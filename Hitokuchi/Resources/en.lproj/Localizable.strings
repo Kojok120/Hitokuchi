@@ -1,0 +1,458 @@
+/*
+  Localizable.strings (English)
+  Hitokuchi
+
+  Key naming convention: screen.element.description
+  Accessibility keys: a11y.screen.element
+*/
+
+// =============================================================================
+// MARK: - Tab Bar
+// =============================================================================
+
+"tab.home.title" = "Home";
+"tab.history.title" = "History";
+"tab.settings.title" = "Settings";
+
+// =============================================================================
+// MARK: - Home Screen
+// =============================================================================
+
+"home.section.favorites" = "Favorites";
+"home.button.otherBeverages" = "Other Drinks";
+
+// Accessibility
+"a11y.home.otherBeverages.hint" = "Double-tap to open beverage selection";
+"a11y.home.quickRecord.label" = "Log %@";
+"a11y.home.quickRecord.hint" = "Double-tap to log";
+
+// =============================================================================
+// MARK: - History Screen
+// =============================================================================
+
+"history.title" = "History";
+"history.segment.today" = "Today";
+"history.segment.thisWeek" = "This Week";
+"history.section.todayLogs" = "Today's Log";
+"history.section.weeklySummary" = "Daily Summary";
+"history.noRecordToday" = "No entries yet today. Try logging from the Home screen.";
+"history.weeklyMessage" = "You met your goal on %d of 7 days this week";
+"history.delete" = "Delete";
+
+// Accessibility
+"a11y.history.segmentControl" = "Switch between Today and This Week";
+"a11y.history.weekday" = "%@, %@";
+"a11y.history.logEntry" = "%@, %@, %@, %d milliliters";
+
+// Day Status
+"history.dayStatus.achieved" = "Goal reached";
+"history.dayStatus.partial" = "Almost there";
+"history.dayStatus.belowHalf" = "Room for more";
+"history.dayStatus.noRecord" = "No entries";
+
+// =============================================================================
+// MARK: - Beverage Select Screen
+// =============================================================================
+
+"beverageSelect.title" = "Choose a Drink";
+"beverageSelect.filter.all" = "All";
+"beverageSelect.amountPicker.title" = "Choose an amount";
+"beverageSelect.button.record" = "Log this amount";
+"beverageSelect.caffeineNote" = "Contains caffeine";
+
+// Accessibility
+"a11y.beverageSelect.category" = "%@ category";
+"a11y.beverageSelect.categorySelected" = "Selected";
+"a11y.beverageSelect.categoryHint" = "Double-tap to filter";
+"a11y.beverageSelect.beverageValue" = "%@ category. %@";
+"a11y.beverageSelect.beverageHint" = "Double-tap to choose an amount";
+"a11y.beverageSelect.recordValue" = "%@, %@";
+"a11y.beverageSelect.recordHint" = "Double-tap to log";
+"a11y.beverageSelect.amountSelected" = "Selected";
+"a11y.beverageSelect.amountValue" = "About %d milliliters";
+"a11y.beverageSelect.amountHint" = "Double-tap to select";
+
+// =============================================================================
+// MARK: - Settings Screen
+// =============================================================================
+
+"settings.title" = "Settings";
+
+// Section: Goal
+"settings.section.goal" = "Goal";
+"settings.goal.dailyAmount" = "Daily Goal";
+"settings.goal.dailyAmountValue" = "%d glasses (%d ml)";
+"settings.goal.quietHours" = "Quiet Hours";
+"settings.goal.quietHoursValue" = "%d:00 – %d:00";
+
+// Section: Display
+"settings.section.display" = "Display";
+"settings.display.numericValues" = "Show Numbers";
+"settings.display.numericValuesDescription" = "Show ml values alongside natural-language messages";
+
+// Section: Fun
+"settings.section.fun" = "Customize";
+"settings.fun.theme" = "Theme";
+"settings.fun.themeValue" = "Current: %@";
+"settings.fun.voicePack" = "Voice Pack";
+"settings.fun.voicePackValue" = "Current: %@";
+"settings.fun.premium" = "Premium";
+"settings.fun.premiumDescription" = "Seasonal content, insights, themes";
+
+// Section: Integration
+"settings.section.integration" = "Integration";
+"settings.integration.healthKit" = "Health App";
+"settings.integration.healthKitDescription" = "Sync water intake to the Health app";
+
+// Section: Support
+"settings.section.support" = "Support";
+"settings.support.editFavorites" = "Edit Favorite Drinks";
+"settings.support.restorePurchases" = "Restore Purchases";
+"settings.support.restoring" = "Restoring...";
+"settings.support.about" = "About This App";
+
+// Restore Alert
+"settings.alert.restoreTitle" = "Restore Purchases";
+"settings.restore.notFound" = "No purchases to restore";
+"settings.restore.success" = "Purchases restored. Thank you!";
+"settings.restore.failed" = "Failed to restore purchases";
+
+// Footer
+"settings.footer.version" = "Hitokuchi v%@ (%@)";
+
+// Accessibility
+"a11y.settings.dailyAmount.label" = "Daily goal";
+"a11y.settings.dailyAmount.value" = "%d milliliters, %d glasses";
+"a11y.settings.dailyAmount.hint" = "Double-tap to change";
+"a11y.settings.quietHours.label" = "Quiet hours";
+"a11y.settings.quietHours.value" = "%d o'clock to %d o'clock";
+"a11y.settings.quietHours.hint" = "Double-tap to change";
+"a11y.settings.numericValues.label" = "Show numbers";
+"a11y.settings.numericValues.on" = "On";
+"a11y.settings.numericValues.off" = "Off";
+"a11y.settings.numericValues.hint" = "Double-tap to toggle. When on, milliliter values are shown alongside messages.";
+"a11y.settings.theme.hint" = "Double-tap to change";
+"a11y.settings.voicePack.hint" = "Double-tap to change";
+"a11y.settings.premium.hint" = "Unlock seasonal content, insights, and themes";
+"a11y.settings.healthKit.label" = "Health App sync";
+"a11y.settings.healthKit.hint" = "Double-tap to toggle";
+"a11y.settings.editFavorites.hint" = "Double-tap to edit favorite drinks";
+"a11y.settings.restorePurchases.label" = "Restore purchases";
+"a11y.settings.restorePurchases.hint" = "Double-tap to restore previous purchases";
+
+// =============================================================================
+// MARK: - Goal Setting Screen
+// =============================================================================
+
+"goalSetting.title" = "Daily Goal";
+"goalSetting.question" = "How much would you like\nto drink each day?";
+"goalSetting.cupsDisplay" = "%d glasses";
+"goalSetting.mlDisplay" = "(%d ml)";
+"goalSetting.recommendation" = "The general recommendation\nfor adults is 2,000–2,500 ml per day";
+
+// Accessibility
+"a11y.goalSetting.label" = "Daily goal";
+"a11y.goalSetting.value" = "%d milliliters, %d glasses";
+"a11y.goalSetting.stepper.label" = "Goal amount";
+"a11y.goalSetting.stepper.value" = "%d milliliters";
+"a11y.goalSetting.stepper.hint" = "Adjust the value";
+
+// =============================================================================
+// MARK: - Quiet Hours Screen
+// =============================================================================
+
+"quietHours.title" = "Quiet Hours";
+"quietHours.description" = "No notifications\nduring these hours";
+"quietHours.start" = "Start";
+"quietHours.end" = "End";
+"quietHours.summary" = "Reminders are paused\nbetween %d:00 and %d:00";
+
+// Accessibility
+"a11y.quietHours.startLabel" = "Quiet hours start time";
+"a11y.quietHours.startValue" = "%d o'clock";
+"a11y.quietHours.endLabel" = "Quiet hours end time";
+"a11y.quietHours.endValue" = "%d o'clock";
+
+// =============================================================================
+// MARK: - Theme Picker Screen
+// =============================================================================
+
+"themePicker.title" = "Theme";
+"themePicker.previewMessage" = "Previewing %@ theme...";
+"themePicker.purchaseButton" = "Use this theme %@";
+"themePicker.backButton" = "Back";
+
+// Accessibility
+"a11y.themePicker.inUse" = "In use";
+"a11y.themePicker.available" = "Available";
+"a11y.themePicker.locked" = "Not purchased";
+"a11y.themePicker.switchHint" = "Double-tap to switch to this theme";
+"a11y.themePicker.previewHint" = "Double-tap to preview for 5 seconds";
+"a11y.themePicker.previewLabel" = "Previewing %@ theme. %@";
+"a11y.themePicker.purchaseLabel" = "Use this theme, %@";
+"a11y.themePicker.purchaseHint" = "Double-tap to purchase";
+"a11y.themePicker.endPreview" = "End preview";
+
+// =============================================================================
+// MARK: - Voice Pack Screen
+// =============================================================================
+
+"voicePack.title" = "Voice Pack";
+"voicePack.question" = "Choose a\nspeaking style";
+"voicePack.inUse" = "In Use";
+"voicePack.selectButton" = "Use this voice";
+"voicePack.purchaseButton" = "Use this voice %@";
+"voicePack.exampleLabel" = "e.g.";
+
+// Accessibility
+"a11y.voicePack.selectHint" = "Double-tap to switch";
+"a11y.voicePack.purchaseLabel" = "Use %@ voice. %@. One-time purchase";
+"a11y.voicePack.purchaseHint" = "Double-tap to purchase";
+"a11y.voicePack.exampleMessage" = "Example. %@";
+
+// =============================================================================
+// MARK: - Premium Screen
+// =============================================================================
+
+"premium.title" = "Premium";
+"premium.catchCopy" = "More fun,\nmore insight";
+"premium.subtitle" = "Unlock features that make\nyour daily hydration even better";
+"premium.feature.seasonal.title" = "Seasonal Content";
+"premium.feature.seasonal.description" = "Discover beverage trivia and special messages for every season";
+"premium.feature.insights.title" = "Health Insights";
+"premium.feature.insights.description" = "Detailed weekly analysis to better understand your hydration habits";
+"premium.feature.themes.title" = "5 Color Themes";
+"premium.feature.themes.description" = "Cherry Blossom, Ocean, Forest, Sunset, Night — match the app's mood to yours";
+"premium.purchaseButton" = "Get Premium %@ (one-time)";
+"premium.oneTimePurchaseNote" = "Pay once, use forever";
+
+// Accessibility
+"a11y.premium.purchaseLabel" = "Get Premium, %@, one-time purchase";
+"a11y.premium.purchaseValue" = "Unlocks seasonal content, health insights, and 5 color themes permanently";
+"a11y.premium.purchaseHint" = "Double-tap to purchase";
+
+// =============================================================================
+// MARK: - Onboarding: Welcome Screen
+// =============================================================================
+
+"welcome.title" = "Had a sip yet?";
+"welcome.subtitle" = "A hydration partner\nthat gently checks in\nlike a friend";
+"welcome.feature.naturalLanguage" = "Words, not numbers";
+"welcome.feature.oneButton" = "One tap to log";
+"welcome.feature.voiceOver" = "Fully accessible with VoiceOver";
+"welcome.startButton" = "Get Started";
+
+// Accessibility
+"a11y.welcome.features" = "Communicates in words, not numbers. One tap to log a drink. Fully accessible with VoiceOver.";
+"a11y.welcome.startHint" = "Double-tap to begin setup";
+
+// =============================================================================
+// MARK: - Onboarding: Favorite Select Screen
+// =============================================================================
+
+"favoriteSelect.title" = "What do you\nusually drink?";
+"favoriteSelect.subtitle" = "Pick 3 to 5 and they'll become\nquick-log buttons on your Home screen";
+"favoriteSelect.selectionCount" = "%d/5 selected";
+"favoriteSelect.completeButton" = "All set!";
+
+// Accessibility
+"a11y.favoriteSelect.selectionCount" = "%d selected";
+"a11y.favoriteSelect.canSelectMore" = "You can pick %d more";
+"a11y.favoriteSelect.needMore" = "Pick %d more";
+"a11y.favoriteSelect.completeLabel" = "All set";
+"a11y.favoriteSelect.completeDisabled" = "Disabled. Pick %d more";
+"a11y.favoriteSelect.completeHint" = "Double-tap to start the app";
+"a11y.favoriteSelect.selected" = "Selected";
+"a11y.favoriteSelect.notSelected" = "Not selected";
+"a11y.favoriteSelect.selectHint" = "Double-tap to select";
+"a11y.favoriteSelect.deselectHint" = "Double-tap to deselect";
+
+// =============================================================================
+// MARK: - Favorite Edit Screen (Settings)
+// =============================================================================
+
+"favoriteEdit.title" = "Favorite Drinks";
+"favoriteEdit.instruction" = "Pick your\ngo-to drinks";
+"favoriteEdit.selectionCount" = "%d/5 selected";
+"favoriteEdit.saveButton" = "Save";
+
+// =============================================================================
+// MARK: - About Screen
+// =============================================================================
+
+"about.title" = "About This App";
+"about.version" = "Version";
+"about.supportedOS" = "Requires";
+"about.termsOfService" = "Terms of Service";
+"about.privacyPolicy" = "Privacy Policy";
+"about.appName" = "Hitokuchi";
+"about.appTagline" = "Your hydration partner";
+
+// Disclaimer
+"about.disclaimerSection" = "Please Note";
+"about.disclaimer" = "Hitokuchi is a hydration-tracking companion. It does not provide medical advice. The hydration coefficients shown are reference values based on the Japan Standard Tables of Food Composition, and actual water absorption varies by individual physiology and health condition. Please consult your doctor for any decisions about fluid intake goals or health.";
+
+// Accessibility
+"a11y.about.disclaimer" = "Disclaimer. Hitokuchi is a hydration-tracking companion. It does not provide medical advice.";
+
+// =============================================================================
+// MARK: - Progress Stage
+// =============================================================================
+
+"progress.notStarted" = "Not started yet";
+"progress.beginning" = "Getting started";
+"progress.onTrack" = "On track";
+"progress.almostDone" = "Almost there";
+"progress.achieved" = "Goal reached!";
+"progress.exceeded" = "Well hydrated";
+
+// Accessibility
+"a11y.progress.label" = "Today's progress";
+"a11y.progress.valueWithNumeric" = "%@. %d of %d milliliters. %d percent";
+"a11y.progress.valueWithoutNumeric" = "%@. %d percent of goal";
+
+// =============================================================================
+// MARK: - Drink Amount
+// =============================================================================
+
+"drinkAmount.yunomi" = "Tea cup";
+"drinkAmount.owan" = "Small bowl";
+"drinkAmount.mugCup" = "Mug";
+"drinkAmount.petBottleHalf" = "Half bottle";
+"drinkAmount.petBottleFull" = "Full bottle";
+
+// Accessibility
+"a11y.drinkAmount.yunomi" = "Tea cup, about 120 milliliters";
+"a11y.drinkAmount.owan" = "Small bowl, about 180 milliliters";
+"a11y.drinkAmount.mugCup" = "Mug, about 250 milliliters";
+"a11y.drinkAmount.petBottleHalf" = "Half bottle, about 250 milliliters";
+"a11y.drinkAmount.petBottleFull" = "Full bottle, about 500 milliliters";
+
+// =============================================================================
+// MARK: - Beverage Category
+// =============================================================================
+
+"beverageCategory.tea" = "Tea";
+"beverageCategory.coffee" = "Coffee";
+"beverageCategory.water" = "Water";
+"beverageCategory.soup" = "Soup";
+"beverageCategory.juice" = "Juice";
+"beverageCategory.other" = "Other";
+
+// =============================================================================
+// MARK: - Beverage Names (28 types)
+// =============================================================================
+
+"beverage.sencha" = "Sencha (Green Tea)";
+"beverage.hojicha" = "Hojicha (Roasted Tea)";
+"beverage.mugicha" = "Barley Tea";
+"beverage.gyokuro" = "Gyokuro (Shade Tea)";
+"beverage.blackTea" = "Black Tea";
+"beverage.coffeeBlack" = "Black Coffee";
+"beverage.cafeAuLait" = "Cafe au Lait";
+"beverage.water" = "Water";
+"beverage.sparklingWater" = "Sparkling Water";
+"beverage.misoSoup" = "Miso Soup";
+"beverage.soup" = "Soup";
+"beverage.orangeJuice" = "Orange Juice";
+"beverage.sportsDrink" = "Sports Drink";
+"beverage.milk" = "Milk";
+"beverage.soyMilk" = "Soy Milk";
+"beverage.energyDrink" = "Energy Drink";
+"beverage.matcha" = "Matcha";
+"beverage.oolongTea" = "Oolong Tea";
+"beverage.rooibosTea" = "Rooibos Tea";
+"beverage.amazake" = "Amazake (Sweet Rice Drink)";
+"beverage.cocoa" = "Cocoa";
+"beverage.vegetableJuice" = "Vegetable Juice";
+"beverage.icedTea" = "Iced Tea";
+"beverage.decafCoffee" = "Decaf Coffee";
+"beverage.hotWater" = "Hot Water";
+"beverage.tomatoJuice" = "Tomato Juice";
+"beverage.calpis" = "Calpis";
+"beverage.pocariSweat" = "Pocari Sweat";
+
+// Beverage notes
+"beverage.note.caffeineFree" = "Caffeine-free";
+"beverage.note.highCaffeine" = "High caffeine";
+"beverage.note.saltWarning" = "High sodium";
+"beverage.note.highSugarCaffeine" = "High sugar & caffeine";
+"beverage.note.sugarWarning" = "High sugar";
+
+// =============================================================================
+// MARK: - App Theme
+// =============================================================================
+
+"theme.default.name" = "Default";
+"theme.default.description" = "Warm and neutral";
+"theme.sakura.name" = "Cherry Blossom";
+"theme.sakura.description" = "Inspired by spring sakura";
+"theme.ocean.name" = "Ocean";
+"theme.ocean.description" = "Inspired by summer seas";
+"theme.forest.name" = "Forest";
+"theme.forest.description" = "Year-round forest green";
+"theme.sunset.name" = "Sunset";
+"theme.sunset.description" = "Inspired by autumn sunsets";
+"theme.night.name" = "Night";
+"theme.night.description" = "The calm of a moonlit night";
+
+// =============================================================================
+// MARK: - Message Tone
+// =============================================================================
+
+"messageTone.default.name" = "Gentle Standard";
+"messageTone.default.description" = "Speaks kindly, like a friend";
+"messageTone.kansai.name" = "Kansai Dialect";
+"messageTone.kansai.description" = "Warm Osaka friendliness";
+"messageTone.kyoto.name" = "Kyoto Dialect";
+"messageTone.kyoto.description" = "Elegant Kyoto refinement";
+
+// =============================================================================
+// MARK: - Notifications
+// =============================================================================
+
+"notification.title" = "Hitokuchi";
+"notification.fallbackBody" = "Time for a sip?";
+
+// =============================================================================
+// MARK: - Common
+// =============================================================================
+
+"common.ok" = "OK";
+"common.cancel" = "Cancel";
+"common.save" = "Save";
+"common.unit.ml" = "ml";
+"common.unit.milliliters" = "milliliters";
+"common.unit.cups" = "glasses";
+"common.unit.percent" = "percent";
+"common.unknown" = "Unknown";
+
+// =============================================================================
+// MARK: - Accessibility: Recording
+// =============================================================================
+
+"a11y.home.recorded.announcement" = "Logged %@. %@, %d milliliters";
+
+// =============================================================================
+// MARK: - Greeting Messages (for localized message engine)
+// =============================================================================
+
+"message.greeting.morning" = "Good morning! Let's start with a sip";
+"message.greeting.afternoon" = "Good afternoon! Staying hydrated?";
+"message.greeting.evening" = "Good evening! Great job today";
+"message.greeting.night" = "Getting late. One more sip before bed?";
+"message.afterRecord" = "Logged %@! Keep it up";
+"message.dailySummary" = "Today you had: %@. %@";
+"message.progress.notStarted" = "How about a sip to get started?";
+"message.progress.beginning" = "Nice start! Keep going";
+"message.progress.onTrack" = "You're on track!";
+"message.progress.almostDone" = "Almost at your goal!";
+"message.progress.achieved" = "Goal achieved! Well done!";
+"message.progress.exceeded" = "You've exceeded your goal! Great job";
+
+// =============================================================================
+// MARK: - History: Beverage Summary
+// =============================================================================
+
+"history.beverageCount" = "%@ x%d";
+"history.beverageSeparator" = ", ";

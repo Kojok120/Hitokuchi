@@ -1,0 +1,458 @@
+/*
+  Localizable.strings (Korean)
+  Hitokuchi / 히토쿠치
+
+  Key naming convention: screen.element.description
+  Accessibility keys: a11y.screen.element
+*/
+
+// =============================================================================
+// MARK: - Tab Bar
+// =============================================================================
+
+"tab.home.title" = "홈";
+"tab.history.title" = "기록";
+"tab.settings.title" = "설정";
+
+// =============================================================================
+// MARK: - Home Screen
+// =============================================================================
+
+"home.section.favorites" = "즐겨찾기";
+"home.button.otherBeverages" = "다른 음료";
+
+// Accessibility
+"a11y.home.otherBeverages.hint" = "이중 탭하여 음료 선택 화면을 엽니다";
+"a11y.home.quickRecord.label" = "%@ 기록";
+"a11y.home.quickRecord.hint" = "이중 탭하여 기록합니다";
+
+// =============================================================================
+// MARK: - History Screen
+// =============================================================================
+
+"history.title" = "기록";
+"history.segment.today" = "오늘";
+"history.segment.thisWeek" = "이번 주";
+"history.section.todayLogs" = "오늘의 기록";
+"history.section.weeklySummary" = "일별 요약";
+"history.noRecordToday" = "아직 오늘 기록이 없습니다. 홈 화면에서 기록해 보세요.";
+"history.weeklyMessage" = "이번 주 7일 중 %d일 목표를 달성했습니다";
+"history.delete" = "삭제";
+
+// Accessibility
+"a11y.history.segmentControl" = "오늘과 이번 주 전환";
+"a11y.history.weekday" = "%@요일, %@";
+"a11y.history.logEntry" = "%@, %@, %@, %d밀리리터";
+
+// Day Status
+"history.dayStatus.achieved" = "충분히 마셨습니다";
+"history.dayStatus.partial" = "조금 더 마시면 좋겠어요";
+"history.dayStatus.belowHalf" = "더 마실 수 있어요";
+"history.dayStatus.noRecord" = "기록 없음";
+
+// =============================================================================
+// MARK: - Beverage Select Screen
+// =============================================================================
+
+"beverageSelect.title" = "음료 선택";
+"beverageSelect.filter.all" = "전체";
+"beverageSelect.amountPicker.title" = "양을 선택하세요";
+"beverageSelect.button.record" = "이 양으로 기록";
+"beverageSelect.caffeineNote" = "카페인 포함";
+
+// Accessibility
+"a11y.beverageSelect.category" = "%@ 카테고리";
+"a11y.beverageSelect.categorySelected" = "선택됨";
+"a11y.beverageSelect.categoryHint" = "이중 탭하여 필터링합니다";
+"a11y.beverageSelect.beverageValue" = "%@ 카테고리. %@";
+"a11y.beverageSelect.beverageHint" = "이중 탭하여 양을 선택합니다";
+"a11y.beverageSelect.recordValue" = "%@, %@";
+"a11y.beverageSelect.recordHint" = "이중 탭하여 기록합니다";
+"a11y.beverageSelect.amountSelected" = "선택됨";
+"a11y.beverageSelect.amountValue" = "약 %d밀리리터";
+"a11y.beverageSelect.amountHint" = "이중 탭하여 선택합니다";
+
+// =============================================================================
+// MARK: - Settings Screen
+// =============================================================================
+
+"settings.title" = "설정";
+
+// Section: Goal
+"settings.section.goal" = "목표";
+"settings.goal.dailyAmount" = "하루 목표량";
+"settings.goal.dailyAmountValue" = "컵 %d잔 (%dml)";
+"settings.goal.quietHours" = "방해 금지 시간";
+"settings.goal.quietHoursValue" = "%d:00 ~ %d:00";
+
+// Section: Display
+"settings.section.display" = "표시";
+"settings.display.numericValues" = "수치 표시";
+"settings.display.numericValuesDescription" = "메시지와 함께 ml 수치도 표시합니다";
+
+// Section: Fun
+"settings.section.fun" = "꾸미기";
+"settings.fun.theme" = "테마";
+"settings.fun.themeValue" = "현재: %@";
+"settings.fun.voicePack" = "보이스 팩";
+"settings.fun.voicePackValue" = "현재: %@";
+"settings.fun.premium" = "프리미엄";
+"settings.fun.premiumDescription" = "시즌 콘텐츠, 인사이트, 테마";
+
+// Section: Integration
+"settings.section.integration" = "연동";
+"settings.integration.healthKit" = "건강 앱 연동";
+"settings.integration.healthKitDescription" = "건강 앱에 수분 섭취량을 기록합니다";
+
+// Section: Support
+"settings.section.support" = "지원";
+"settings.support.editFavorites" = "즐겨찾기 음료 변경";
+"settings.support.restorePurchases" = "구매 복원";
+"settings.support.restoring" = "복원 중...";
+"settings.support.about" = "앱 정보";
+
+// Restore Alert
+"settings.alert.restoreTitle" = "구매 복원";
+"settings.restore.notFound" = "복원할 구매가 없습니다";
+"settings.restore.success" = "구매가 복원되었습니다. 감사합니다!";
+"settings.restore.failed" = "구매 복원에 실패했습니다";
+
+// Footer
+"settings.footer.version" = "Hitokuchi v%@ (%@)";
+
+// Accessibility
+"a11y.settings.dailyAmount.label" = "하루 목표량";
+"a11y.settings.dailyAmount.value" = "%d밀리리터, 컵 %d잔";
+"a11y.settings.dailyAmount.hint" = "이중 탭하여 변경합니다";
+"a11y.settings.quietHours.label" = "방해 금지 시간";
+"a11y.settings.quietHours.value" = "%d시부터 %d시";
+"a11y.settings.quietHours.hint" = "이중 탭하여 변경합니다";
+"a11y.settings.numericValues.label" = "수치 표시";
+"a11y.settings.numericValues.on" = "켜짐";
+"a11y.settings.numericValues.off" = "꺼짐";
+"a11y.settings.numericValues.hint" = "이중 탭하여 전환합니다. 켜면 메시지와 함께 밀리리터 수치도 표시됩니다";
+"a11y.settings.theme.hint" = "이중 탭하여 변경합니다";
+"a11y.settings.voicePack.hint" = "이중 탭하여 변경합니다";
+"a11y.settings.premium.hint" = "시즌 콘텐츠, 인사이트, 테마를 사용할 수 있습니다";
+"a11y.settings.healthKit.label" = "건강 앱 연동";
+"a11y.settings.healthKit.hint" = "이중 탭하여 전환합니다";
+"a11y.settings.editFavorites.hint" = "이중 탭하여 즐겨찾기 음료를 변경합니다";
+"a11y.settings.restorePurchases.label" = "구매 복원";
+"a11y.settings.restorePurchases.hint" = "이중 탭하여 이전 구매를 복원합니다";
+
+// =============================================================================
+// MARK: - Goal Setting Screen
+// =============================================================================
+
+"goalSetting.title" = "목표량";
+"goalSetting.question" = "하루에 얼마나\n마시고 싶으세요?";
+"goalSetting.cupsDisplay" = "컵 %d잔";
+"goalSetting.mlDisplay" = "(%dml)";
+"goalSetting.recommendation" = "성인 권장량은\n하루 2,000ml~2,500ml입니다";
+
+// Accessibility
+"a11y.goalSetting.label" = "하루 목표량";
+"a11y.goalSetting.value" = "%d밀리리터, 컵 %d잔";
+"a11y.goalSetting.stepper.label" = "목표량";
+"a11y.goalSetting.stepper.value" = "%d밀리리터";
+"a11y.goalSetting.stepper.hint" = "값을 조절할 수 있습니다";
+
+// =============================================================================
+// MARK: - Quiet Hours Screen
+// =============================================================================
+
+"quietHours.title" = "방해 금지 시간";
+"quietHours.description" = "이 시간대에는\n알림을 보내지 않습니다";
+"quietHours.start" = "시작";
+"quietHours.end" = "종료";
+"quietHours.summary" = "%d:00부터 %d:00까지\n알림을 일시 중지합니다";
+
+// Accessibility
+"a11y.quietHours.startLabel" = "방해 금지 시작 시간";
+"a11y.quietHours.startValue" = "%d시";
+"a11y.quietHours.endLabel" = "방해 금지 종료 시간";
+"a11y.quietHours.endValue" = "%d시";
+
+// =============================================================================
+// MARK: - Theme Picker Screen
+// =============================================================================
+
+"themePicker.title" = "테마";
+"themePicker.previewMessage" = "%@ 테마 미리보기 중...";
+"themePicker.purchaseButton" = "이 테마 사용 %@";
+"themePicker.backButton" = "돌아가기";
+
+// Accessibility
+"a11y.themePicker.inUse" = "사용 중";
+"a11y.themePicker.available" = "선택 가능";
+"a11y.themePicker.locked" = "미구매";
+"a11y.themePicker.switchHint" = "이중 탭하여 이 테마로 전환합니다";
+"a11y.themePicker.previewHint" = "이중 탭하여 5초간 미리보기합니다";
+"a11y.themePicker.previewLabel" = "%@ 테마 미리보기 중입니다. %@";
+"a11y.themePicker.purchaseLabel" = "이 테마 사용, %@";
+"a11y.themePicker.purchaseHint" = "이중 탭하여 구매합니다";
+"a11y.themePicker.endPreview" = "미리보기 종료";
+
+// =============================================================================
+// MARK: - Voice Pack Screen
+// =============================================================================
+
+"voicePack.title" = "보이스 팩";
+"voicePack.question" = "말투를\n선택하세요";
+"voicePack.inUse" = "사용 중";
+"voicePack.selectButton" = "이 보이스 사용";
+"voicePack.purchaseButton" = "이 보이스 사용 %@";
+"voicePack.exampleLabel" = "예:";
+
+// Accessibility
+"a11y.voicePack.selectHint" = "이중 탭하여 전환합니다";
+"a11y.voicePack.purchaseLabel" = "%@ 보이스 사용. %@. 일회 결제";
+"a11y.voicePack.purchaseHint" = "이중 탭하여 구매합니다";
+"a11y.voicePack.exampleMessage" = "예문. %@";
+
+// =============================================================================
+// MARK: - Premium Screen
+// =============================================================================
+
+"premium.title" = "프리미엄";
+"premium.catchCopy" = "더 즐겁게,\n더 깊이";
+"premium.subtitle" = "매일의 수분 보충을\n더 즐겁게 만드는 기능을 만나보세요";
+"premium.feature.seasonal.title" = "시즌 콘텐츠";
+"premium.feature.seasonal.description" = "계절마다 음료 이야기와 특별 메시지를 받아보세요";
+"premium.feature.insights.title" = "건강 인사이트";
+"premium.feature.insights.description" = "주간 상세 분석으로 나의 수분 보충 습관을 깊이 이해하세요";
+"premium.feature.themes.title" = "컬러 테마 5종";
+"premium.feature.themes.description" = "벚꽃, 바다, 숲, 노을, 밤 — 기분에 맞게 앱 분위기를 바꿔보세요";
+"premium.purchaseButton" = "프리미엄 구매 %@(일회 결제)";
+"premium.oneTimePurchaseNote" = "한 번 결제로 영구 이용 가능합니다";
+
+// Accessibility
+"a11y.premium.purchaseLabel" = "프리미엄 구매, %@, 일회 결제";
+"a11y.premium.purchaseValue" = "시즌 콘텐츠, 건강 인사이트, 컬러 테마 5종을 영구적으로 사용할 수 있습니다";
+"a11y.premium.purchaseHint" = "이중 탭하여 구매합니다";
+
+// =============================================================================
+// MARK: - Onboarding: Welcome Screen
+// =============================================================================
+
+"welcome.title" = "한 모금, 마셨어?";
+"welcome.subtitle" = "친구처럼 살짝\n말을 건네주는\n수분 보충 파트너";
+"welcome.feature.naturalLanguage" = "숫자가 아닌 말로";
+"welcome.feature.oneButton" = "버튼 하나로 기록";
+"welcome.feature.voiceOver" = "VoiceOver 완벽 지원";
+"welcome.startButton" = "시작하기";
+
+// Accessibility
+"a11y.welcome.features" = "숫자가 아닌 말로 알려드립니다. 버튼 하나로 기록할 수 있습니다. VoiceOver로 완벽하게 사용할 수 있습니다.";
+"a11y.welcome.startHint" = "이중 탭하여 설정을 시작합니다";
+
+// =============================================================================
+// MARK: - Onboarding: Favorite Select Screen
+// =============================================================================
+
+"favoriteSelect.title" = "자주 마시는 음료를\n선택하세요";
+"favoriteSelect.subtitle" = "3~5개를 선택하면\n홈 화면에 버튼이 생깁니다";
+"favoriteSelect.selectionCount" = "%d/5 선택됨";
+"favoriteSelect.completeButton" = "준비 완료!";
+
+// Accessibility
+"a11y.favoriteSelect.selectionCount" = "%d개 선택됨";
+"a11y.favoriteSelect.canSelectMore" = "%d개 더 선택할 수 있습니다";
+"a11y.favoriteSelect.needMore" = "%d개 더 선택하세요";
+"a11y.favoriteSelect.completeLabel" = "준비 완료";
+"a11y.favoriteSelect.completeDisabled" = "비활성. %d개 더 선택하세요";
+"a11y.favoriteSelect.completeHint" = "이중 탭하여 앱을 시작합니다";
+"a11y.favoriteSelect.selected" = "선택됨";
+"a11y.favoriteSelect.notSelected" = "미선택";
+"a11y.favoriteSelect.selectHint" = "이중 탭하여 선택합니다";
+"a11y.favoriteSelect.deselectHint" = "이중 탭하여 선택 해제합니다";
+
+// =============================================================================
+// MARK: - Favorite Edit Screen (Settings)
+// =============================================================================
+
+"favoriteEdit.title" = "즐겨찾기 음료";
+"favoriteEdit.instruction" = "자주 마시는 음료를\n선택하세요";
+"favoriteEdit.selectionCount" = "%d/5 선택됨";
+"favoriteEdit.saveButton" = "저장";
+
+// =============================================================================
+// MARK: - About Screen
+// =============================================================================
+
+"about.title" = "앱 정보";
+"about.version" = "버전";
+"about.supportedOS" = "지원 OS";
+"about.termsOfService" = "이용 약관";
+"about.privacyPolicy" = "개인정보 처리방침";
+"about.appName" = "Hitokuchi";
+"about.appTagline" = "나의 수분 보충 파트너";
+
+// Disclaimer
+"about.disclaimerSection" = "주의사항";
+"about.disclaimer" = "Hitokuchi는 수분 보충 기록을 돕는 앱입니다. 의학적 조언을 제공하지 않습니다. 표시되는 수분 계수는 일본 식품표준성분표에 기반한 참고값이며, 실제 수분 흡수량은 개인의 체질과 건강 상태에 따라 다릅니다. 수분 섭취 목표 설정이나 건강 관련 판단은 담당 의사와 상담하세요.";
+
+// Accessibility
+"a11y.about.disclaimer" = "면책 조항. Hitokuchi는 수분 보충 기록을 돕는 앱입니다. 의학적 조언을 제공하지 않습니다.";
+
+// =============================================================================
+// MARK: - Progress Stage
+// =============================================================================
+
+"progress.notStarted" = "아직 시작 전";
+"progress.beginning" = "첫걸음";
+"progress.onTrack" = "잘 하고 있어요";
+"progress.almostDone" = "거의 다 됐어요";
+"progress.achieved" = "목표 달성!";
+"progress.exceeded" = "충분합니다";
+
+// Accessibility
+"a11y.progress.label" = "오늘의 진행률";
+"a11y.progress.valueWithNumeric" = "%@. %d밀리리터 중 %d밀리리터. %d퍼센트";
+"a11y.progress.valueWithoutNumeric" = "%@. 목표의 %d퍼센트";
+
+// =============================================================================
+// MARK: - Drink Amount
+// =============================================================================
+
+"drinkAmount.yunomi" = "찻잔 한 잔";
+"drinkAmount.owan" = "국그릇 한 그릇";
+"drinkAmount.mugCup" = "머그컵 한 잔";
+"drinkAmount.petBottleHalf" = "페트병 반 병";
+"drinkAmount.petBottleFull" = "페트병 한 병";
+
+// Accessibility
+"a11y.drinkAmount.yunomi" = "찻잔 한 잔, 약 120밀리리터";
+"a11y.drinkAmount.owan" = "국그릇 한 그릇, 약 180밀리리터";
+"a11y.drinkAmount.mugCup" = "머그컵 한 잔, 약 250밀리리터";
+"a11y.drinkAmount.petBottleHalf" = "페트병 반 병, 약 250밀리리터";
+"a11y.drinkAmount.petBottleFull" = "페트병 한 병, 약 500밀리리터";
+
+// =============================================================================
+// MARK: - Beverage Category
+// =============================================================================
+
+"beverageCategory.tea" = "차";
+"beverageCategory.coffee" = "커피";
+"beverageCategory.water" = "물";
+"beverageCategory.soup" = "국물";
+"beverageCategory.juice" = "주스";
+"beverageCategory.other" = "기타";
+
+// =============================================================================
+// MARK: - Beverage Names (28 types)
+// =============================================================================
+
+"beverage.sencha" = "센차(녹차)";
+"beverage.hojicha" = "호지차(볶음차)";
+"beverage.mugicha" = "보리차";
+"beverage.gyokuro" = "교쿠로(옥로)";
+"beverage.blackTea" = "홍차";
+"beverage.coffeeBlack" = "블랙 커피";
+"beverage.cafeAuLait" = "카페오레";
+"beverage.water" = "물";
+"beverage.sparklingWater" = "탄산수";
+"beverage.misoSoup" = "미소시루(된장국)";
+"beverage.soup" = "수프";
+"beverage.orangeJuice" = "오렌지주스";
+"beverage.sportsDrink" = "스포츠 드링크";
+"beverage.milk" = "우유";
+"beverage.soyMilk" = "두유";
+"beverage.energyDrink" = "에너지 드링크";
+"beverage.matcha" = "말차";
+"beverage.oolongTea" = "우롱차";
+"beverage.rooibosTea" = "루이보스차";
+"beverage.amazake" = "아마자케(단술)";
+"beverage.cocoa" = "코코아";
+"beverage.vegetableJuice" = "야채주스";
+"beverage.icedTea" = "아이스티";
+"beverage.decafCoffee" = "디카페인 커피";
+"beverage.hotWater" = "따뜻한 물";
+"beverage.tomatoJuice" = "토마토주스";
+"beverage.calpis" = "칼피스";
+"beverage.pocariSweat" = "포카리스웨트";
+
+// Beverage notes
+"beverage.note.caffeineFree" = "카페인 프리";
+"beverage.note.highCaffeine" = "고카페인";
+"beverage.note.saltWarning" = "나트륨 주의";
+"beverage.note.highSugarCaffeine" = "고당분·카페인";
+"beverage.note.sugarWarning" = "당분 주의";
+
+// =============================================================================
+// MARK: - App Theme
+// =============================================================================
+
+"theme.default.name" = "기본";
+"theme.default.description" = "따뜻한 뉴트럴";
+"theme.sakura.name" = "벚꽃";
+"theme.sakura.description" = "봄의 벚꽃을 담아서";
+"theme.ocean.name" = "바다";
+"theme.ocean.description" = "여름 바다를 담아서";
+"theme.forest.name" = "숲";
+"theme.forest.description" = "사계절 함께하는 숲의 초록";
+"theme.sunset.name" = "노을";
+"theme.sunset.description" = "가을 노을을 담아서";
+"theme.night.name" = "밤";
+"theme.night.description" = "달빛의 고요함";
+
+// =============================================================================
+// MARK: - Message Tone
+// =============================================================================
+
+"messageTone.default.name" = "다정한 표준어";
+"messageTone.default.description" = "친구처럼 다정하게 말합니다";
+"messageTone.kansai.name" = "간사이 사투리";
+"messageTone.kansai.description" = "오사카의 따뜻함";
+"messageTone.kyoto.name" = "교토 사투리";
+"messageTone.kyoto.description" = "교토의 우아한 세련됨";
+
+// =============================================================================
+// MARK: - Notifications
+// =============================================================================
+
+"notification.title" = "Hitokuchi";
+"notification.fallbackBody" = "한 모금 마실 시간이에요";
+
+// =============================================================================
+// MARK: - Common
+// =============================================================================
+
+"common.ok" = "확인";
+"common.cancel" = "취소";
+"common.save" = "저장";
+"common.unit.ml" = "ml";
+"common.unit.milliliters" = "밀리리터";
+"common.unit.cups" = "잔";
+"common.unit.percent" = "퍼센트";
+"common.unknown" = "알 수 없음";
+
+// =============================================================================
+// MARK: - Accessibility: Recording
+// =============================================================================
+
+"a11y.home.recorded.announcement" = "%@ 기록 완료. %@, %d밀리리터";
+
+// =============================================================================
+// MARK: - Greeting Messages (for localized message engine)
+// =============================================================================
+
+"message.greeting.morning" = "좋은 아침이에요! 한 모금부터 시작해볼까요";
+"message.greeting.afternoon" = "안녕하세요! 수분 보충하고 계신가요?";
+"message.greeting.evening" = "안녕하세요! 오늘도 수고하셨어요";
+"message.greeting.night" = "늦은 시간이네요. 자기 전에 한 잔 더?";
+"message.afterRecord" = "%@ 기록 완료! 잘하고 있어요";
+"message.dailySummary" = "오늘은 %@을(를) 마셨어요. %@";
+"message.progress.notStarted" = "한 잔 시작해볼까요?";
+"message.progress.beginning" = "좋은 시작이에요!";
+"message.progress.onTrack" = "잘하고 있어요!";
+"message.progress.almostDone" = "목표 거의 달성!";
+"message.progress.achieved" = "오늘 목표 달성! 축하해요!";
+"message.progress.exceeded" = "목표를 초과했어요! 훌륭해요";
+
+// =============================================================================
+// MARK: - History: Beverage Summary
+// =============================================================================
+
+"history.beverageCount" = "%@ %d잔";
+"history.beverageSeparator" = ", ";

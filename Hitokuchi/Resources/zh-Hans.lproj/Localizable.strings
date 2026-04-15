@@ -1,0 +1,458 @@
+/*
+  Localizable.strings (Simplified Chinese)
+  Hitokuchi / 一小口
+
+  Key naming convention: screen.element.description
+  Accessibility keys: a11y.screen.element
+*/
+
+// =============================================================================
+// MARK: - Tab Bar
+// =============================================================================
+
+"tab.home.title" = "首页";
+"tab.history.title" = "记录";
+"tab.settings.title" = "设置";
+
+// =============================================================================
+// MARK: - Home Screen
+// =============================================================================
+
+"home.section.favorites" = "常喝";
+"home.button.otherBeverages" = "其他饮品";
+
+// Accessibility
+"a11y.home.otherBeverages.hint" = "双击打开饮品选择页面";
+"a11y.home.quickRecord.label" = "记录%@";
+"a11y.home.quickRecord.hint" = "双击记录";
+
+// =============================================================================
+// MARK: - History Screen
+// =============================================================================
+
+"history.title" = "记录";
+"history.segment.today" = "今天";
+"history.segment.thisWeek" = "本周";
+"history.section.todayLogs" = "今日记录";
+"history.section.weeklySummary" = "每日概况";
+"history.noRecordToday" = "今天还没有记录。去首页记录一下吧。";
+"history.weeklyMessage" = "本周7天中有%d天达成了目标";
+"history.delete" = "删除";
+
+// Accessibility
+"a11y.history.segmentControl" = "切换今天和本周";
+"a11y.history.weekday" = "周%@，%@";
+"a11y.history.logEntry" = "%@，%@，%@，%d毫升";
+
+// Day Status
+"history.dayStatus.achieved" = "已达标";
+"history.dayStatus.partial" = "差一点就达标了";
+"history.dayStatus.belowHalf" = "还可以多喝一些";
+"history.dayStatus.noRecord" = "无记录";
+
+// =============================================================================
+// MARK: - Beverage Select Screen
+// =============================================================================
+
+"beverageSelect.title" = "选择饮品";
+"beverageSelect.filter.all" = "全部";
+"beverageSelect.amountPicker.title" = "请选择饮用量";
+"beverageSelect.button.record" = "记录这杯";
+"beverageSelect.caffeineNote" = "含咖啡因";
+
+// Accessibility
+"a11y.beverageSelect.category" = "%@类别";
+"a11y.beverageSelect.categorySelected" = "已选";
+"a11y.beverageSelect.categoryHint" = "双击筛选";
+"a11y.beverageSelect.beverageValue" = "%@类别。%@";
+"a11y.beverageSelect.beverageHint" = "双击选择饮用量";
+"a11y.beverageSelect.recordValue" = "%@，%@";
+"a11y.beverageSelect.recordHint" = "双击记录";
+"a11y.beverageSelect.amountSelected" = "已选";
+"a11y.beverageSelect.amountValue" = "约%d毫升";
+"a11y.beverageSelect.amountHint" = "双击选择";
+
+// =============================================================================
+// MARK: - Settings Screen
+// =============================================================================
+
+"settings.title" = "设置";
+
+// Section: Goal
+"settings.section.goal" = "目标";
+"settings.goal.dailyAmount" = "每日目标量";
+"settings.goal.dailyAmountValue" = "%d杯（%dml）";
+"settings.goal.quietHours" = "免打扰时间";
+"settings.goal.quietHoursValue" = "%d:00 ~ %d:00";
+
+// Section: Display
+"settings.section.display" = "显示";
+"settings.display.numericValues" = "数值显示";
+"settings.display.numericValuesDescription" = "在消息旁边显示毫升数值";
+
+// Section: Fun
+"settings.section.fun" = "个性化";
+"settings.fun.theme" = "主题";
+"settings.fun.themeValue" = "当前：%@";
+"settings.fun.voicePack" = "语音包";
+"settings.fun.voicePackValue" = "当前：%@";
+"settings.fun.premium" = "高级版";
+"settings.fun.premiumDescription" = "季节内容、分析报告、主题";
+
+// Section: Integration
+"settings.section.integration" = "关联";
+"settings.integration.healthKit" = "健康 App 关联";
+"settings.integration.healthKitDescription" = "将饮水量同步到健康 App";
+
+// Section: Support
+"settings.section.support" = "支持";
+"settings.support.editFavorites" = "更改常喝饮品";
+"settings.support.restorePurchases" = "恢复购买";
+"settings.support.restoring" = "恢复中...";
+"settings.support.about" = "关于";
+
+// Restore Alert
+"settings.alert.restoreTitle" = "恢复购买";
+"settings.restore.notFound" = "没有找到可恢复的购买";
+"settings.restore.success" = "购买已恢复，谢谢！";
+"settings.restore.failed" = "恢复购买失败";
+
+// Footer
+"settings.footer.version" = "Hitokuchi v%@ (%@)";
+
+// Accessibility
+"a11y.settings.dailyAmount.label" = "每日目标量";
+"a11y.settings.dailyAmount.value" = "%d毫升，%d杯";
+"a11y.settings.dailyAmount.hint" = "双击更改";
+"a11y.settings.quietHours.label" = "免打扰时间";
+"a11y.settings.quietHours.value" = "%d点到%d点";
+"a11y.settings.quietHours.hint" = "双击更改";
+"a11y.settings.numericValues.label" = "数值显示";
+"a11y.settings.numericValues.on" = "已开启";
+"a11y.settings.numericValues.off" = "已关闭";
+"a11y.settings.numericValues.hint" = "双击切换。开启后将在消息旁显示毫升数值";
+"a11y.settings.theme.hint" = "双击更改";
+"a11y.settings.voicePack.hint" = "双击更改";
+"a11y.settings.premium.hint" = "解锁季节内容、分析报告和主题";
+"a11y.settings.healthKit.label" = "健康 App 关联";
+"a11y.settings.healthKit.hint" = "双击切换";
+"a11y.settings.editFavorites.hint" = "双击更改常喝饮品";
+"a11y.settings.restorePurchases.label" = "恢复购买";
+"a11y.settings.restorePurchases.hint" = "双击恢复之前的购买";
+
+// =============================================================================
+// MARK: - Goal Setting Screen
+// =============================================================================
+
+"goalSetting.title" = "目标量";
+"goalSetting.question" = "你每天想喝\n多少水？";
+"goalSetting.cupsDisplay" = "%d 杯";
+"goalSetting.mlDisplay" = "(%dml)";
+"goalSetting.recommendation" = "成人通常建议\n每天2,000~2,500ml";
+
+// Accessibility
+"a11y.goalSetting.label" = "每日目标量";
+"a11y.goalSetting.value" = "%d毫升，%d杯";
+"a11y.goalSetting.stepper.label" = "目标量";
+"a11y.goalSetting.stepper.value" = "%d毫升";
+"a11y.goalSetting.stepper.hint" = "调整数值";
+
+// =============================================================================
+// MARK: - Quiet Hours Screen
+// =============================================================================
+
+"quietHours.title" = "免打扰时间";
+"quietHours.description" = "在这个时间段\n不会发送提醒";
+"quietHours.start" = "开始";
+"quietHours.end" = "结束";
+"quietHours.summary" = "%d:00到%d:00之间\n将暂停提醒";
+
+// Accessibility
+"a11y.quietHours.startLabel" = "免打扰开始时间";
+"a11y.quietHours.startValue" = "%d点";
+"a11y.quietHours.endLabel" = "免打扰结束时间";
+"a11y.quietHours.endValue" = "%d点";
+
+// =============================================================================
+// MARK: - Theme Picker Screen
+// =============================================================================
+
+"themePicker.title" = "主题";
+"themePicker.previewMessage" = "正在预览%@主题...";
+"themePicker.purchaseButton" = "使用此主题 %@";
+"themePicker.backButton" = "返回";
+
+// Accessibility
+"a11y.themePicker.inUse" = "使用中";
+"a11y.themePicker.available" = "可选";
+"a11y.themePicker.locked" = "未购买";
+"a11y.themePicker.switchHint" = "双击切换到此主题";
+"a11y.themePicker.previewHint" = "双击预览5秒";
+"a11y.themePicker.previewLabel" = "正在预览%@主题。%@";
+"a11y.themePicker.purchaseLabel" = "使用此主题，%@";
+"a11y.themePicker.purchaseHint" = "双击购买";
+"a11y.themePicker.endPreview" = "结束预览";
+
+// =============================================================================
+// MARK: - Voice Pack Screen
+// =============================================================================
+
+"voicePack.title" = "语音包";
+"voicePack.question" = "选择\n说话风格";
+"voicePack.inUse" = "使用中";
+"voicePack.selectButton" = "使用此语音";
+"voicePack.purchaseButton" = "使用此语音 %@";
+"voicePack.exampleLabel" = "例：";
+
+// Accessibility
+"a11y.voicePack.selectHint" = "双击切换";
+"a11y.voicePack.purchaseLabel" = "使用%@语音。%@。一次性购买";
+"a11y.voicePack.purchaseHint" = "双击购买";
+"a11y.voicePack.exampleMessage" = "示例。%@";
+
+// =============================================================================
+// MARK: - Premium Screen
+// =============================================================================
+
+"premium.title" = "高级版";
+"premium.catchCopy" = "更有趣，\n更深入";
+"premium.subtitle" = "解锁更多功能\n让每天的补水更有趣";
+"premium.feature.seasonal.title" = "季节内容";
+"premium.feature.seasonal.description" = "每个季节都有饮品小知识和特别消息";
+"premium.feature.insights.title" = "健康分析";
+"premium.feature.insights.description" = "每周详细分析，深入了解您的饮水习惯";
+"premium.feature.themes.title" = "5种颜色主题";
+"premium.feature.themes.description" = "樱花·海洋·森林·日落·夜晚 — 随心情切换应用氛围";
+"premium.purchaseButton" = "购买高级版 %@（买断制）";
+"premium.oneTimePurchaseNote" = "一次付款，永久使用";
+
+// Accessibility
+"a11y.premium.purchaseLabel" = "购买高级版，%@，一次性付款";
+"a11y.premium.purchaseValue" = "永久解锁季节内容、健康分析和5种颜色主题";
+"a11y.premium.purchaseHint" = "双击购买";
+
+// =============================================================================
+// MARK: - Onboarding: Welcome Screen
+// =============================================================================
+
+"welcome.title" = "喝了一口吗？";
+"welcome.subtitle" = "像朋友一样\n轻声提醒你\n补水的伙伴";
+"welcome.feature.naturalLanguage" = "用语言，不用数字";
+"welcome.feature.oneButton" = "一键记录";
+"welcome.feature.voiceOver" = "完全支持VoiceOver";
+"welcome.startButton" = "开始使用";
+
+// Accessibility
+"a11y.welcome.features" = "用语言而非数字传达。一键即可记录。完全支持VoiceOver操作。";
+"a11y.welcome.startHint" = "双击开始设置";
+
+// =============================================================================
+// MARK: - Onboarding: Favorite Select Screen
+// =============================================================================
+
+"favoriteSelect.title" = "选择你\n经常喝的饮品";
+"favoriteSelect.subtitle" = "选3到5种\n它们会变成首页快捷按钮";
+"favoriteSelect.selectionCount" = "%d/5 已选";
+"favoriteSelect.completeButton" = "准备好了！";
+
+// Accessibility
+"a11y.favoriteSelect.selectionCount" = "已选%d个";
+"a11y.favoriteSelect.canSelectMore" = "还可以选%d个";
+"a11y.favoriteSelect.needMore" = "还需选%d个";
+"a11y.favoriteSelect.completeLabel" = "准备完成";
+"a11y.favoriteSelect.completeDisabled" = "不可用。还需选%d个";
+"a11y.favoriteSelect.completeHint" = "双击开始使用";
+"a11y.favoriteSelect.selected" = "已选";
+"a11y.favoriteSelect.notSelected" = "未选";
+"a11y.favoriteSelect.selectHint" = "双击选择";
+"a11y.favoriteSelect.deselectHint" = "双击取消选择";
+
+// =============================================================================
+// MARK: - Favorite Edit Screen (Settings)
+// =============================================================================
+
+"favoriteEdit.title" = "常喝饮品";
+"favoriteEdit.instruction" = "选择你\n经常喝的饮品";
+"favoriteEdit.selectionCount" = "%d/5 已选";
+"favoriteEdit.saveButton" = "保存";
+
+// =============================================================================
+// MARK: - About Screen
+// =============================================================================
+
+"about.title" = "关于";
+"about.version" = "版本";
+"about.supportedOS" = "支持系统";
+"about.termsOfService" = "使用条款";
+"about.privacyPolicy" = "隐私政策";
+"about.appName" = "Hitokuchi";
+"about.appTagline" = "你的补水伙伴";
+
+// Disclaimer
+"about.disclaimerSection" = "注意事项";
+"about.disclaimer" = "Hitokuchi 是一款辅助记录饮水的应用，不提供医学建议。显示的水分系数为基于日本食品标准成分表的参考值，实际水分吸收量因个人体质和健康状况而异。关于饮水目标设定或健康方面的判断，请咨询您的医生。";
+
+// Accessibility
+"a11y.about.disclaimer" = "免责声明。Hitokuchi是一款辅助记录饮水的应用，不提供医学建议。";
+
+// =============================================================================
+// MARK: - Progress Stage
+// =============================================================================
+
+"progress.notStarted" = "还没开始";
+"progress.beginning" = "刚刚起步";
+"progress.onTrack" = "状态不错";
+"progress.almostDone" = "快到了";
+"progress.achieved" = "达标！";
+"progress.exceeded" = "已充足";
+
+// Accessibility
+"a11y.progress.label" = "今日进度";
+"a11y.progress.valueWithNumeric" = "%@。%d毫升中的%d毫升。%d%%";
+"a11y.progress.valueWithoutNumeric" = "%@。目标的%d%%";
+
+// =============================================================================
+// MARK: - Drink Amount
+// =============================================================================
+
+"drinkAmount.yunomi" = "茶杯一杯";
+"drinkAmount.owan" = "汤碗一碗";
+"drinkAmount.mugCup" = "马克杯一杯";
+"drinkAmount.petBottleHalf" = "瓶装水半瓶";
+"drinkAmount.petBottleFull" = "瓶装水一瓶";
+
+// Accessibility
+"a11y.drinkAmount.yunomi" = "茶杯一杯，约120毫升";
+"a11y.drinkAmount.owan" = "汤碗一碗，约180毫升";
+"a11y.drinkAmount.mugCup" = "马克杯一杯，约250毫升";
+"a11y.drinkAmount.petBottleHalf" = "瓶装水半瓶，约250毫升";
+"a11y.drinkAmount.petBottleFull" = "瓶装水一瓶，约500毫升";
+
+// =============================================================================
+// MARK: - Beverage Category
+// =============================================================================
+
+"beverageCategory.tea" = "茶";
+"beverageCategory.coffee" = "咖啡";
+"beverageCategory.water" = "水";
+"beverageCategory.soup" = "汤";
+"beverageCategory.juice" = "果汁";
+"beverageCategory.other" = "其他";
+
+// =============================================================================
+// MARK: - Beverage Names (28 types)
+// =============================================================================
+
+"beverage.sencha" = "煎茶(绿茶)";
+"beverage.hojicha" = "焙茶";
+"beverage.mugicha" = "大麦茶";
+"beverage.gyokuro" = "玉露";
+"beverage.blackTea" = "红茶";
+"beverage.coffeeBlack" = "黑咖啡";
+"beverage.cafeAuLait" = "拿铁咖啡";
+"beverage.water" = "水";
+"beverage.sparklingWater" = "气泡水";
+"beverage.misoSoup" = "味噌汤";
+"beverage.soup" = "汤";
+"beverage.orangeJuice" = "橙汁";
+"beverage.sportsDrink" = "运动饮料";
+"beverage.milk" = "牛奶";
+"beverage.soyMilk" = "豆浆";
+"beverage.energyDrink" = "能量饮料";
+"beverage.matcha" = "抹茶";
+"beverage.oolongTea" = "乌龙茶";
+"beverage.rooibosTea" = "路易波士茶";
+"beverage.amazake" = "甜酒酿";
+"beverage.cocoa" = "可可";
+"beverage.vegetableJuice" = "蔬菜汁";
+"beverage.icedTea" = "冰茶";
+"beverage.decafCoffee" = "低因咖啡";
+"beverage.hotWater" = "白开水";
+"beverage.tomatoJuice" = "番茄汁";
+"beverage.calpis" = "可尔必思";
+"beverage.pocariSweat" = "宝矿力水特";
+
+// Beverage notes
+"beverage.note.caffeineFree" = "无咖啡因";
+"beverage.note.highCaffeine" = "高咖啡因";
+"beverage.note.saltWarning" = "注意盐分";
+"beverage.note.highSugarCaffeine" = "高糖分·咖啡因";
+"beverage.note.sugarWarning" = "注意糖分";
+
+// =============================================================================
+// MARK: - App Theme
+// =============================================================================
+
+"theme.default.name" = "默认";
+"theme.default.description" = "温暖中性";
+"theme.sakura.name" = "樱花";
+"theme.sakura.description" = "春日樱花";
+"theme.ocean.name" = "海洋";
+"theme.ocean.description" = "夏日大海";
+"theme.forest.name" = "森林";
+"theme.forest.description" = "四季常青";
+"theme.sunset.name" = "日落";
+"theme.sunset.description" = "秋日夕阳";
+"theme.night.name" = "夜晚";
+"theme.night.description" = "月夜宁静";
+
+// =============================================================================
+// MARK: - Message Tone
+// =============================================================================
+
+"messageTone.default.name" = "温柔标准语";
+"messageTone.default.description" = "像朋友一样温柔地说话";
+"messageTone.kansai.name" = "关西方言";
+"messageTone.kansai.description" = "大阪式的温暖";
+"messageTone.kyoto.name" = "京都方言";
+"messageTone.kyoto.description" = "京都式的优雅";
+
+// =============================================================================
+// MARK: - Notifications
+// =============================================================================
+
+"notification.title" = "Hitokuchi";
+"notification.fallbackBody" = "该喝一口了";
+
+// =============================================================================
+// MARK: - Common
+// =============================================================================
+
+"common.ok" = "确定";
+"common.cancel" = "取消";
+"common.save" = "保存";
+"common.unit.ml" = "ml";
+"common.unit.milliliters" = "毫升";
+"common.unit.cups" = "杯";
+"common.unit.percent" = "百分比";
+"common.unknown" = "未知";
+
+// =============================================================================
+// MARK: - Accessibility: Recording
+// =============================================================================
+
+"a11y.home.recorded.announcement" = "已记录%@。%@，%d毫升";
+
+// =============================================================================
+// MARK: - Greeting Messages (for localized message engine)
+// =============================================================================
+
+"message.greeting.morning" = "早上好！先来一口吧";
+"message.greeting.afternoon" = "下午好！记得补充水分哦";
+"message.greeting.evening" = "晚上好！今天辛苦了";
+"message.greeting.night" = "夜深了，睡前再喝一口？";
+"message.afterRecord" = "已记录%@！继续保持";
+"message.dailySummary" = "今天喝了：%@。%@";
+"message.progress.notStarted" = "来一口开始今天的水分补充吧？";
+"message.progress.beginning" = "好的开始！继续加油";
+"message.progress.onTrack" = "进展顺利！";
+"message.progress.almostDone" = "快达到目标了！";
+"message.progress.achieved" = "今日目标达成！太棒了！";
+"message.progress.exceeded" = "已超过目标！很棒";
+
+// =============================================================================
+// MARK: - History: Beverage Summary
+// =============================================================================
+
+"history.beverageCount" = "%@ %d杯";
+"history.beverageSeparator" = "、";

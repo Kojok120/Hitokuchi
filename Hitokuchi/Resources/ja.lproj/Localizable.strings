@@ -1,0 +1,458 @@
+/*
+  Localizable.strings (Japanese — Base Language)
+  Hitokuchi / ひとくち
+
+  Key naming convention: screen.element.description
+  Accessibility keys: a11y.screen.element
+*/
+
+// =============================================================================
+// MARK: - Tab Bar
+// =============================================================================
+
+"tab.home.title" = "ホーム";
+"tab.history.title" = "きろく";
+"tab.settings.title" = "せってい";
+
+// =============================================================================
+// MARK: - Home Screen
+// =============================================================================
+
+"home.section.favorites" = "いつもの";
+"home.button.otherBeverages" = "ほかの飲みもの";
+
+// Accessibility
+"a11y.home.otherBeverages.hint" = "ダブルタップで飲料選択画面を開きます";
+"a11y.home.quickRecord.label" = "%@を記録";
+"a11y.home.quickRecord.hint" = "ダブルタップで記録します";
+
+// =============================================================================
+// MARK: - History Screen
+// =============================================================================
+
+"history.title" = "きろく";
+"history.segment.today" = "今日";
+"history.segment.thisWeek" = "今週";
+"history.section.todayLogs" = "今日の記録";
+"history.section.weeklySummary" = "日別サマリー";
+"history.noRecordToday" = "今日はまだ記録がありませんね。ホーム画面から記録してみましょう";
+"history.weeklyMessage" = "今週は7日中%d日、目標を達成できました";
+"history.delete" = "削除";
+
+// Accessibility
+"a11y.history.segmentControl" = "今日と今週の切り替え";
+"a11y.history.weekday" = "%@曜日、%@";
+"a11y.history.logEntry" = "%@、%@、%@、%dミリリットル";
+
+// Day Status
+"history.dayStatus.achieved" = "充分に摂れました";
+"history.dayStatus.partial" = "あと少しでした";
+"history.dayStatus.belowHalf" = "もう少し飲めるといいですね";
+"history.dayStatus.noRecord" = "記録なし";
+
+// =============================================================================
+// MARK: - Beverage Select Screen
+// =============================================================================
+
+"beverageSelect.title" = "飲みもの選択";
+"beverageSelect.filter.all" = "すべて";
+"beverageSelect.amountPicker.title" = "量を選んでください";
+"beverageSelect.button.record" = "この量で記録する";
+"beverageSelect.caffeineNote" = "カフェイン含む";
+
+// Accessibility
+"a11y.beverageSelect.category" = "%@カテゴリ";
+"a11y.beverageSelect.categorySelected" = "選択中";
+"a11y.beverageSelect.categoryHint" = "ダブルタップで絞り込みます";
+"a11y.beverageSelect.beverageValue" = "お%@カテゴリ。%@";
+"a11y.beverageSelect.beverageHint" = "ダブルタップで量を選択します";
+"a11y.beverageSelect.recordValue" = "%@、%@";
+"a11y.beverageSelect.recordHint" = "ダブルタップで記録します";
+"a11y.beverageSelect.amountSelected" = "選択中";
+"a11y.beverageSelect.amountValue" = "約%dミリリットル";
+"a11y.beverageSelect.amountHint" = "ダブルタップで選択します";
+
+// =============================================================================
+// MARK: - Settings Screen
+// =============================================================================
+
+"settings.title" = "せってい";
+
+// Section: 目標
+"settings.section.goal" = "目標";
+"settings.goal.dailyAmount" = "1日の目標量";
+"settings.goal.dailyAmountValue" = "コップ%d杯分（%dml）";
+"settings.goal.quietHours" = "おやすみ時間";
+"settings.goal.quietHoursValue" = "%d:00 〜 %d:00";
+
+// Section: 表示
+"settings.section.display" = "表示";
+"settings.display.numericValues" = "数値表示";
+"settings.display.numericValuesDescription" = "自然言語メッセージに加えてml数値も表示します";
+
+// Section: お楽しみ
+"settings.section.fun" = "お楽しみ";
+"settings.fun.theme" = "テーマ";
+"settings.fun.themeValue" = "現在: %@";
+"settings.fun.voicePack" = "ボイスパック";
+"settings.fun.voicePackValue" = "現在: %@";
+"settings.fun.premium" = "プレミアム";
+"settings.fun.premiumDescription" = "季節コンテンツ、インサイト、テーマ";
+
+// Section: 連携
+"settings.section.integration" = "連携";
+"settings.integration.healthKit" = "ヘルスケア連携";
+"settings.integration.healthKitDescription" = "ヘルスケアアプリに水分量を記録します";
+
+// Section: サポート
+"settings.section.support" = "サポート";
+"settings.support.editFavorites" = "お気に入り飲料の変更";
+"settings.support.restorePurchases" = "購入を復元";
+"settings.support.restoring" = "復元中...";
+"settings.support.about" = "このアプリについて";
+
+// Restore Alert
+"settings.alert.restoreTitle" = "購入の復元";
+"settings.restore.notFound" = "復元する購入が見つかりませんでした";
+"settings.restore.success" = "購入が復元されました。ありがとうございます";
+"settings.restore.failed" = "購入の復元に失敗しました";
+
+// Footer
+"settings.footer.version" = "ひとくち v%@ (%@)";
+
+// Accessibility
+"a11y.settings.dailyAmount.label" = "1日の目標量";
+"a11y.settings.dailyAmount.value" = "%dミリリットル、コップ%d杯分";
+"a11y.settings.dailyAmount.hint" = "ダブルタップで変更します";
+"a11y.settings.quietHours.label" = "おやすみ時間";
+"a11y.settings.quietHours.value" = "%d時から%d時";
+"a11y.settings.quietHours.hint" = "ダブルタップで変更します";
+"a11y.settings.numericValues.label" = "数値表示";
+"a11y.settings.numericValues.on" = "オン";
+"a11y.settings.numericValues.off" = "オフ";
+"a11y.settings.numericValues.hint" = "ダブルタップで切り替えます。オンにすると自然言語メッセージに加えてミリリットル数値も表示されます";
+"a11y.settings.theme.hint" = "ダブルタップで変更します";
+"a11y.settings.voicePack.hint" = "ダブルタップで変更します";
+"a11y.settings.premium.hint" = "季節コンテンツ、インサイト、テーマが使えるようになります";
+"a11y.settings.healthKit.label" = "ヘルスケア連携";
+"a11y.settings.healthKit.hint" = "ダブルタップで切り替えます";
+"a11y.settings.editFavorites.hint" = "ダブルタップでお気に入り飲料を変更します";
+"a11y.settings.restorePurchases.label" = "購入を復元";
+"a11y.settings.restorePurchases.hint" = "ダブルタップで過去の購入を復元します";
+
+// =============================================================================
+// MARK: - Goal Setting Screen
+// =============================================================================
+
+"goalSetting.title" = "目標量";
+"goalSetting.question" = "1日にどのくらい\n飲みたいですか？";
+"goalSetting.cupsDisplay" = "コップ %d 杯分";
+"goalSetting.mlDisplay" = "(%dml)";
+"goalSetting.recommendation" = "一般的な成人の推奨量は\n1日2,000ml〜2,500mlです";
+
+// Accessibility
+"a11y.goalSetting.label" = "1日の目標量";
+"a11y.goalSetting.value" = "%dミリリットル、コップ%d杯分";
+"a11y.goalSetting.stepper.label" = "目標量";
+"a11y.goalSetting.stepper.value" = "%dミリリットル";
+"a11y.goalSetting.stepper.hint" = "値を調整できます";
+
+// =============================================================================
+// MARK: - Quiet Hours Screen
+// =============================================================================
+
+"quietHours.title" = "おやすみ時間";
+"quietHours.description" = "この時間帯には\n通知を送りません";
+"quietHours.start" = "開始";
+"quietHours.end" = "終了";
+"quietHours.summary" = "%d:00から%d:00の間は\nリマインダーをお休みにします";
+
+// Accessibility
+"a11y.quietHours.startLabel" = "おやすみ開始時間";
+"a11y.quietHours.startValue" = "%d時";
+"a11y.quietHours.endLabel" = "おやすみ終了時間";
+"a11y.quietHours.endValue" = "%d時";
+
+// =============================================================================
+// MARK: - Theme Picker Screen
+// =============================================================================
+
+"themePicker.title" = "テーマ";
+"themePicker.previewMessage" = "%@テーマをプレビュー中...";
+"themePicker.purchaseButton" = "このテーマにする %@";
+"themePicker.backButton" = "戻る";
+
+// Accessibility
+"a11y.themePicker.inUse" = "使用中";
+"a11y.themePicker.available" = "選択可能";
+"a11y.themePicker.locked" = "未購入";
+"a11y.themePicker.switchHint" = "ダブルタップでこのテーマに切り替えます";
+"a11y.themePicker.previewHint" = "ダブルタップで5秒間プレビューします";
+"a11y.themePicker.previewLabel" = "%@テーマをプレビュー中です。%@です";
+"a11y.themePicker.purchaseLabel" = "このテーマにする、%@";
+"a11y.themePicker.purchaseHint" = "ダブルタップで購入します";
+"a11y.themePicker.endPreview" = "プレビューを終了";
+
+// =============================================================================
+// MARK: - Voice Pack Screen
+// =============================================================================
+
+"voicePack.title" = "ボイスパック";
+"voicePack.question" = "話し方を\n選んでください";
+"voicePack.inUse" = "使用中";
+"voicePack.selectButton" = "このトーンにする";
+"voicePack.purchaseButton" = "このトーンにする %@";
+"voicePack.exampleLabel" = "例:";
+
+// Accessibility
+"a11y.voicePack.selectHint" = "ダブルタップで切り替えます";
+"a11y.voicePack.purchaseLabel" = "%@トーンにする。%@。一回のお支払い";
+"a11y.voicePack.purchaseHint" = "ダブルタップで購入します";
+"a11y.voicePack.exampleMessage" = "例文。%@";
+
+// =============================================================================
+// MARK: - Premium Screen
+// =============================================================================
+
+"premium.title" = "プレミアム";
+"premium.catchCopy" = "もっと楽しく、\nもっと深く";
+"premium.subtitle" = "ひとくちと過ごす毎日を\nさらに楽しくする機能をお届けします";
+"premium.feature.seasonal.title" = "季節コンテンツ";
+"premium.feature.seasonal.description" = "四季折々の飲料トリビアと特別メッセージが届きます";
+"premium.feature.insights.title" = "ヘルスインサイト";
+"premium.feature.insights.description" = "週次の詳細分析であなたの水分補給習慣を深く理解できます";
+"premium.feature.themes.title" = "カラーテーマ5種";
+"premium.feature.themes.description" = "桜・海・森・夕焼け・夜 — 気分に合わせてアプリの雰囲気を変えられます";
+"premium.purchaseButton" = "プレミアムを購入 %@（買い切り）";
+"premium.oneTimePurchaseNote" = "一度のお支払いで永久にご利用いただけます";
+
+// Accessibility
+"a11y.premium.purchaseLabel" = "プレミアムを購入、%@、一回のお支払い";
+"a11y.premium.purchaseValue" = "季節コンテンツ、ヘルスインサイト、カラーテーマ5種が永久に使えるようになります";
+"a11y.premium.purchaseHint" = "ダブルタップで購入します";
+
+// =============================================================================
+// MARK: - Onboarding: Welcome Screen
+// =============================================================================
+
+"welcome.title" = "ひとくち、飲んだ？";
+"welcome.subtitle" = "友だちのようにそっと\n声をかけてくれる\n水分補給パートナー";
+"welcome.feature.naturalLanguage" = "数字じゃなく、言葉で";
+"welcome.feature.oneButton" = "ボタンひとつで記録";
+"welcome.feature.voiceOver" = "VoiceOverで完全操作";
+"welcome.startButton" = "はじめる";
+
+// Accessibility
+"a11y.welcome.features" = "数字ではなく言葉で伝えます。ボタンひとつで記録できます。VoiceOverで完全に操作できます";
+"a11y.welcome.startHint" = "ダブルタップでアプリの設定を始めます";
+
+// =============================================================================
+// MARK: - Onboarding: Favorite Select Screen
+// =============================================================================
+
+"favoriteSelect.title" = "よく飲むものを\n選んでください";
+"favoriteSelect.subtitle" = "3つから5つ選ぶと\nホーム画面にボタンができます";
+"favoriteSelect.selectionCount" = "%d/5 選択中";
+"favoriteSelect.completeButton" = "準備完了！";
+
+// Accessibility
+"a11y.favoriteSelect.selectionCount" = "%d個選択中";
+"a11y.favoriteSelect.canSelectMore" = "あと%dつ選べます";
+"a11y.favoriteSelect.needMore" = "あと%dつ選んでください";
+"a11y.favoriteSelect.completeLabel" = "準備完了";
+"a11y.favoriteSelect.completeDisabled" = "無効。あと%dつ選んでください";
+"a11y.favoriteSelect.completeHint" = "ダブルタップでアプリを始めます";
+"a11y.favoriteSelect.selected" = "選択済み";
+"a11y.favoriteSelect.notSelected" = "未選択";
+"a11y.favoriteSelect.selectHint" = "ダブルタップで選択します";
+"a11y.favoriteSelect.deselectHint" = "ダブルタップで選択を解除します";
+
+// =============================================================================
+// MARK: - Favorite Edit Screen (Settings)
+// =============================================================================
+
+"favoriteEdit.title" = "お気に入り飲料";
+"favoriteEdit.instruction" = "よく飲むものを\n選んでください";
+"favoriteEdit.selectionCount" = "%d/5 選択中";
+"favoriteEdit.saveButton" = "保存する";
+
+// =============================================================================
+// MARK: - About Screen
+// =============================================================================
+
+"about.title" = "このアプリについて";
+"about.version" = "バージョン";
+"about.supportedOS" = "対応OS";
+"about.termsOfService" = "利用規約";
+"about.privacyPolicy" = "プライバシーポリシー";
+"about.appName" = "ひとくち";
+"about.appTagline" = "あなたの水分補給パートナー";
+
+// Disclaimer
+"about.disclaimerSection" = "ご注意";
+"about.disclaimer" = "「ひとくち」は水分補給の記録を補助するアプリです。医療的なアドバイスを提供するものではありません。表示される水分係数は文部科学省食品成分表に基づく参考値であり、個人の体質・健康状態により実際の水分吸収量は異なります。水分摂取量の目標設定や健康上の判断については、かかりつけの医師にご相談ください。";
+
+// Accessibility
+"a11y.about.disclaimer" = "免責事項。ひとくちは水分補給の記録を補助するアプリです。医療的なアドバイスを提供するものではありません。";
+
+// =============================================================================
+// MARK: - Progress Stage
+// =============================================================================
+
+"progress.notStarted" = "まだこれから";
+"progress.beginning" = "はじめの一歩";
+"progress.onTrack" = "いい調子";
+"progress.almostDone" = "あと少し";
+"progress.achieved" = "達成!";
+"progress.exceeded" = "充分です";
+
+// Accessibility
+"a11y.progress.label" = "今日の進捗";
+"a11y.progress.valueWithNumeric" = "%@。%dミリリットル中%dミリリットル。%dパーセント";
+"a11y.progress.valueWithoutNumeric" = "%@。目標の%dパーセント";
+
+// =============================================================================
+// MARK: - Drink Amount
+// =============================================================================
+
+"drinkAmount.yunomi" = "湯呑み一杯";
+"drinkAmount.owan" = "お椀一杯";
+"drinkAmount.mugCup" = "マグカップ一杯";
+"drinkAmount.petBottleHalf" = "ペットボトル半分";
+"drinkAmount.petBottleFull" = "ペットボトル一本";
+
+// Accessibility
+"a11y.drinkAmount.yunomi" = "湯呑み一杯、約120ミリリットル";
+"a11y.drinkAmount.owan" = "お椀一杯、約180ミリリットル";
+"a11y.drinkAmount.mugCup" = "マグカップ一杯、約250ミリリットル";
+"a11y.drinkAmount.petBottleHalf" = "ペットボトル半分、約250ミリリットル";
+"a11y.drinkAmount.petBottleFull" = "ペットボトル一本、約500ミリリットル";
+
+// =============================================================================
+// MARK: - Beverage Category
+// =============================================================================
+
+"beverageCategory.tea" = "お茶";
+"beverageCategory.coffee" = "コーヒー";
+"beverageCategory.water" = "お水";
+"beverageCategory.soup" = "汁物";
+"beverageCategory.juice" = "ジュース";
+"beverageCategory.other" = "その他";
+
+// =============================================================================
+// MARK: - Beverage Names (28 types)
+// =============================================================================
+
+"beverage.sencha" = "煎茶";
+"beverage.hojicha" = "ほうじ茶";
+"beverage.mugicha" = "麦茶";
+"beverage.gyokuro" = "玉露";
+"beverage.blackTea" = "紅茶";
+"beverage.coffeeBlack" = "コーヒー（ブラック）";
+"beverage.cafeAuLait" = "カフェオレ";
+"beverage.water" = "水";
+"beverage.sparklingWater" = "炭酸水";
+"beverage.misoSoup" = "味噌汁";
+"beverage.soup" = "スープ";
+"beverage.orangeJuice" = "オレンジジュース";
+"beverage.sportsDrink" = "スポーツドリンク";
+"beverage.milk" = "牛乳";
+"beverage.soyMilk" = "豆乳";
+"beverage.energyDrink" = "エナジードリンク";
+"beverage.matcha" = "抹茶";
+"beverage.oolongTea" = "烏龍茶";
+"beverage.rooibosTea" = "ルイボスティー";
+"beverage.amazake" = "甘酒";
+"beverage.cocoa" = "ココア";
+"beverage.vegetableJuice" = "野菜ジュース";
+"beverage.icedTea" = "アイスティー";
+"beverage.decafCoffee" = "デカフェコーヒー";
+"beverage.hotWater" = "白湯";
+"beverage.tomatoJuice" = "トマトジュース";
+"beverage.calpis" = "カルピス";
+"beverage.pocariSweat" = "ポカリスエット";
+
+// Beverage notes
+"beverage.note.caffeineFree" = "カフェインフリー";
+"beverage.note.highCaffeine" = "高カフェイン";
+"beverage.note.saltWarning" = "塩分注意";
+"beverage.note.highSugarCaffeine" = "高糖分・カフェイン";
+"beverage.note.sugarWarning" = "糖分注意";
+
+// =============================================================================
+// MARK: - App Theme
+// =============================================================================
+
+"theme.default.name" = "デフォルト";
+"theme.default.description" = "温かみのあるニュートラル";
+"theme.sakura.name" = "桜";
+"theme.sakura.description" = "春の桜をイメージ";
+"theme.ocean.name" = "海";
+"theme.ocean.description" = "夏の海をイメージ";
+"theme.forest.name" = "森";
+"theme.forest.description" = "通年で使える森の緑";
+"theme.sunset.name" = "夕焼け";
+"theme.sunset.description" = "秋の夕焼けをイメージ";
+"theme.night.name" = "夜";
+"theme.night.description" = "月夜の静けさ";
+
+// =============================================================================
+// MARK: - Message Tone
+// =============================================================================
+
+"messageTone.default.name" = "やさしい標準語";
+"messageTone.default.description" = "友だちのようにやさしく語りかけます";
+"messageTone.kansai.name" = "関西弁";
+"messageTone.kansai.description" = "大阪のおっちゃん/おばちゃんの温かさ";
+"messageTone.kyoto.name" = "京都弁";
+"messageTone.kyoto.description" = "はんなりした京都人の上品さ";
+
+// =============================================================================
+// MARK: - Notifications
+// =============================================================================
+
+"notification.title" = "ひとくち";
+"notification.fallbackBody" = "そろそろ一杯いかがですか？";
+
+// =============================================================================
+// MARK: - Common
+// =============================================================================
+
+"common.ok" = "OK";
+"common.cancel" = "キャンセル";
+"common.save" = "保存";
+"common.unit.ml" = "ml";
+"common.unit.milliliters" = "ミリリットル";
+"common.unit.cups" = "杯";
+"common.unit.percent" = "パーセント";
+"common.unknown" = "不明";
+
+// =============================================================================
+// MARK: - Accessibility: Recording
+// =============================================================================
+
+"a11y.home.recorded.announcement" = "%@を記録しました。%@、%dミリリットル";
+
+// =============================================================================
+// MARK: - Greeting Messages (for localized message engine)
+// =============================================================================
+
+"message.greeting.morning" = "おはようございます。今日もまず一杯から始めましょう";
+"message.greeting.afternoon" = "こんにちは。水分補給していますか？";
+"message.greeting.evening" = "こんばんは。今日も一日お疲れさまです";
+"message.greeting.night" = "夜遅くまでお疲れさまです。寝る前にもう一杯";
+"message.afterRecord" = "%@を記録しました！いい調子ですよ";
+"message.dailySummary" = "今日は%@を飲みました。%@";
+"message.progress.notStarted" = "まず一杯、いかがですか";
+"message.progress.beginning" = "いい一歩ですね";
+"message.progress.onTrack" = "いい調子ですよ";
+"message.progress.almostDone" = "あと少しで今日の目標です";
+"message.progress.achieved" = "今日の目標、達成しました！";
+"message.progress.exceeded" = "充分な水分が摂れていますね";
+
+// =============================================================================
+// MARK: - History: Beverage Summary
+// =============================================================================
+
+"history.beverageCount" = "%@%d杯";
+"history.beverageSeparator" = "、";

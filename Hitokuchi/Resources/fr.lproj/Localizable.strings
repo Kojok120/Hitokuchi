@@ -101,6 +101,10 @@
 
 // Section: Integration
 "settings.section.integration" = "Connexion";
+
+// Language
+"settings.section.language" = "Langue";
+"settings.language.displayLanguage" = "Langue d'affichage";
 "settings.integration.healthKit" = "App Santé";
 "settings.integration.healthKitDescription" = "Synchronise l'hydratation avec l'app Santé";
 

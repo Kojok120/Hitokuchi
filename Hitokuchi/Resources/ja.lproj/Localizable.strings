@@ -101,6 +101,10 @@
 
 // Section: 連携
 "settings.section.integration" = "連携";
+
+// Language
+"settings.section.language" = "言語";
+"settings.language.displayLanguage" = "表示言語";
 "settings.integration.healthKit" = "ヘルスケア連携";
 "settings.integration.healthKitDescription" = "ヘルスケアアプリに水分量を記録します";
 

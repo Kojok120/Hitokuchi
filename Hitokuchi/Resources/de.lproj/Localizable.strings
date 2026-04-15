@@ -101,6 +101,10 @@
 
 // Section: Integration
 "settings.section.integration" = "Verknüpfung";
+
+// Language
+"settings.section.language" = "Sprache";
+"settings.language.displayLanguage" = "Anzeigesprache";
 "settings.integration.healthKit" = "Health-App";
 "settings.integration.healthKitDescription" = "Synchronisiert die Trinkmenge mit der Health-App";
 

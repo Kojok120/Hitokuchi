@@ -111,7 +111,8 @@ final class HomeViewModel {
             dailyGoal: progress.goalML,
             currentIntake: progress.totalML,
             quietHourStart: settings?.quietHourStart ?? 22,
-            quietHourEnd: settings?.quietHourEnd ?? 7
+            quietHourEnd: settings?.quietHourEnd ?? 7,
+            tone: tone
         )
 
         // 6. VoiceOver announcement

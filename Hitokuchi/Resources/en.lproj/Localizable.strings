@@ -101,6 +101,10 @@
 
 // Section: Integration
 "settings.section.integration" = "Integration";
+
+// Language
+"settings.section.language" = "Language";
+"settings.language.displayLanguage" = "Display Language";
 "settings.integration.healthKit" = "Health App";
 "settings.integration.healthKitDescription" = "Sync water intake to the Health app";
 

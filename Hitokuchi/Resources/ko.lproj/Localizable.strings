@@ -101,6 +101,10 @@
 
 // Section: Integration
 "settings.section.integration" = "연동";
+
+// Language
+"settings.section.language" = "언어";
+"settings.language.displayLanguage" = "표시 언어";
 "settings.integration.healthKit" = "건강 앱 연동";
 "settings.integration.healthKitDescription" = "건강 앱에 수분 섭취량을 기록합니다";
 

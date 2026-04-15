@@ -136,7 +136,7 @@ struct SettingsView: View {
             }
 
             // MARK: - Section 5: 言語
-            Section(L("settings.section.support")) {
+            Section(L("settings.section.language")) {
                 Picker(selection: Binding(
                     get: { viewModel.preferredLanguage },
                     set: { viewModel.preferredLanguage = $0 }
@@ -145,7 +145,7 @@ struct SettingsView: View {
                         Text(language.displayName).tag(language)
                     }
                 } label: {
-                    Text(L("tab.settings.title"))
+                    Text(L("settings.language.displayLanguage"))
                         .font(.body)
                         .foregroundStyle(Color.hitokuchi.textPrimary(for: theme, colorScheme: colorScheme))
                 }

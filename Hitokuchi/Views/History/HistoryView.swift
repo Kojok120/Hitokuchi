@@ -172,7 +172,7 @@ struct HistoryView: View {
         .padding(.vertical, HitokuchiSpacing.s)
         .accessibilityElement(children: .combine)
         .accessibilityLabel("\(log.recordedAt.formatted(.dateTime.hour().minute())), \(log.beverage?.localizedName ?? ""), \(log.drinkAmount.displayName), \(Int(log.volumeML))ml")
-        .swipeActions(edge: .trailing) {
+        .contextMenu {
             Button(role: .destructive) {
                 viewModel.deleteLog(log, context: modelContext)
             } label: {

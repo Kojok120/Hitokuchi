@@ -24,7 +24,8 @@ final class ReminderSchedulerService: ReminderScheduling {
         dailyGoal: Double,
         currentIntake: Double,
         quietHourStart: Int,
-        quietHourEnd: Int
+        quietHourEnd: Int,
+        tone: MessageTone = .default
     ) async {
         // Cancel existing notifications
         center.removeAllPendingNotificationRequests()
@@ -49,8 +50,8 @@ final class ReminderSchedulerService: ReminderScheduling {
         let triggerInterval = max(1, finalDate.timeIntervalSinceNow)
 
         let content = UNMutableNotificationContent()
-        content.title = "ひとくち"
-        content.body = messageEngine.reminderMessage(tone: .default)
+        content.title = L("notification.title")
+        content.body = messageEngine.reminderMessage(tone: tone)
         content.sound = .default
 
         let trigger = UNTimeIntervalNotificationTrigger(

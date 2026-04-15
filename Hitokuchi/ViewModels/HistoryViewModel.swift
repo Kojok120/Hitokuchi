@@ -102,7 +102,7 @@ final class HistoryViewModel {
         let settingsDescriptor = FetchDescriptor<UserSettings>()
         let goalML = (try? context.fetch(settingsDescriptor))?.first?.dailyGoalML ?? 2000.0
 
-        let dayNames = ["日", "月", "火", "水", "木", "金", "土"]
+        let dayNames = Calendar.current.shortWeekdaySymbols
         var days: [WeekDayData] = []
         var achievedCount = 0
 

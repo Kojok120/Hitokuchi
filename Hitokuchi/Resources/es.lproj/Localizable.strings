@@ -101,6 +101,10 @@
 
 // Section: Integration
 "settings.section.integration" = "Conexiones";
+
+// Language
+"settings.section.language" = "Idioma";
+"settings.language.displayLanguage" = "Idioma de visualización";
 "settings.integration.healthKit" = "App Salud";
 "settings.integration.healthKitDescription" = "Sincroniza el consumo de agua con la app Salud";
 

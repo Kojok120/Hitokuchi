@@ -101,6 +101,10 @@
 
 // Section: Integration
 "settings.section.integration" = "关联";
+
+// Language
+"settings.section.language" = "语言";
+"settings.language.displayLanguage" = "显示语言";
 "settings.integration.healthKit" = "健康 App 关联";
 "settings.integration.healthKitDescription" = "将饮水量同步到健康 App";
 

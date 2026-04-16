@@ -70,6 +70,11 @@ final class HomeViewModel {
         currentMessage = messageEngine.generate(context: messageContext)
     }
 
+    /// Request notification permission (called once on first appearance)
+    func requestNotificationPermissionIfNeeded() async {
+        _ = await reminderScheduler.requestAuthorization()
+    }
+
     // MARK: - Record Drink
 
     func recordDrink(

@@ -154,6 +154,9 @@ struct HomeView: View {
         .onAppear {
             viewModel.loadData(context: modelContext)
         }
+        .task {
+            await viewModel.requestNotificationPermissionIfNeeded()
+        }
         .onChange(of: modelContext.hasChanges) {
             viewModel.loadData(context: modelContext)
         }

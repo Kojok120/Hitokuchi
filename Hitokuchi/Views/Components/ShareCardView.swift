@@ -4,15 +4,10 @@ import SwiftUI
 struct ShareCardView: View {
     let progress: HydrationProgress
     let streakDays: Int
-    let date: Date
     let colors: ThemeColorSet
 
     private var percentageText: String {
         "\(min(Int(progress.percentage), 999))%"
-    }
-
-    private var dateText: String {
-        date.formatted(.dateTime.month(.abbreviated).day())
     }
 
     var body: some View {
@@ -55,35 +50,20 @@ struct ShareCardView: View {
 
             Spacer()
 
-            // Bottom — Stats
-            HStack(spacing: 24) {
-                if streakDays > 0 {
-                    VStack(spacing: 2) {
-                        Text("\(streakDays)")
-                            .font(.title2)
-                            .fontWeight(.bold)
-                            .foregroundStyle(colors.accentPrimary)
-                        Text("streak")
-                            .font(.caption)
-                            .foregroundStyle(colors.textTertiary)
-                    }
-
-                    Rectangle()
-                        .fill(colors.borderDefault)
-                        .frame(width: 1, height: 28)
-                }
-
+            // Bottom — Streak (if any)
+            if streakDays > 0 {
                 VStack(spacing: 2) {
-                    Text(dateText)
-                        .font(.title3)
-                        .fontWeight(.semibold)
-                        .foregroundStyle(colors.textPrimary)
-                    Text("date")
+                    Text("\(streakDays)")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .foregroundStyle(colors.accentPrimary)
+                    Text("streak")
                         .font(.caption)
                         .foregroundStyle(colors.textTertiary)
                 }
             }
-            .padding(.bottom, 32)
+
+            Spacer().frame(height: 32)
         }
         .frame(width: 540, height: 540)
         .background(

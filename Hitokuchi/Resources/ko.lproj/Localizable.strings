@@ -369,10 +369,10 @@
 // MARK: - Beverage Names (28 types)
 // =============================================================================
 
-"beverage.sencha" = "센차(녹차)";
-"beverage.hojicha" = "호지차(볶음차)";
+"beverage.sencha" = "센차";
+"beverage.hojicha" = "호지차";
 "beverage.mugicha" = "보리차";
-"beverage.gyokuro" = "교쿠로(옥로)";
+"beverage.gyokuro" = "교쿠로";
 "beverage.blackTea" = "홍차";
 "beverage.coffeeBlack" = "블랙 커피";
 "beverage.cafeAuLait" = "카페오레";
@@ -388,7 +388,7 @@
 "beverage.matcha" = "말차";
 "beverage.oolongTea" = "우롱차";
 "beverage.rooibosTea" = "루이보스차";
-"beverage.amazake" = "아마자케(단술)";
+"beverage.amazake" = "아마자케";
 "beverage.cocoa" = "코코아";
 "beverage.vegetableJuice" = "야채주스";
 "beverage.icedTea" = "아이스티";
@@ -462,6 +462,13 @@
 // =============================================================================
 
 "a11y.home.recorded.announcement" = "%@ 기록 완료. %@, %d밀리리터";
+
+// Undo
+"home.undo.recorded" = "%@ 기록 완료";
+"home.undo.button" = "취소";
+"a11y.home.undo.label" = "기록 취소";
+"a11y.home.undo.hint" = "이중 탭하여 마지막 기록을 취소합니다";
+"a11y.home.undone.announcement" = "%@ 기록이 취소되었습니다";
 
 // =============================================================================
 // MARK: - Greeting Messages (for localized message engine)

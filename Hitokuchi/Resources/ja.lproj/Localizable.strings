@@ -463,6 +463,13 @@
 
 "a11y.home.recorded.announcement" = "%@を記録しました。%@、%dミリリットル";
 
+// Undo
+"home.undo.recorded" = "%@を記録しました";
+"home.undo.button" = "取消";
+"a11y.home.undo.label" = "記録を取り消す";
+"a11y.home.undo.hint" = "ダブルタップで直前の記録を取り消します";
+"a11y.home.undone.announcement" = "%@の記録を取り消しました";
+
 // =============================================================================
 // MARK: - Greeting Messages (for localized message engine)
 // =============================================================================

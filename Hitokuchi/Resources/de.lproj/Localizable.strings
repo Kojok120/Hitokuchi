@@ -369,10 +369,10 @@
 // MARK: - Beverage Names (28 types)
 // =============================================================================
 
-"beverage.sencha" = "Sencha (Grüntee)";
-"beverage.hojicha" = "Hojicha (Gerösteter Tee)";
+"beverage.sencha" = "Sencha";
+"beverage.hojicha" = "Hojicha";
 "beverage.mugicha" = "Gerstentee";
-"beverage.gyokuro" = "Gyokuro (Schattentee)";
+"beverage.gyokuro" = "Gyokuro";
 "beverage.blackTea" = "Schwarztee";
 "beverage.coffeeBlack" = "Schwarzer Kaffee";
 "beverage.cafeAuLait" = "Milchkaffee";
@@ -388,7 +388,7 @@
 "beverage.matcha" = "Matcha";
 "beverage.oolongTea" = "Oolong-Tee";
 "beverage.rooibosTea" = "Rooibostee";
-"beverage.amazake" = "Amazake (Süßes Reisgetränk)";
+"beverage.amazake" = "Amazake";
 "beverage.cocoa" = "Kakao";
 "beverage.vegetableJuice" = "Gemüsesaft";
 "beverage.icedTea" = "Eistee";
@@ -462,6 +462,13 @@
 // =============================================================================
 
 "a11y.home.recorded.announcement" = "%@ aufgezeichnet. %@, %d Milliliter";
+
+// Undo
+"home.undo.recorded" = "%@ aufgezeichnet";
+"home.undo.button" = "Widerrufen";
+"a11y.home.undo.label" = "Aufzeichnung widerrufen";
+"a11y.home.undo.hint" = "Doppeltippen, um die letzte Aufzeichnung zu widerrufen";
+"a11y.home.undone.announcement" = "Aufzeichnung von %@ widerrufen";
 
 // =============================================================================
 // MARK: - Greeting Messages (for localized message engine)

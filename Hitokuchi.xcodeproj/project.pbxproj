@@ -38,6 +38,7 @@
 		648F2019A19ADAB4B11B02F4 /* DrinkAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B678E2A3B39AB08F6939E49 /* DrinkAmount.swift */; };
 		6F5FF136CCE05C71FE6060D5 /* DrinkLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365DFCAAFED07B16553D4D6C /* DrinkLog.swift */; };
 		76BA757E6CEEE2BECB696848 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA7EB426062690C7EBE2837 /* MessageBubble.swift */; };
+		UNDO0001000000000000000A /* UndoSnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = UNDO0001000000000000000B /* UndoSnackBar.swift */; };
 		789747303A2FC7070C4A6183 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FA93DF0422F601B16746C9 /* OnboardingViewModel.swift */; };
 		7A657BCE5F65211FCAB62CD1 /* StoreManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4189C9F1977FD33793780B /* StoreManaging.swift */; };
 		7C7580485BF04B6E8BDF053E /* MessageEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505FF14A5CF19ED91B21DA0 /* MessageEngine.swift */; };
@@ -137,6 +138,7 @@
 		C7C2E75562D8ED1984C83E7D /* MessageEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageEngineTests.swift; sourceTree = "<group>"; };
 		C9F87FD02A0EE155E0620760 /* BeverageSeedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageSeedData.swift; sourceTree = "<group>"; };
 		CAA7EB426062690C7EBE2837 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		UNDO0001000000000000000B /* UndoSnackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoSnackBar.swift; sourceTree = "<group>"; };
 		CBFC10D1432F9241378017E3 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		CF99E5858ED8427A2BDDA911 /* MessageGenerating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageGenerating.swift; sourceTree = "<group>"; };
 		D1205CC7EB0B78F6C51DF5DA /* MessageTemplates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTemplates.swift; sourceTree = "<group>"; };
@@ -382,6 +384,7 @@
 				3C41B13D654AE2B4214F641E /* HitokuchiCard.swift */,
 				CAA7EB426062690C7EBE2837 /* MessageBubble.swift */,
 				00FE18507510428133801231 /* ProgressIndicator.swift */,
+				UNDO0001000000000000000B /* UndoSnackBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -521,6 +524,7 @@
 				9954F5BB1AA4487A86A399A6 /* HydrationCalculator.swift in Sources */,
 				BB97310CCCFA7ECB34672C8E /* MainTabView.swift in Sources */,
 				76BA757E6CEEE2BECB696848 /* MessageBubble.swift in Sources */,
+				UNDO0001000000000000000A /* UndoSnackBar.swift in Sources */,
 				0AAB7DEAB5231905F00E5A7A /* MessageContext.swift in Sources */,
 				7C7580485BF04B6E8BDF053E /* MessageEngine.swift in Sources */,
 				48E9CDD0E254728B859C807D /* MessageGenerating.swift in Sources */,

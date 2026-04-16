@@ -369,10 +369,10 @@
 // MARK: - Beverage Names (28 types)
 // =============================================================================
 
-"beverage.sencha" = "Sencha (Té verde)";
-"beverage.hojicha" = "Hojicha (Té tostado)";
+"beverage.sencha" = "Sencha";
+"beverage.hojicha" = "Hojicha";
 "beverage.mugicha" = "Té de cebada";
-"beverage.gyokuro" = "Gyokuro (Té de sombra)";
+"beverage.gyokuro" = "Gyokuro";
 "beverage.blackTea" = "Té negro";
 "beverage.coffeeBlack" = "Café solo";
 "beverage.cafeAuLait" = "Café con leche";
@@ -388,7 +388,7 @@
 "beverage.matcha" = "Matcha";
 "beverage.oolongTea" = "Té oolong";
 "beverage.rooibosTea" = "Té rooibos";
-"beverage.amazake" = "Amazake (Bebida de arroz dulce)";
+"beverage.amazake" = "Amazake";
 "beverage.cocoa" = "Chocolate caliente";
 "beverage.vegetableJuice" = "Jugo de verduras";
 "beverage.icedTea" = "Té helado";
@@ -462,6 +462,13 @@
 // =============================================================================
 
 "a11y.home.recorded.announcement" = "Registrado %@. %@, %d mililitros";
+
+// Undo
+"home.undo.recorded" = "%@ registrado";
+"home.undo.button" = "Deshacer";
+"a11y.home.undo.label" = "Deshacer registro";
+"a11y.home.undo.hint" = "Toque dos veces para deshacer el último registro";
+"a11y.home.undone.announcement" = "Registro de %@ deshecho";
 
 // =============================================================================
 // MARK: - Greeting Messages (for localized message engine)

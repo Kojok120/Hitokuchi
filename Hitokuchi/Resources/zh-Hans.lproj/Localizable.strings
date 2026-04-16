@@ -463,6 +463,13 @@
 
 "a11y.home.recorded.announcement" = "已记录%@。%@，%d毫升";
 
+// Undo
+"home.undo.recorded" = "已记录%@";
+"home.undo.button" = "撤销";
+"a11y.home.undo.label" = "撤销记录";
+"a11y.home.undo.hint" = "双击以撤销上一条记录";
+"a11y.home.undone.announcement" = "已撤销%@的记录";
+
 // =============================================================================
 // MARK: - Greeting Messages (for localized message engine)
 // =============================================================================

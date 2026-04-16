@@ -369,10 +369,10 @@
 // MARK: - Beverage Names (28 types)
 // =============================================================================
 
-"beverage.sencha" = "Sencha (Green Tea)";
-"beverage.hojicha" = "Hojicha (Roasted Tea)";
+"beverage.sencha" = "Sencha";
+"beverage.hojicha" = "Hojicha";
 "beverage.mugicha" = "Barley Tea";
-"beverage.gyokuro" = "Gyokuro (Shade Tea)";
+"beverage.gyokuro" = "Gyokuro";
 "beverage.blackTea" = "Black Tea";
 "beverage.coffeeBlack" = "Black Coffee";
 "beverage.cafeAuLait" = "Cafe au Lait";
@@ -388,7 +388,7 @@
 "beverage.matcha" = "Matcha";
 "beverage.oolongTea" = "Oolong Tea";
 "beverage.rooibosTea" = "Rooibos Tea";
-"beverage.amazake" = "Amazake (Sweet Rice Drink)";
+"beverage.amazake" = "Amazake";
 "beverage.cocoa" = "Cocoa";
 "beverage.vegetableJuice" = "Vegetable Juice";
 "beverage.icedTea" = "Iced Tea";
@@ -462,6 +462,13 @@
 // =============================================================================
 
 "a11y.home.recorded.announcement" = "Logged %@. %@, %d milliliters";
+
+// Undo
+"home.undo.recorded" = "Logged %@";
+"home.undo.button" = "Undo";
+"a11y.home.undo.label" = "Undo record";
+"a11y.home.undo.hint" = "Double-tap to undo the last record";
+"a11y.home.undone.announcement" = "Undid %@ record";
 
 // =============================================================================
 // MARK: - Greeting Messages (for localized message engine)

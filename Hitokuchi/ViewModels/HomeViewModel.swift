@@ -10,6 +10,12 @@ final class HomeViewModel {
     var isRecording: Bool = false
     var lastRecordedBeverageID: UUID?
 
+    // Undo state
+    var undoTarget: DrinkLog?
+    var undoSecondsRemaining: Int = 0
+    var showUndo: Bool { undoTarget != nil && undoSecondsRemaining > 0 }
+    private var undoTask: Task<Void, Never>?
+
     private let messageEngine: any MessageGenerating
     private let hydrationCalculator: any HydrationCalculating
     private let reminderScheduler: any ReminderScheduling
@@ -119,11 +125,72 @@ final class HomeViewModel {
         let announcement = L("a11y.home.recorded.announcement", beverage.localizedName, amount.displayName, Int(amount.volumeML))
         UIAccessibility.post(notification: .announcement, argument: announcement)
 
+        // 7. Start undo timer
+        startUndoTimer(for: log)
+
         isRecording = false
 
         // Clear the recording indicator after a delay
         try? await Task.sleep(for: .milliseconds(500))
         lastRecordedBeverageID = nil
+    }
+
+    // MARK: - Undo
+
+    func startUndoTimer(for log: DrinkLog) {
+        undoTask?.cancel()
+        undoTarget = log
+        undoSecondsRemaining = 5
+        undoTask = Task {
+            for _ in 0..<5 {
+                try? await Task.sleep(for: .seconds(1))
+                guard !Task.isCancelled else { return }
+                undoSecondsRemaining -= 1
+            }
+            undoTarget = nil
+            undoTask = nil
+        }
+    }
+
+    func undoLastRecord(context: ModelContext) {
+        undoTask?.cancel()
+        undoTask = nil
+        guard let log = undoTarget else { return }
+
+        let beverageName = log.beverage?.localizedName ?? ""
+
+        // Delete from SwiftData
+        context.delete(log)
+        try? context.save()
+
+        undoTarget = nil
+        undoSecondsRemaining = 0
+
+        // Refresh progress
+        progress = hydrationCalculator.todayProgress(in: context)
+
+        // Refresh message
+        let settingsDescriptor = FetchDescriptor<UserSettings>()
+        let settings = (try? context.fetch(settingsDescriptor))?.first
+        let tone = settings?.messageTone ?? .default
+        let streakDays = calculateStreak(context: context)
+        let messageContext = MessageContext.greeting(
+            progressStage: progress.stage,
+            tone: tone,
+            streakDays: streakDays
+        )
+        currentMessage = messageEngine.generate(context: messageContext)
+
+        // VoiceOver announcement
+        let announcement = L("a11y.home.undone.announcement", beverageName)
+        UIAccessibility.post(notification: .announcement, argument: announcement)
+    }
+
+    func dismissUndo() {
+        undoTask?.cancel()
+        undoTask = nil
+        undoTarget = nil
+        undoSecondsRemaining = 0
     }
 
     // MARK: - Streak Calculation

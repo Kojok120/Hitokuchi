@@ -13,6 +13,13 @@ enum MessageStyle {
         }
     }
 
+    var fixedHeight: CGFloat {
+        switch self {
+        case .home, .homeAchieved: return 120
+        case .history, .weekly: return 80
+        }
+    }
+
     var weight: Font.Weight {
         switch self {
         case .homeAchieved: return .semibold
@@ -35,7 +42,7 @@ struct MessageBubble: View {
             .lineSpacing(6)
             .multilineTextAlignment(.leading)
             .padding(HitokuchiSpacing.l)
-            .frame(maxWidth: .infinity, alignment: .leading)
+            .frame(maxWidth: .infinity, minHeight: style.fixedHeight, alignment: .topLeading)
             .accessibilityElement()
             .accessibilityLabel(message)
             .accessibilityAddTraits(.isStaticText)

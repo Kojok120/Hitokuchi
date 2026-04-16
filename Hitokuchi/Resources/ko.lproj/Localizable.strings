@@ -96,8 +96,8 @@
 "settings.fun.themeValue" = "현재: %@";
 "settings.fun.voicePack" = "보이스 팩";
 "settings.fun.voicePackValue" = "현재: %@";
-"settings.fun.premium" = "프리미엄";
-"settings.fun.premiumDescription" = "시즌 콘텐츠, 인사이트, 테마";
+"settings.fun.premium" = "올인원 팩";
+"settings.fun.premiumDescription" = "테마 5종 + 보이스팩 2종";
 
 // Section: Integration
 "settings.section.integration" = "연동";
@@ -137,7 +137,7 @@
 "a11y.settings.numericValues.hint" = "이중 탭하여 전환합니다. 켜면 메시지와 함께 밀리리터 수치도 표시됩니다";
 "a11y.settings.theme.hint" = "이중 탭하여 변경합니다";
 "a11y.settings.voicePack.hint" = "이중 탭하여 변경합니다";
-"a11y.settings.premium.hint" = "시즌 콘텐츠, 인사이트, 테마를 사용할 수 있습니다";
+"a11y.settings.premium.hint" = "테마 5종과 보이스팩 2종을 사용할 수 있습니다";
 "a11y.settings.healthKit.label" = "건강 앱 연동";
 "a11y.settings.healthKit.hint" = "이중 탭하여 전환합니다";
 "a11y.settings.editFavorites.hint" = "이중 탭하여 즐겨찾기 음료를 변경합니다";
@@ -239,22 +239,20 @@
 // MARK: - Premium Screen
 // =============================================================================
 
-"premium.title" = "프리미엄";
-"premium.catchCopy" = "더 즐겁게,\n더 깊이";
-"premium.subtitle" = "매일의 수분 보충을\n더 즐겁게 만드는 기능을 만나보세요";
-"premium.feature.seasonal.title" = "시즌 콘텐츠";
-"premium.feature.seasonal.description" = "계절마다 음료 이야기와 특별 메시지를 받아보세요";
-"premium.feature.insights.title" = "건강 인사이트";
-"premium.feature.insights.description" = "주간 상세 분석으로 나의 수분 보충 습관을 깊이 이해하세요";
+"premium.title" = "올인원 팩";
+"premium.catchCopy" = "나만의\n스타일로.";
+"premium.subtitle" = "테마와 보이스, 모두 한 번에 득템.";
 "premium.feature.themes.title" = "컬러 테마 5종";
 "premium.feature.themes.description" = "벚꽃, 바다, 숲, 노을, 밤 — 기분에 맞게 앱 분위기를 바꿔보세요";
-"premium.purchaseButton" = "프리미엄 구매 %@(일회 결제)";
+"premium.feature.voices.title" = "보이스팩 2종";
+"premium.feature.voices.description" = "간사이 사투리 · 교토 사투리 — 마음에 드는 말투로 앱 메시지를 받아보세요";
+"premium.purchaseButton" = "올인원 팩 구매 %@(일회 결제)";
 "premium.oneTimePurchaseNote" = "한 번 결제로 영구 이용 가능합니다";
 "premium.loadingProducts" = "상품 불러오는 중...";
 
 // Accessibility
-"a11y.premium.purchaseLabel" = "프리미엄 구매, %@, 일회 결제";
-"a11y.premium.purchaseValue" = "시즌 콘텐츠, 건강 인사이트, 컬러 테마 5종을 영구적으로 사용할 수 있습니다";
+"a11y.premium.purchaseLabel" = "올인원 팩 구매, %@, 일회 결제";
+"a11y.premium.purchaseValue" = "컬러 테마 5종과 보이스팩 2종을 영구적으로 사용할 수 있습니다";
 "a11y.premium.purchaseHint" = "이중 탭하여 구매합니다";
 
 // =============================================================================

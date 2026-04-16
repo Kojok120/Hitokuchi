@@ -88,7 +88,7 @@ struct SettingsView: View {
                 .accessibilityValue(viewModel.messageTone.displayName)
                 .accessibilityHint(L("a11y.settings.voicePack.hint"))
 
-                if !viewModel.isPremium {
+                if !viewModel.hasBundleAll {
                     NavigationLink {
                         PremiumView(storeManager: storeManager)
                     } label: {

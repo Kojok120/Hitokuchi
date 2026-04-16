@@ -12,8 +12,8 @@ struct PremiumView: View {
     @State private var purchaseError: StoreError?
     @State private var showingError = false
 
-    private var premiumProduct: Product? {
-        storeManager.product(for: "hitokuchi.premium")
+    private var bundleProduct: Product? {
+        storeManager.product(for: "hitokuchi.bundle.all")
     }
 
     var body: some View {
@@ -40,21 +40,15 @@ struct PremiumView: View {
                 // Feature cards
                 VStack(spacing: HitokuchiSpacing.s) {
                     featureCard(
-                        icon: "leaf.fill",
-                        title: L("premium.feature.seasonal.title"),
-                        description: L("premium.feature.seasonal.description")
-                    )
-
-                    featureCard(
-                        icon: "chart.bar.fill",
-                        title: L("premium.feature.insights.title"),
-                        description: L("premium.feature.insights.description")
-                    )
-
-                    featureCard(
                         icon: "paintpalette.fill",
                         title: L("premium.feature.themes.title"),
                         description: L("premium.feature.themes.description")
+                    )
+
+                    featureCard(
+                        icon: "waveform",
+                        title: L("premium.feature.voices.title"),
+                        description: L("premium.feature.voices.description")
                     )
                 }
                 .padding(.horizontal, HitokuchiLayout.pageMargin)
@@ -62,7 +56,7 @@ struct PremiumView: View {
                 Spacer().frame(height: HitokuchiSpacing.xl)
 
                 // Purchase button
-                if let product = premiumProduct {
+                if let product = bundleProduct {
                     Button {
                         Task {
                             isPurchasing = true

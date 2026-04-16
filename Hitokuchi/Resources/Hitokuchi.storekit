@@ -15,27 +15,27 @@
   ],
   "products" : [
     {
-      "displayPrice" : "4.99",
+      "displayPrice" : "3.99",
       "familyShareable" : true,
       "internalID" : "A0000001",
       "localizations" : [
         {
-          "description" : "Unlock all themes and premium features",
-          "displayName" : "Hitokuchi Premium",
+          "description" : "Unlock all themes and voice packs",
+          "displayName" : "Everything Pack",
           "locale" : "en_US"
         },
         {
-          "description" : "すべてのテーマとプレミアム機能をアンロック",
-          "displayName" : "ひとくちプレミアム",
+          "description" : "テーマ5種とボイスパック2種をぜんぶアンロック",
+          "displayName" : "ぜんぶ入りパック",
           "locale" : "ja"
         }
       ],
-      "productID" : "hitokuchi.premium",
-      "referenceName" : "Premium",
+      "productID" : "hitokuchi.bundle.all",
+      "referenceName" : "Everything Pack",
       "type" : "NonConsumable"
     },
     {
-      "displayPrice" : "1.99",
+      "displayPrice" : "0.99",
       "familyShareable" : true,
       "internalID" : "A0000002",
       "localizations" : [
@@ -55,7 +55,7 @@
       "type" : "NonConsumable"
     },
     {
-      "displayPrice" : "1.99",
+      "displayPrice" : "0.99",
       "familyShareable" : true,
       "internalID" : "A0000003",
       "localizations" : [
@@ -75,7 +75,7 @@
       "type" : "NonConsumable"
     },
     {
-      "displayPrice" : "1.99",
+      "displayPrice" : "0.99",
       "familyShareable" : true,
       "internalID" : "A0000004",
       "localizations" : [
@@ -95,7 +95,7 @@
       "type" : "NonConsumable"
     },
     {
-      "displayPrice" : "1.99",
+      "displayPrice" : "0.99",
       "familyShareable" : true,
       "internalID" : "A0000005",
       "localizations" : [
@@ -115,7 +115,7 @@
       "type" : "NonConsumable"
     },
     {
-      "displayPrice" : "1.99",
+      "displayPrice" : "0.99",
       "familyShareable" : true,
       "internalID" : "A0000006",
       "localizations" : [
@@ -135,7 +135,7 @@
       "type" : "NonConsumable"
     },
     {
-      "displayPrice" : "2.99",
+      "displayPrice" : "0.99",
       "familyShareable" : true,
       "internalID" : "A0000007",
       "localizations" : [
@@ -155,7 +155,7 @@
       "type" : "NonConsumable"
     },
     {
-      "displayPrice" : "2.99",
+      "displayPrice" : "0.99",
       "familyShareable" : true,
       "internalID" : "A0000008",
       "localizations" : [

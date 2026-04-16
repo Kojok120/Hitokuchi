@@ -368,9 +368,4 @@ struct MessageTemplates {
         "週末どすなぁ。ゆるりと水分補給しましょ",
     ]
 
-    // MARK: - 季節メッセージ
-
-    static let seasonalDefault: [String] = [
-        "暑い日は特に水分補給が大切ですよ。こまめに飲みましょう",
-    ]
 }

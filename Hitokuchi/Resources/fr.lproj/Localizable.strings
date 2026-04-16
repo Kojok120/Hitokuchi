@@ -96,8 +96,8 @@
 "settings.fun.themeValue" = "Actuel : %@";
 "settings.fun.voicePack" = "Pack vocal";
 "settings.fun.voicePackValue" = "Actuel : %@";
-"settings.fun.premium" = "Premium";
-"settings.fun.premiumDescription" = "Contenu saisonnier, analyses, thèmes";
+"settings.fun.premium" = "Pack complet";
+"settings.fun.premiumDescription" = "5 thèmes + 2 packs de voix";
 
 // Section: Integration
 "settings.section.integration" = "Connexion";
@@ -137,7 +137,7 @@
 "a11y.settings.numericValues.hint" = "Touchez deux fois pour basculer. Si activé, les valeurs en millilitres sont affichées avec les messages.";
 "a11y.settings.theme.hint" = "Touchez deux fois pour modifier";
 "a11y.settings.voicePack.hint" = "Touchez deux fois pour modifier";
-"a11y.settings.premium.hint" = "Débloquez du contenu saisonnier, des analyses et des thèmes";
+"a11y.settings.premium.hint" = "Débloquez 5 thèmes et 2 packs de voix";
 "a11y.settings.healthKit.label" = "Synchronisation Santé";
 "a11y.settings.healthKit.hint" = "Touchez deux fois pour basculer";
 "a11y.settings.editFavorites.hint" = "Touchez deux fois pour modifier vos boissons favorites";
@@ -239,22 +239,20 @@
 // MARK: - Premium Screen
 // =============================================================================
 
-"premium.title" = "Premium";
-"premium.catchCopy" = "Plus de plaisir,\nplus de profondeur";
-"premium.subtitle" = "Débloquez des fonctions qui rendent\nvotre hydratation quotidienne encore meilleure";
-"premium.feature.seasonal.title" = "Contenu saisonnier";
-"premium.feature.seasonal.description" = "Découvrez des anecdotes sur les boissons et des messages spéciaux pour chaque saison";
-"premium.feature.insights.title" = "Analyses santé";
-"premium.feature.insights.description" = "Analyse hebdomadaire détaillée pour mieux comprendre vos habitudes d'hydratation";
+"premium.title" = "Pack complet";
+"premium.catchCopy" = "Faites-en\nle vôtre.";
+"premium.subtitle" = "Thèmes et voix, tout en un seul pack.";
 "premium.feature.themes.title" = "5 thèmes de couleur";
 "premium.feature.themes.description" = "Cerisier, Océan, Forêt, Crépuscule, Nuit — adaptez l'ambiance à votre humeur";
-"premium.purchaseButton" = "Obtenir Premium %@ (achat unique)";
+"premium.feature.voices.title" = "2 packs de voix";
+"premium.feature.voices.description" = "Dialecte Kansai et Kyoto — l'app vous parle avec la voix de votre choix";
+"premium.purchaseButton" = "Obtenir le pack complet %@ (achat unique)";
 "premium.oneTimePurchaseNote" = "Payez une fois, utilisez pour toujours";
 "premium.loadingProducts" = "Chargement des produits...";
 
 // Accessibility
-"a11y.premium.purchaseLabel" = "Obtenir Premium, %@, achat unique";
-"a11y.premium.purchaseValue" = "Débloquez définitivement le contenu saisonnier, les analyses santé et 5 thèmes de couleur";
+"a11y.premium.purchaseLabel" = "Obtenir le pack complet, %@, achat unique";
+"a11y.premium.purchaseValue" = "Débloquez définitivement 5 thèmes de couleur et 2 packs de voix";
 "a11y.premium.purchaseHint" = "Touchez deux fois pour acheter";
 
 // =============================================================================

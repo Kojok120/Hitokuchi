@@ -96,8 +96,8 @@
 "settings.fun.themeValue" = "Current: %@";
 "settings.fun.voicePack" = "Voice Pack";
 "settings.fun.voicePackValue" = "Current: %@";
-"settings.fun.premium" = "Premium";
-"settings.fun.premiumDescription" = "Seasonal content, insights, themes";
+"settings.fun.premium" = "Everything Pack";
+"settings.fun.premiumDescription" = "5 themes + 2 voice packs";
 
 // Section: Integration
 "settings.section.integration" = "Integration";
@@ -137,7 +137,7 @@
 "a11y.settings.numericValues.hint" = "Double-tap to toggle. When on, milliliter values are shown alongside messages.";
 "a11y.settings.theme.hint" = "Double-tap to change";
 "a11y.settings.voicePack.hint" = "Double-tap to change";
-"a11y.settings.premium.hint" = "Unlock seasonal content, insights, and themes";
+"a11y.settings.premium.hint" = "Unlock 5 themes and 2 voice packs";
 "a11y.settings.healthKit.label" = "Health App sync";
 "a11y.settings.healthKit.hint" = "Double-tap to toggle";
 "a11y.settings.editFavorites.hint" = "Double-tap to edit favorite drinks";
@@ -239,22 +239,20 @@
 // MARK: - Premium Screen
 // =============================================================================
 
-"premium.title" = "Premium";
-"premium.catchCopy" = "More fun,\nmore insight";
-"premium.subtitle" = "Unlock features that make\nyour daily hydration even better";
-"premium.feature.seasonal.title" = "Seasonal Content";
-"premium.feature.seasonal.description" = "Discover beverage trivia and special messages for every season";
-"premium.feature.insights.title" = "Health Insights";
-"premium.feature.insights.description" = "Detailed weekly analysis to better understand your hydration habits";
+"premium.title" = "Everything Pack";
+"premium.catchCopy" = "Make it\nyours.";
+"premium.subtitle" = "Themes and voices, all in one pack.";
 "premium.feature.themes.title" = "5 Color Themes";
 "premium.feature.themes.description" = "Cherry Blossom, Ocean, Forest, Sunset, Night — match the app's mood to yours";
-"premium.purchaseButton" = "Get Premium %@ (one-time)";
+"premium.feature.voices.title" = "2 Voice Packs";
+"premium.feature.voices.description" = "Kansai & Kyoto dialect — hear the app speak in your favorite voice";
+"premium.purchaseButton" = "Get Everything Pack %@ (one-time)";
 "premium.oneTimePurchaseNote" = "Pay once, use forever";
 "premium.loadingProducts" = "Loading products...";
 
 // Accessibility
-"a11y.premium.purchaseLabel" = "Get Premium, %@, one-time purchase";
-"a11y.premium.purchaseValue" = "Unlocks seasonal content, health insights, and 5 color themes permanently";
+"a11y.premium.purchaseLabel" = "Get Everything Pack, %@, one-time purchase";
+"a11y.premium.purchaseValue" = "Unlocks 5 color themes and 2 voice packs permanently";
 "a11y.premium.purchaseHint" = "Double-tap to purchase";
 
 // =============================================================================

@@ -10,7 +10,7 @@ final class StoreManagerService {
     private var transactionListener: Task<Void, Never>?
 
     static let allProductIDs: Set<String> = [
-        "hitokuchi.premium",
+        "hitokuchi.bundle.all",
         "hitokuchi.theme.sakura",
         "hitokuchi.theme.ocean",
         "hitokuchi.theme.forest",
@@ -32,18 +32,18 @@ final class StoreManagerService {
 
     // MARK: - Public
 
-    var isPremium: Bool {
-        purchasedProductIDs.contains("hitokuchi.premium")
+    var hasBundleAll: Bool {
+        purchasedProductIDs.contains("hitokuchi.bundle.all")
     }
 
     func isThemeUnlocked(_ theme: AppTheme) -> Bool {
         guard let productID = theme.productID else { return true } // Default is always unlocked
-        return isPremium || purchasedProductIDs.contains(productID)
+        return hasBundleAll || purchasedProductIDs.contains(productID)
     }
 
     func isVoicePackUnlocked(_ tone: MessageTone) -> Bool {
         guard let productID = tone.productID else { return true } // Default is always unlocked
-        return purchasedProductIDs.contains(productID)
+        return hasBundleAll || purchasedProductIDs.contains(productID)
     }
 
     func loadProducts() async {

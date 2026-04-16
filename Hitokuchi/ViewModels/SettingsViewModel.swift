@@ -15,8 +15,8 @@ final class SettingsViewModel {
         self.storeManager = storeManager
     }
 
-    var isPremium: Bool {
-        storeManager.isPremium
+    var hasBundleAll: Bool {
+        storeManager.hasBundleAll
     }
 
     var dailyGoalML: Double {

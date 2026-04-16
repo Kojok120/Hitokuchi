@@ -105,8 +105,8 @@
 "settings.fun.themeValue" = "現在: %@";
 "settings.fun.voicePack" = "ボイスパック";
 "settings.fun.voicePackValue" = "現在: %@";
-"settings.fun.premium" = "プレミアム";
-"settings.fun.premiumDescription" = "季節コンテンツ、インサイト、テーマ";
+"settings.fun.premium" = "ぜんぶ入りパック";
+"settings.fun.premiumDescription" = "テーマ5種 + ボイスパック2種";
 
 // Section: 連携
 "settings.section.integration" = "連携";
@@ -146,7 +146,7 @@
 "a11y.settings.numericValues.hint" = "ダブルタップで切り替えます。オンにすると自然言語メッセージに加えてミリリットル数値も表示されます";
 "a11y.settings.theme.hint" = "ダブルタップで変更します";
 "a11y.settings.voicePack.hint" = "ダブルタップで変更します";
-"a11y.settings.premium.hint" = "季節コンテンツ、インサイト、テーマが使えるようになります";
+"a11y.settings.premium.hint" = "テーマ5種とボイスパック2種が使えるようになります";
 "a11y.settings.healthKit.label" = "ヘルスケア連携";
 "a11y.settings.healthKit.hint" = "ダブルタップで切り替えます";
 "a11y.settings.editFavorites.hint" = "ダブルタップでお気に入り飲料を変更します";
@@ -248,22 +248,20 @@
 // MARK: - Premium Screen
 // =============================================================================
 
-"premium.title" = "プレミアム";
-"premium.catchCopy" = "もっと楽しく、\nもっと深く";
-"premium.subtitle" = "ひとくちと過ごす毎日を\nさらに楽しくする機能をお届けします";
-"premium.feature.seasonal.title" = "季節コンテンツ";
-"premium.feature.seasonal.description" = "四季折々の飲料トリビアと特別メッセージが届きます";
-"premium.feature.insights.title" = "ヘルスインサイト";
-"premium.feature.insights.description" = "週次の詳細分析であなたの水分補給習慣を深く理解できます";
+"premium.title" = "ぜんぶ入りパック";
+"premium.catchCopy" = "あなた好みの\nひとくちに。";
+"premium.subtitle" = "テーマも声もぜんぶまとめて、お得に。";
 "premium.feature.themes.title" = "カラーテーマ5種";
 "premium.feature.themes.description" = "桜・海・森・夕焼け・夜 — 気分に合わせてアプリの雰囲気を変えられます";
-"premium.purchaseButton" = "プレミアムを購入 %@（買い切り）";
+"premium.feature.voices.title" = "ボイスパック2種";
+"premium.feature.voices.description" = "関西弁・京都弁 — アプリのメッセージがお好みの言葉になります";
+"premium.purchaseButton" = "ぜんぶ入りパック %@（買い切り）";
 "premium.oneTimePurchaseNote" = "一度のお支払いで永久にご利用いただけます";
 "premium.loadingProducts" = "商品を読み込み中...";
 
 // Accessibility
-"a11y.premium.purchaseLabel" = "プレミアムを購入、%@、一回のお支払い";
-"a11y.premium.purchaseValue" = "季節コンテンツ、ヘルスインサイト、カラーテーマ5種が永久に使えるようになります";
+"a11y.premium.purchaseLabel" = "ぜんぶ入りパックを購入、%@、一回のお支払い";
+"a11y.premium.purchaseValue" = "カラーテーマ5種とボイスパック2種が永久に使えるようになります";
 "a11y.premium.purchaseHint" = "ダブルタップで購入します";
 
 // =============================================================================

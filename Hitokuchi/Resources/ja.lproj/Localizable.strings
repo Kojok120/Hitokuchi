@@ -28,6 +28,7 @@
 "history.share.button" = "シェア";
 "history.share.preview.title" = "今日の水分記録";
 "history.share.action" = "シェアする";
+"share.card.streak" = "日連続達成";
 "a11y.history.share.hint" = "ダブルタップで今日の記録をシェアします";
 
 // Accessibility

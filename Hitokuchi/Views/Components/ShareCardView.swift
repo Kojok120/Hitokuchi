@@ -16,7 +16,7 @@ struct ShareCardView: View {
             HStack {
                 Image(systemName: "drop.fill")
                     .font(.caption)
-                Text("ひとくち")
+                Text(L("about.appName"))
                     .font(.callout)
                     .fontWeight(.medium)
             }
@@ -41,7 +41,7 @@ struct ShareCardView: View {
                     Text(percentageText)
                         .font(.system(size: 44, weight: .bold, design: .rounded))
                         .foregroundStyle(colors.textPrimary)
-                    Text("\(Int(progress.totalML)) / \(Int(progress.goalML)) ml")
+                    Text(L("common.volumeFormat", Int(progress.totalML)) + " / " + L("common.volumeFormat", Int(progress.goalML)))
                         .font(.callout)
                         .foregroundStyle(colors.textSecondary)
                 }
@@ -57,7 +57,7 @@ struct ShareCardView: View {
                         .font(.title2)
                         .fontWeight(.bold)
                         .foregroundStyle(colors.accentPrimary)
-                    Text("streak")
+                    Text(L("share.card.streak"))
                         .font(.caption)
                         .foregroundStyle(colors.textTertiary)
                 }

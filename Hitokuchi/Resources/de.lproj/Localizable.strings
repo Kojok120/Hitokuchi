@@ -507,4 +507,5 @@
 "history.share.button" = "Teilen";
 "history.share.preview.title" = "Heutige Flüssigkeitszufuhr";
 "history.share.action" = "Teilen";
+"share.card.streak" = "Tage in Folge";
 "a11y.history.share.hint" = "Doppeltippen, um den heutigen Bericht zu teilen";

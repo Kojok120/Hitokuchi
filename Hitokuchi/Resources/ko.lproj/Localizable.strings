@@ -507,4 +507,5 @@
 "history.share.button" = "공유";
 "history.share.preview.title" = "오늘의 수분 기록";
 "history.share.action" = "공유하기";
+"share.card.streak" = "일 연속 달성";
 "a11y.history.share.hint" = "이중 탭하여 오늘의 기록을 공유합니다";

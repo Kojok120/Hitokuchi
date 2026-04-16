@@ -507,4 +507,5 @@
 "history.share.button" = "Share";
 "history.share.preview.title" = "Today's Hydration";
 "history.share.action" = "Share";
+"share.card.streak" = "day streak";
 "a11y.history.share.hint" = "Double-tap to share today's record";

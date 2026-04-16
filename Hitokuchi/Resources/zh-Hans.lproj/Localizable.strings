@@ -507,4 +507,5 @@
 "history.share.button" = "分享";
 "history.share.preview.title" = "今日饮水记录";
 "history.share.action" = "分享";
+"share.card.streak" = "天连续达标";
 "a11y.history.share.hint" = "双击分享今日记录";

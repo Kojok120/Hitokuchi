@@ -507,4 +507,5 @@
 "history.share.button" = "Partager";
 "history.share.preview.title" = "Hydratation du jour";
 "history.share.action" = "Partager";
+"share.card.streak" = "jours consécutifs";
 "a11y.history.share.hint" = "Touchez deux fois pour partager le bilan du jour";

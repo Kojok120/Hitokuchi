@@ -21,12 +21,10 @@ final class StoreManagerService {
     ]
 
     init() {
-        // Start transaction listener (must_fix: cancel in deinit)
         transactionListener = listenForTransactions()
     }
 
     deinit {
-        // Phase 4 QA must_fix: cancel transactionListener on deinit
         transactionListener?.cancel()
     }
 

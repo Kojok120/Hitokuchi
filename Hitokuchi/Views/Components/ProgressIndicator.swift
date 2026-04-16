@@ -30,7 +30,7 @@ struct ProgressIndicator: View {
                         .contentTransition(.numericText(value: currentML))
                         .animation(reduceMotion ? nil : .easeOut(duration: 0.4), value: currentML)
 
-                    Text(" / \(Int(goalML)) ml")
+                    Text(" / " + L("common.volumeFormat", Int(goalML)))
                         .font(.callout)
                         .foregroundStyle(Color.hitokuchi.textTertiary(for: theme, colorScheme: colorScheme))
                 }

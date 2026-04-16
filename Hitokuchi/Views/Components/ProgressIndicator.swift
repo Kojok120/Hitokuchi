@@ -22,14 +22,18 @@ struct ProgressIndicator: View {
 
                 Spacer()
 
-                Text(L("common.volumeFormat", Int(currentML)))
-                    .font(.callout)
-                    .fontWeight(.medium)
-                    .foregroundStyle(stageColor)
-                +
-                Text(" / \(Int(goalML)) ml")
-                    .font(.callout)
-                    .foregroundStyle(Color.hitokuchi.textTertiary(for: theme, colorScheme: colorScheme))
+                HStack(spacing: 0) {
+                    Text(L("common.volumeFormat", Int(currentML)))
+                        .font(.callout)
+                        .fontWeight(.medium)
+                        .foregroundStyle(stageColor)
+                        .contentTransition(.numericText(value: currentML))
+                        .animation(reduceMotion ? nil : .easeOut(duration: 0.4), value: currentML)
+
+                    Text(" / \(Int(goalML)) ml")
+                        .font(.callout)
+                        .foregroundStyle(Color.hitokuchi.textTertiary(for: theme, colorScheme: colorScheme))
+                }
             }
 
             // Progress bar

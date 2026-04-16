@@ -81,6 +81,8 @@ struct QuickRecordButton: View {
     @Environment(\.appTheme) private var theme
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @State private var rippleScale: CGFloat = 0
+    @State private var rippleOpacity: Double = 0
 
     var body: some View {
         Button(action: action) {
@@ -116,6 +118,13 @@ struct QuickRecordButton: View {
             )
             .clipShape(RoundedRectangle(cornerRadius: HitokuchiRadius.m))
             .overlay(
+                // Ripple effect
+                RoundedRectangle(cornerRadius: HitokuchiRadius.m)
+                    .fill(Color.hitokuchi.accentPrimary(for: theme, colorScheme: colorScheme))
+                    .scaleEffect(rippleScale)
+                    .opacity(rippleOpacity)
+            )
+            .overlay(
                 RoundedRectangle(cornerRadius: HitokuchiRadius.m)
                     .stroke(
                         isRecorded
@@ -124,10 +133,21 @@ struct QuickRecordButton: View {
                         lineWidth: 1
                     )
             )
+            .clipShape(RoundedRectangle(cornerRadius: HitokuchiRadius.m))
             .animation(reduceMotion ? nil : .easeInOut(duration: 0.3), value: isRecorded)
         }
         .buttonStyle(ScalePressStyle(reduceMotion: reduceMotion))
         .sensoryFeedback(.success, trigger: isRecorded)
+        .onChange(of: isRecorded) { _, recorded in
+            guard recorded, !reduceMotion else { return }
+            // Trigger ripple
+            rippleScale = 0.3
+            rippleOpacity = 0.25
+            withAnimation(.easeOut(duration: 0.5)) {
+                rippleScale = 1.2
+                rippleOpacity = 0
+            }
+        }
         .accessibilityLabel(L("a11y.home.quickRecord.label", beverage.localizedName))
         .accessibilityValue(DrinkAmount.defaultAmount(for: beverage.category).accessibilityLabel)
         .accessibilityHint(L("a11y.home.quickRecord.hint"))

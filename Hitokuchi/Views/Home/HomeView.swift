@@ -10,6 +10,7 @@ struct HomeView: View {
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     @State private var viewModel = HomeViewModel()
+    @State private var showCelebration = false
 
     var body: some View {
         ScrollView {
@@ -133,6 +134,13 @@ struct HomeView: View {
             }
         }
         .background(Color.hitokuchi.bgPrimary(for: theme, colorScheme: colorScheme))
+        .overlay {
+            CelebrationEffect(
+                isActive: showCelebration,
+                color: Color.hitokuchi.accentSuccess(for: theme, colorScheme: colorScheme)
+            )
+        }
+        .sensoryFeedback(.impact(weight: .heavy), trigger: showCelebration)
         .overlay(alignment: .bottom) {
             if viewModel.showUndo, let target = viewModel.undoTarget {
                 UndoSnackBar(
@@ -158,6 +166,11 @@ struct HomeView: View {
         }
         .onChange(of: modelContext.hasChanges) {
             viewModel.loadData(context: modelContext)
+        }
+        .onChange(of: viewModel.progress.isGoalAchieved) { wasAchieved, isAchieved in
+            if !wasAchieved, isAchieved {
+                showCelebration = true
+            }
         }
     }
 }

@@ -68,6 +68,7 @@
 		F948760CB93EE7A71A68AA02 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4C9981F3BD345E4A5A9A76C5 /* PrivacyInfo.xcprivacy */; };
 		SHARE001000000000000000A /* ShareCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SHARE001000000000000000B /* ShareCardView.swift */; };
 		UNDO0001000000000000000A /* UndoSnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = UNDO0001000000000000000B /* UndoSnackBar.swift */; };
+		CELB0001000000000000000A /* CelebrationEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = CELB0001000000000000000B /* CelebrationEffect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		057FC80920CC810F0206999D /* Hitokuchi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hitokuchi.entitlements; sourceTree = "<group>"; };
 		0ABEB8E190B94F1C72B34C21 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
 		0C4BE145E3469144A8A2EDEA /* GoalSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalSettingView.swift; sourceTree = "<group>"; };
+		CELB0001000000000000000B /* CelebrationEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrationEffect.swift; sourceTree = "<group>"; };
 		0D986F7144BFA72D473EF9AB /* HitokuchiButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitokuchiButton.swift; sourceTree = "<group>"; };
 		15BD48B95651A176AFB88536 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		163F73447A46C0BF43C29487 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
@@ -384,6 +386,7 @@
 		F5B8979A1D495895DB26A56C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				CELB0001000000000000000B /* CelebrationEffect.swift */,
 				0D986F7144BFA72D473EF9AB /* HitokuchiButton.swift */,
 				3C41B13D654AE2B4214F641E /* HitokuchiCard.swift */,
 				CAA7EB426062690C7EBE2837 /* MessageBubble.swift */,
@@ -521,6 +524,7 @@
 				E35AA4F35FDBBBDF06474189 /* HistoryView.swift in Sources */,
 				60F284C0767BE47612505332 /* HistoryViewModel.swift in Sources */,
 				36B8C7C825BA4B6283FF29F1 /* HitokuchiApp.swift in Sources */,
+				CELB0001000000000000000A /* CelebrationEffect.swift in Sources */,
 				F39D658826183334D60D4612 /* HitokuchiButton.swift in Sources */,
 				DED897D11DE3281232A5937D /* HitokuchiCard.swift in Sources */,
 				142DC22C46F4F5C831585C31 /* HomeView.swift in Sources */,

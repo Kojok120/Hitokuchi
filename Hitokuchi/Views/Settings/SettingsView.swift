@@ -199,7 +199,9 @@ struct SettingsView: View {
             Section {
                 EmptyView()
             } footer: {
-                Text(L("settings.footer.version", "1.0", "1"))
+                Text(L("settings.footer.version",
+                    Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0",
+                    Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "1"))
                     .font(.footnote)
                     .foregroundStyle(Color.hitokuchi.textTertiary(for: theme, colorScheme: colorScheme))
                     .frame(maxWidth: .infinity, alignment: .center)
@@ -359,7 +361,7 @@ struct AboutView: View {
                 HStack {
                     Text(L("about.version"))
                     Spacer()
-                    Text("1.0 (1)")
+                    Text("\(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0") (\(Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "1"))")
                         .foregroundStyle(Color.hitokuchi.textSecondary(for: theme, colorScheme: colorScheme))
                 }
 

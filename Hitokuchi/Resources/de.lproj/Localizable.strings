@@ -214,6 +214,27 @@
 "a11y.voicePack.purchaseHint" = "Doppeltippen zum Kaufen";
 "a11y.voicePack.exampleMessage" = "Beispiel. %@";
 
+// Voice Pack Examples
+"voicePack.example.default.1" = "Guten Morgen. Ein Sencha am Morgen, ein guter Start in den Tag";
+"voicePack.example.default.2" = "Das Tagesziel ist erreicht";
+"voicePack.example.default.3" = "Wie wäre es bald mit einem Glas?";
+"voicePack.example.kansai.1" = "Morgen! Sencha gleich früh, super! Heute auch schön gemütlich";
+"voicePack.example.kansai.2" = "Klasse! Tagesziel geschafft!";
+"voicePack.example.kansai.3" = "Wie wär's mit 'nem Glas?";
+"voicePack.example.kyoto.1" = "Guten Morgen. Was für ein angenehmer Morgen-Sencha";
+"voicePack.example.kyoto.2" = "Das Tagesziel wurde anmutig erreicht";
+"voicePack.example.kyoto.3" = "Dürfte es ein Schlückchen sein?";
+
+// =============================================================================
+// MARK: - Store Errors
+// =============================================================================
+
+"store.error.title" = "Kauffehler";
+"store.error.userCancelled" = "Der Kauf wurde abgebrochen";
+"store.error.pending" = "Der Kauf ist ausstehend";
+"store.error.unknown" = "Ein unbekannter Fehler ist aufgetreten";
+"store.error.verificationFailed" = "Die Kaufverifizierung ist fehlgeschlagen";
+
 // =============================================================================
 // MARK: - Premium Screen
 // =============================================================================
@@ -229,6 +250,7 @@
 "premium.feature.themes.description" = "Kirschblüte, Ozean, Wald, Sonnenuntergang, Nacht — passe die Stimmung der App deiner an";
 "premium.purchaseButton" = "Premium kaufen %@ (Einmalkauf)";
 "premium.oneTimePurchaseNote" = "Einmal zahlen, für immer nutzen";
+"premium.loadingProducts" = "Produkte werden geladen...";
 
 // Accessibility
 "a11y.premium.purchaseLabel" = "Premium kaufen, %@, Einmalkauf";
@@ -430,6 +452,10 @@
 "common.unit.cups" = "Gläser";
 "common.unit.percent" = "Prozent";
 "common.unknown" = "Unbekannt";
+"common.volumeFormat" = "%dml";
+"beverageSelect.defaultAmountFormat" = "%@ (%dml)";
+"voicePack.exampleFormat" = "\U201E%@\U201C";
+"settings.language.system" = "Systemeinstellungen folgen";
 
 // =============================================================================
 // MARK: - Accessibility: Recording

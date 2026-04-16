@@ -163,7 +163,7 @@ struct HistoryView: View {
                 Text(log.drinkAmount.displayName)
                     .font(.callout)
                     .foregroundStyle(Color.hitokuchi.textSecondary(for: theme, colorScheme: colorScheme))
-                Text("\(Int(log.volumeML))ml")
+                Text(L("common.volumeFormat", Int(log.volumeML)))
                     .font(.caption)
                     .foregroundStyle(Color.hitokuchi.textTertiary(for: theme, colorScheme: colorScheme))
             }
@@ -171,7 +171,7 @@ struct HistoryView: View {
         .padding(.horizontal, HitokuchiLayout.pageMargin)
         .padding(.vertical, HitokuchiSpacing.s)
         .accessibilityElement(children: .combine)
-        .accessibilityLabel("\(log.recordedAt.formatted(.dateTime.hour().minute())), \(log.beverage?.localizedName ?? ""), \(log.drinkAmount.displayName), \(Int(log.volumeML))ml")
+        .accessibilityLabel("\(log.recordedAt.formatted(.dateTime.hour().minute())), \(log.beverage?.localizedName ?? ""), \(log.drinkAmount.displayName), \(L("common.volumeFormat", Int(log.volumeML)))")
         .contextMenu {
             Button(role: .destructive) {
                 viewModel.deleteLog(log, context: modelContext)

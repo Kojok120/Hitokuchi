@@ -214,6 +214,27 @@
 "a11y.voicePack.purchaseHint" = "ダブルタップで購入します";
 "a11y.voicePack.exampleMessage" = "例文。%@";
 
+// Voice Pack Examples
+"voicePack.example.default.1" = "おはようございます。朝の煎茶、いい一日の始まりですね";
+"voicePack.example.default.2" = "今日の目標、達成しました";
+"voicePack.example.default.3" = "そろそろ一杯いかがですか？";
+"voicePack.example.kansai.1" = "おはよう！朝イチの煎茶、ええやん。今日もぼちぼちいこか";
+"voicePack.example.kansai.2" = "やったやん！今日の目標クリアや";
+"voicePack.example.kansai.3" = "そろそろ一杯どうや？";
+"voicePack.example.kyoto.1" = "おはようさんどす。朝のお煎茶、ええお味どすなぁ";
+"voicePack.example.kyoto.2" = "今日のお目標、達成しはりました";
+"voicePack.example.kyoto.3" = "そろそろ一杯いかがどすか？";
+
+// =============================================================================
+// MARK: - Store Errors
+// =============================================================================
+
+"store.error.title" = "購入エラー";
+"store.error.userCancelled" = "購入がキャンセルされました";
+"store.error.pending" = "購入が保留中です";
+"store.error.unknown" = "不明なエラーが発生しました";
+"store.error.verificationFailed" = "購入の検証に失敗しました";
+
 // =============================================================================
 // MARK: - Premium Screen
 // =============================================================================
@@ -229,6 +250,7 @@
 "premium.feature.themes.description" = "桜・海・森・夕焼け・夜 — 気分に合わせてアプリの雰囲気を変えられます";
 "premium.purchaseButton" = "プレミアムを購入 %@（買い切り）";
 "premium.oneTimePurchaseNote" = "一度のお支払いで永久にご利用いただけます";
+"premium.loadingProducts" = "商品を読み込み中...";
 
 // Accessibility
 "a11y.premium.purchaseLabel" = "プレミアムを購入、%@、一回のお支払い";
@@ -430,6 +452,10 @@
 "common.unit.cups" = "杯";
 "common.unit.percent" = "パーセント";
 "common.unknown" = "不明";
+"common.volumeFormat" = "%dml";
+"beverageSelect.defaultAmountFormat" = "%@（%dml）";
+"voicePack.exampleFormat" = "「%@」";
+"settings.language.system" = "システム設定に従う";
 
 // =============================================================================
 // MARK: - Accessibility: Recording

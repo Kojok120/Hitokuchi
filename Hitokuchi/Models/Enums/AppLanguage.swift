@@ -11,9 +11,10 @@ enum AppLanguage: String, CaseIterable, Codable, Sendable {
     case fr = "fr"
     case de = "de"
 
+    @MainActor
     var displayName: String {
         switch self {
-        case .system: return "システム設定に従う"
+        case .system: return L("settings.language.system")
         case .ja:     return "日本語"
         case .en:     return "English"
         case .ko:     return "한국어"

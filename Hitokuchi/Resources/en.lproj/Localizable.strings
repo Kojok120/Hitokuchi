@@ -214,6 +214,27 @@
 "a11y.voicePack.purchaseHint" = "Double-tap to purchase";
 "a11y.voicePack.exampleMessage" = "Example. %@";
 
+// Voice Pack Examples
+"voicePack.example.default.1" = "Good morning. A nice cup of sencha — great way to start the day";
+"voicePack.example.default.2" = "You've reached today's goal";
+"voicePack.example.default.3" = "How about a drink soon?";
+"voicePack.example.kansai.1" = "Mornin'! Sencha first thing, nice one! Let's take it easy today";
+"voicePack.example.kansai.2" = "Awesome! Goal cleared for today!";
+"voicePack.example.kansai.3" = "How 'bout a drink?";
+"voicePack.example.kyoto.1" = "Good morning. My, what a lovely cup of sencha to start with";
+"voicePack.example.kyoto.2" = "Today's goal has been gracefully achieved";
+"voicePack.example.kyoto.3" = "Perhaps a sip would be delightful?";
+
+// =============================================================================
+// MARK: - Store Errors
+// =============================================================================
+
+"store.error.title" = "Purchase Error";
+"store.error.userCancelled" = "Purchase was cancelled";
+"store.error.pending" = "Purchase is pending";
+"store.error.unknown" = "An unknown error occurred";
+"store.error.verificationFailed" = "Purchase verification failed";
+
 // =============================================================================
 // MARK: - Premium Screen
 // =============================================================================
@@ -229,6 +250,7 @@
 "premium.feature.themes.description" = "Cherry Blossom, Ocean, Forest, Sunset, Night — match the app's mood to yours";
 "premium.purchaseButton" = "Get Premium %@ (one-time)";
 "premium.oneTimePurchaseNote" = "Pay once, use forever";
+"premium.loadingProducts" = "Loading products...";
 
 // Accessibility
 "a11y.premium.purchaseLabel" = "Get Premium, %@, one-time purchase";
@@ -430,6 +452,10 @@
 "common.unit.cups" = "glasses";
 "common.unit.percent" = "percent";
 "common.unknown" = "Unknown";
+"common.volumeFormat" = "%dml";
+"beverageSelect.defaultAmountFormat" = "%@ (%dml)";
+"voicePack.exampleFormat" = "\"%@\"";
+"settings.language.system" = "Follow System Settings";
 
 // =============================================================================
 // MARK: - Accessibility: Recording

@@ -9,6 +9,8 @@ struct PremiumView: View {
     @Environment(\.dismiss) private var dismiss
 
     @State private var isPurchasing = false
+    @State private var purchaseError: StoreError?
+    @State private var showingError = false
 
     private var premiumProduct: Product? {
         storeManager.product(for: "hitokuchi.premium")
@@ -67,8 +69,11 @@ struct PremiumView: View {
                             do {
                                 _ = try await storeManager.purchase(product)
                                 dismiss()
+                            } catch let error as StoreError where error != .userCancelled {
+                                purchaseError = error
+                                showingError = true
                             } catch {
-                                // User cancelled or error
+                                // User cancelled
                             }
                             isPurchasing = false
                         }
@@ -93,15 +98,14 @@ struct PremiumView: View {
                     .accessibilityLabel(L("a11y.premium.purchaseLabel", product.displayPrice))
                     .accessibilityValue(L("a11y.premium.purchaseValue"))
                     .accessibilityHint(L("a11y.premium.purchaseHint"))
-                } else if storeManager.products.isEmpty {
-                    Text(L("premium.oneTimePurchaseNote"))
-                        .font(.callout)
-                        .foregroundStyle(Color.hitokuchi.textSecondary(for: theme, colorScheme: colorScheme))
-                        .multilineTextAlignment(.center)
-                        .padding()
                 } else {
-                    ProgressView()
-                        .padding()
+                    VStack(spacing: HitokuchiSpacing.s) {
+                        ProgressView()
+                        Text(L("premium.loadingProducts"))
+                            .font(.callout)
+                            .foregroundStyle(Color.hitokuchi.textSecondary(for: theme, colorScheme: colorScheme))
+                    }
+                    .padding()
                 }
 
                 Spacer().frame(height: HitokuchiSpacing.xs)
@@ -117,6 +121,16 @@ struct PremiumView: View {
         .background(Color.hitokuchi.bgPrimary(for: theme, colorScheme: colorScheme))
         .navigationTitle(L("premium.title"))
         .navigationBarTitleDisplayMode(.inline)
+        .task {
+            if storeManager.products.isEmpty {
+                await storeManager.loadProducts()
+            }
+        }
+        .alert(L("store.error.title"), isPresented: $showingError) {
+            Button(L("common.ok")) { purchaseError = nil }
+        } message: {
+            Text(purchaseError?.localizedMessage ?? "")
+        }
     }
 
     // MARK: - Feature Card

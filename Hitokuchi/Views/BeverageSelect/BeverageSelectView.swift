@@ -122,7 +122,7 @@ struct BeverageSelectView: View {
 
                         HStack(spacing: HitokuchiSpacing.xs) {
                             let defaultAmount = DrinkAmount.defaultAmount(for: beverage.category)
-                            Text("\(defaultAmount.displayName) (\(Int(defaultAmount.volumeML))ml)")
+                            Text(L("beverageSelect.defaultAmountFormat", defaultAmount.displayName, Int(defaultAmount.volumeML)))
                                 .font(.callout)
                                 .foregroundStyle(Color.hitokuchi.textSecondary(for: theme, colorScheme: colorScheme))
 
@@ -235,7 +235,7 @@ struct BeverageSelectView: View {
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)
 
-                Text("\(Int(amount.volumeML))ml")
+                Text(L("common.volumeFormat", Int(amount.volumeML)))
                     .font(.caption2)
                     .foregroundStyle(Color.hitokuchi.textSecondary(for: theme, colorScheme: colorScheme))
             }

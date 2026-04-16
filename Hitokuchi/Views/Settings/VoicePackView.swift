@@ -6,7 +6,9 @@ struct VoicePackView: View {
     @Environment(\.appTheme) private var theme
     @Environment(\.colorScheme) private var colorScheme
 
-    @State private var isPurchasing = false
+    @State private var purchasingTone: MessageTone?
+    @State private var purchaseError: StoreError?
+    @State private var showingError = false
 
     var body: some View {
         ScrollView {
@@ -27,6 +29,11 @@ struct VoicePackView: View {
         .background(Color.hitokuchi.bgPrimary(for: theme, colorScheme: colorScheme))
         .navigationTitle(L("voicePack.title"))
         .navigationBarTitleDisplayMode(.inline)
+        .alert(L("store.error.title"), isPresented: $showingError) {
+            Button(L("common.ok")) { purchaseError = nil }
+        } message: {
+            Text(purchaseError?.localizedMessage ?? "")
+        }
     }
 
     // MARK: - Voice Pack Card
@@ -79,7 +86,7 @@ struct VoicePackView: View {
                             .foregroundStyle(Color.hitokuchi.textTertiary(for: theme, colorScheme: colorScheme))
                             .frame(width: 20, alignment: .leading)
 
-                        Text("「\(message)」")
+                        Text(L("voicePack.exampleFormat", message))
                             .font(.callout)
                             .foregroundStyle(Color.hitokuchi.textSecondary(for: theme, colorScheme: colorScheme))
                     }
@@ -109,17 +116,20 @@ struct VoicePackView: View {
                     guard let productID = tone.productID,
                           let product = viewModel.storeManager.product(for: productID) else { return }
                     Task {
-                        isPurchasing = true
+                        purchasingTone = tone
                         do {
                             _ = try await viewModel.storeManager.purchase(product)
                             viewModel.messageTone = tone
+                        } catch let error as StoreError where error != .userCancelled {
+                            purchaseError = error
+                            showingError = true
                         } catch {
-                            // User cancelled or error
+                            // User cancelled
                         }
-                        isPurchasing = false
+                        purchasingTone = nil
                     }
                 } label: {
-                    if isPurchasing {
+                    if purchasingTone == tone {
                         ProgressView()
                             .tint(.white)
                             .frame(maxWidth: .infinity, minHeight: 44)
@@ -135,7 +145,7 @@ struct VoicePackView: View {
                             .clipShape(Capsule())
                     }
                 }
-                .disabled(isPurchasing)
+                .disabled(purchasingTone != nil)
                 .accessibilityLabel(L("a11y.voicePack.purchaseLabel", tone.displayName, viewModel.storeManager.product(for: tone.productID ?? "")?.displayPrice ?? ""))
                 .accessibilityHint(L("a11y.voicePack.purchaseHint"))
             }
@@ -165,21 +175,21 @@ struct VoicePackView: View {
         switch tone {
         case .default:
             return [
-                "おはようございます。朝の煎茶、いい一日の始まりですね",
-                "今日の目標、達成しました",
-                "そろそろ一杯いかがですか？"
+                L("voicePack.example.default.1"),
+                L("voicePack.example.default.2"),
+                L("voicePack.example.default.3")
             ]
         case .kansai:
             return [
-                "おはよう！朝イチの煎茶、ええやん。今日もぼちぼちいこか",
-                "やったやん！今日の目標クリアや",
-                "そろそろ一杯どうや？"
+                L("voicePack.example.kansai.1"),
+                L("voicePack.example.kansai.2"),
+                L("voicePack.example.kansai.3")
             ]
         case .kyoto:
             return [
-                "おはようさんどす。朝のお煎茶、ええお味どすなぁ",
-                "今日のお目標、達成しはりました",
-                "そろそろ一杯いかがどすか？"
+                L("voicePack.example.kyoto.1"),
+                L("voicePack.example.kyoto.2"),
+                L("voicePack.example.kyoto.3")
             ]
         }
     }

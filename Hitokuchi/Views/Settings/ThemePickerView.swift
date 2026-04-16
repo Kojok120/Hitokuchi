@@ -9,6 +9,8 @@ struct ThemePickerView: View {
     @State private var previewTheme: AppTheme?
     @State private var previewTimer: Task<Void, Never>?
     @State private var isPurchasing = false
+    @State private var purchaseError: StoreError?
+    @State private var showingError = false
 
     var body: some View {
         ScrollView {
@@ -31,6 +33,11 @@ struct ThemePickerView: View {
             }
         }
         .animation(.easeInOut(duration: 0.3), value: previewTheme)
+        .alert(L("store.error.title"), isPresented: $showingError) {
+            Button(L("common.ok")) { purchaseError = nil }
+        } message: {
+            Text(purchaseError?.localizedMessage ?? "")
+        }
     }
 
     // MARK: - Theme Card
@@ -124,8 +131,11 @@ struct ThemePickerView: View {
                                 _ = try await viewModel.storeManager.purchase(product)
                                 viewModel.selectedTheme = previewingTheme
                                 cancelPreview()
+                            } catch let error as StoreError where error != .userCancelled {
+                                purchaseError = error
+                                showingError = true
                             } catch {
-                                // User cancelled or error; preview continues
+                                // User cancelled
                             }
                             isPurchasing = false
                         }

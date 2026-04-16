@@ -43,7 +43,7 @@ struct GoalSettingView: View {
                 in: 500...5000,
                 step: 250
             ) {
-                Text("\(Int(viewModel.dailyGoalML))ml")
+                Text(L("common.volumeFormat", Int(viewModel.dailyGoalML)))
                     .font(.body)
                     .fontWeight(.medium)
                     .foregroundStyle(Color.hitokuchi.textPrimary(for: theme, colorScheme: colorScheme))

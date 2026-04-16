@@ -9,18 +9,19 @@ protocol StoreManaging {
     func restorePurchases() async throws
 }
 
-enum StoreError: Error, LocalizedError {
+enum StoreError: Error {
     case userCancelled
     case pending
     case unknown
     case verificationFailed
 
-    var errorDescription: String? {
+    @MainActor
+    var localizedMessage: String {
         switch self {
-        case .userCancelled: return "購入がキャンセルされました"
-        case .pending: return "購入が保留中です"
-        case .unknown: return "不明なエラーが発生しました"
-        case .verificationFailed: return "購入の検証に失敗しました"
+        case .userCancelled: return L("store.error.userCancelled")
+        case .pending: return L("store.error.pending")
+        case .unknown: return L("store.error.unknown")
+        case .verificationFailed: return L("store.error.verificationFailed")
         }
     }
 }

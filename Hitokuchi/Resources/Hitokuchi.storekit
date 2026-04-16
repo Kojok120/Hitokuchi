@@ -1,0 +1,171 @@
+{
+  "identifier" : "B8F2A3C1-4D5E-6F7A-8B9C-0D1E2F3A4B5C",
+  "type" : "local",
+  "version" : 3,
+  "products" : [
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : true,
+      "internalID" : "A0000001",
+      "localizations" : [
+        {
+          "description" : "Unlock all themes and premium features",
+          "displayName" : "Hitokuchi Premium",
+          "locale" : "en"
+        },
+        {
+          "description" : "すべてのテーマとプレミアム機能をアンロック",
+          "displayName" : "ひとくちプレミアム",
+          "locale" : "ja"
+        }
+      ],
+      "productID" : "hitokuchi.premium",
+      "referenceName" : "Premium",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : true,
+      "internalID" : "A0000002",
+      "localizations" : [
+        {
+          "description" : "Soft pink cherry blossom theme",
+          "displayName" : "Sakura Theme",
+          "locale" : "en"
+        },
+        {
+          "description" : "優しい桜色のテーマ",
+          "displayName" : "さくらテーマ",
+          "locale" : "ja"
+        }
+      ],
+      "productID" : "hitokuchi.theme.sakura",
+      "referenceName" : "Theme: Sakura",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : true,
+      "internalID" : "A0000003",
+      "localizations" : [
+        {
+          "description" : "Cool blue ocean theme",
+          "displayName" : "Ocean Theme",
+          "locale" : "en"
+        },
+        {
+          "description" : "涼やかな海のテーマ",
+          "displayName" : "海テーマ",
+          "locale" : "ja"
+        }
+      ],
+      "productID" : "hitokuchi.theme.ocean",
+      "referenceName" : "Theme: Ocean",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : true,
+      "internalID" : "A0000004",
+      "localizations" : [
+        {
+          "description" : "Calming green forest theme",
+          "displayName" : "Forest Theme",
+          "locale" : "en"
+        },
+        {
+          "description" : "穏やかな森のテーマ",
+          "displayName" : "森テーマ",
+          "locale" : "ja"
+        }
+      ],
+      "productID" : "hitokuchi.theme.forest",
+      "referenceName" : "Theme: Forest",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : true,
+      "internalID" : "A0000005",
+      "localizations" : [
+        {
+          "description" : "Warm sunset orange theme",
+          "displayName" : "Sunset Theme",
+          "locale" : "en"
+        },
+        {
+          "description" : "あたたかい夕焼けのテーマ",
+          "displayName" : "夕焼けテーマ",
+          "locale" : "ja"
+        }
+      ],
+      "productID" : "hitokuchi.theme.sunset",
+      "referenceName" : "Theme: Sunset",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : true,
+      "internalID" : "A0000006",
+      "localizations" : [
+        {
+          "description" : "Deep dark night theme",
+          "displayName" : "Night Theme",
+          "locale" : "en"
+        },
+        {
+          "description" : "落ち着いた夜のテーマ",
+          "displayName" : "夜テーマ",
+          "locale" : "ja"
+        }
+      ],
+      "productID" : "hitokuchi.theme.night",
+      "referenceName" : "Theme: Night",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : true,
+      "internalID" : "A0000007",
+      "localizations" : [
+        {
+          "description" : "Lively Kansai dialect voice pack",
+          "displayName" : "Kansai Voice Pack",
+          "locale" : "en"
+        },
+        {
+          "description" : "元気な関西弁ボイスパック",
+          "displayName" : "関西弁ボイスパック",
+          "locale" : "ja"
+        }
+      ],
+      "productID" : "hitokuchi.voice.kansai",
+      "referenceName" : "Voice: Kansai",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : true,
+      "internalID" : "A0000008",
+      "localizations" : [
+        {
+          "description" : "Elegant Kyoto dialect voice pack",
+          "displayName" : "Kyoto Voice Pack",
+          "locale" : "en"
+        },
+        {
+          "description" : "はんなり京都弁ボイスパック",
+          "displayName" : "京都弁ボイスパック",
+          "locale" : "ja"
+        }
+      ],
+      "productID" : "hitokuchi.voice.kyoto",
+      "referenceName" : "Voice: Kyoto",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6745230001",
+    "_developerTeamID" : "DEVELOPMENT_TEAM"
+  }
+}

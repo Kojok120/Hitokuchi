@@ -214,6 +214,27 @@
 "a11y.voicePack.purchaseHint" = "Toca dos veces para comprar";
 "a11y.voicePack.exampleMessage" = "Ejemplo. %@";
 
+// Voice Pack Examples
+"voicePack.example.default.1" = "Buenos días. Un sencha por la mañana, buen comienzo del día";
+"voicePack.example.default.2" = "Has alcanzado la meta de hoy";
+"voicePack.example.default.3" = "¿Qué tal un vaso pronto?";
+"voicePack.example.kansai.1" = "¡Buenos días! ¡Sencha de buena mañana, genial! Hoy también con calma";
+"voicePack.example.kansai.2" = "¡Genial! ¡Meta de hoy cumplida!";
+"voicePack.example.kansai.3" = "¿Un vaso, no?";
+"voicePack.example.kyoto.1" = "Buenos días. Qué agradable sencha matutino";
+"voicePack.example.kyoto.2" = "La meta de hoy se ha logrado con elegancia";
+"voicePack.example.kyoto.3" = "¿Le apetecería un sorbo?";
+
+// =============================================================================
+// MARK: - Store Errors
+// =============================================================================
+
+"store.error.title" = "Error de compra";
+"store.error.userCancelled" = "La compra fue cancelada";
+"store.error.pending" = "La compra está pendiente";
+"store.error.unknown" = "Ocurrió un error desconocido";
+"store.error.verificationFailed" = "La verificación de compra falló";
+
 // =============================================================================
 // MARK: - Premium Screen
 // =============================================================================
@@ -229,6 +250,7 @@
 "premium.feature.themes.description" = "Cerezo, Océano, Bosque, Atardecer, Noche — adapta el ambiente de la app a tu estado de ánimo";
 "premium.purchaseButton" = "Obtener Premium %@ (pago único)";
 "premium.oneTimePurchaseNote" = "Paga una vez, úsalo para siempre";
+"premium.loadingProducts" = "Cargando productos...";
 
 // Accessibility
 "a11y.premium.purchaseLabel" = "Obtener Premium, %@, pago único";
@@ -430,6 +452,10 @@
 "common.unit.cups" = "vasos";
 "common.unit.percent" = "por ciento";
 "common.unknown" = "Desconocido";
+"common.volumeFormat" = "%dml";
+"beverageSelect.defaultAmountFormat" = "%@ (%dml)";
+"voicePack.exampleFormat" = "«%@»";
+"settings.language.system" = "Seguir la configuración del sistema";
 
 // =============================================================================
 // MARK: - Accessibility: Recording

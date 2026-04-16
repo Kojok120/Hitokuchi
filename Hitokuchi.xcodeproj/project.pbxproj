@@ -148,6 +148,7 @@
 		F449447D0C971310EFF08DED /* HydrationCalculating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydrationCalculating.swift; sourceTree = "<group>"; };
 		F505FF14A5CF19ED91B21DA0 /* MessageEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageEngine.swift; sourceTree = "<group>"; };
 		F78062FC12E83D7A1B21FDD1 /* BeverageMaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageMaster.swift; sourceTree = "<group>"; };
+		STOREKIT0000000000000001 /* Hitokuchi.storekit */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Hitokuchi.storekit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,6 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				3A3091046CFD37D295A7343E /* Assets.xcassets */,
+				STOREKIT0000000000000001 /* Hitokuchi.storekit */,
 				A1B2C3D40000000000000100 /* Localizable.strings */,
 			);
 			path = Resources;

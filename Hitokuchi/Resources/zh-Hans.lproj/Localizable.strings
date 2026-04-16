@@ -214,6 +214,27 @@
 "a11y.voicePack.purchaseHint" = "双击购买";
 "a11y.voicePack.exampleMessage" = "示例。%@";
 
+// Voice Pack Examples
+"voicePack.example.default.1" = "早上好。一杯早茶，美好一天的开始";
+"voicePack.example.default.2" = "今天的目标达成了";
+"voicePack.example.default.3" = "差不多该喝一杯了吧？";
+"voicePack.example.kansai.1" = "早啊！一早来杯煎茶，不错嘛！今天也悠着来吧";
+"voicePack.example.kansai.2" = "太棒了！今天的目标完成啦！";
+"voicePack.example.kansai.3" = "来一杯咋样？";
+"voicePack.example.kyoto.1" = "早安。早晨的煎茶，味道真是好呢";
+"voicePack.example.kyoto.2" = "今天的目标，优雅地达成了呢";
+"voicePack.example.kyoto.3" = "要不来一杯如何？";
+
+// =============================================================================
+// MARK: - Store Errors
+// =============================================================================
+
+"store.error.title" = "购买错误";
+"store.error.userCancelled" = "购买已取消";
+"store.error.pending" = "购买正在处理中";
+"store.error.unknown" = "发生了未知错误";
+"store.error.verificationFailed" = "购买验证失败";
+
 // =============================================================================
 // MARK: - Premium Screen
 // =============================================================================
@@ -229,6 +250,7 @@
 "premium.feature.themes.description" = "樱花·海洋·森林·日落·夜晚 — 随心情切换应用氛围";
 "premium.purchaseButton" = "购买高级版 %@（买断制）";
 "premium.oneTimePurchaseNote" = "一次付款，永久使用";
+"premium.loadingProducts" = "正在加载商品...";
 
 // Accessibility
 "a11y.premium.purchaseLabel" = "购买高级版，%@，一次性付款";
@@ -430,6 +452,10 @@
 "common.unit.cups" = "杯";
 "common.unit.percent" = "百分比";
 "common.unknown" = "未知";
+"common.volumeFormat" = "%dml";
+"beverageSelect.defaultAmountFormat" = "%@（%dml）";
+"voicePack.exampleFormat" = "\U201C%@\U201D";
+"settings.language.system" = "跟随系统设置";
 
 // =============================================================================
 // MARK: - Accessibility: Recording

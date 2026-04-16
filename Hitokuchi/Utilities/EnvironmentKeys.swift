@@ -44,5 +44,7 @@ enum HitokuchiLayout {
     static let minTouchTarget: CGFloat = 48
     static let quickRecordSize: CGFloat = 104
     static let quickRecordHeight: CGFloat = 100
+    static let quickRecordGridHeight: CGFloat = 88
+    static let maxFavoriteCount: Int = 9
     static let progressBarHeight: CGFloat = 8
 }

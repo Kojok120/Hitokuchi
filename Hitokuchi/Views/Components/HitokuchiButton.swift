@@ -98,7 +98,7 @@ struct QuickRecordButton: View {
                     .foregroundStyle(Color.hitokuchi.textSecondary(for: theme, colorScheme: colorScheme))
                     .lineLimit(1)
             }
-            .frame(width: HitokuchiLayout.quickRecordSize, height: HitokuchiLayout.quickRecordHeight)
+            .frame(maxWidth: .infinity, minHeight: HitokuchiLayout.quickRecordGridHeight)
             .background(
                 isRecorded
                     ? Color.hitokuchi.accentSuccess(for: theme, colorScheme: colorScheme).opacity(0.1)

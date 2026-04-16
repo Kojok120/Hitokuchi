@@ -20,6 +20,15 @@
 
 "home.section.favorites" = "いつもの";
 "home.button.otherBeverages" = "ほかの飲みもの";
+"home.favorites.empty" = "お気に入りを追加";
+"a11y.home.addFavorite" = "お気に入りの飲み物を追加する";
+"a11y.home.addFavorite.hint" = "ダブルタップでお気に入り編集画面を開きます";
+
+// Share
+"history.share.button" = "シェア";
+"history.share.preview.title" = "今日の水分記録";
+"history.share.action" = "シェアする";
+"a11y.history.share.hint" = "ダブルタップで今日の記録をシェアします";
 
 // Accessibility
 "a11y.home.otherBeverages.hint" = "ダブルタップで飲料選択画面を開きます";

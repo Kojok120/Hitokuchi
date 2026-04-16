@@ -12,6 +12,8 @@ struct ThemePickerView: View {
     @State private var purchaseError: StoreError?
     @State private var showingError = false
 
+    private var activeTheme: AppTheme { previewTheme ?? theme }
+
     var body: some View {
         ScrollView {
             VStack(spacing: HitokuchiSpacing.s) {
@@ -23,7 +25,7 @@ struct ThemePickerView: View {
             .padding(.top, HitokuchiSpacing.l)
             .padding(.bottom, HitokuchiSpacing.xl)
         }
-        .background(Color.hitokuchi.bgPrimary(for: theme, colorScheme: colorScheme))
+        .background(Color.hitokuchi.bgPrimary(for: activeTheme, colorScheme: colorScheme))
         .navigationTitle(L("themePicker.title"))
         .navigationBarTitleDisplayMode(.inline)
         .overlay(alignment: .bottom) {
@@ -64,24 +66,24 @@ struct ThemePickerView: View {
                 VStack(alignment: .leading, spacing: HitokuchiSpacing.xxxs) {
                     Text(appTheme.displayName)
                         .font(.headline)
-                        .foregroundStyle(Color.hitokuchi.textPrimary(for: theme, colorScheme: colorScheme))
+                        .foregroundStyle(Color.hitokuchi.textPrimary(for: activeTheme, colorScheme: colorScheme))
 
                     Text(appTheme.themeDescription)
                         .font(.callout)
-                        .foregroundStyle(Color.hitokuchi.textSecondary(for: theme, colorScheme: colorScheme))
+                        .foregroundStyle(Color.hitokuchi.textSecondary(for: activeTheme, colorScheme: colorScheme))
                 }
 
                 Spacer()
 
                 if isCurrent {
                     Image(systemName: "checkmark.circle.fill")
-                        .foregroundStyle(Color.hitokuchi.accentSuccess(for: theme, colorScheme: colorScheme))
+                        .foregroundStyle(Color.hitokuchi.accentSuccess(for: activeTheme, colorScheme: colorScheme))
                 } else if !isUnlocked {
                     if let product = viewModel.storeManager.product(for: appTheme.productID ?? "") {
                         Text(product.displayPrice)
                             .font(.callout)
                             .fontWeight(.medium)
-                            .foregroundStyle(Color.hitokuchi.accentPrimary(for: theme, colorScheme: colorScheme))
+                            .foregroundStyle(Color.hitokuchi.accentPrimary(for: activeTheme, colorScheme: colorScheme))
                     } else {
                         ProgressView()
                     }
@@ -91,16 +93,16 @@ struct ThemePickerView: View {
             .frame(minHeight: 80)
             .background(
                 isCurrent
-                    ? Color.hitokuchi.accentPrimary(for: theme, colorScheme: colorScheme).opacity(0.06)
-                    : Color.hitokuchi.bgSecondary(for: theme, colorScheme: colorScheme)
+                    ? Color.hitokuchi.accentPrimary(for: activeTheme, colorScheme: colorScheme).opacity(0.06)
+                    : Color.hitokuchi.bgSecondary(for: activeTheme, colorScheme: colorScheme)
             )
             .clipShape(RoundedRectangle(cornerRadius: HitokuchiRadius.m))
             .overlay(
                 RoundedRectangle(cornerRadius: HitokuchiRadius.m)
                     .stroke(
                         isCurrent
-                            ? Color.hitokuchi.accentPrimary(for: theme, colorScheme: colorScheme)
-                            : Color.hitokuchi.borderDefault(for: theme, colorScheme: colorScheme),
+                            ? Color.hitokuchi.accentPrimary(for: activeTheme, colorScheme: colorScheme)
+                            : Color.hitokuchi.borderDefault(for: activeTheme, colorScheme: colorScheme),
                         lineWidth: isCurrent ? 1.5 : 1
                     )
             )
@@ -120,7 +122,7 @@ struct ThemePickerView: View {
         VStack(spacing: HitokuchiSpacing.xs) {
             Text(L("themePicker.previewMessage", previewingTheme.displayName))
                 .font(.callout)
-                .foregroundStyle(Color.hitokuchi.textPrimary(for: theme, colorScheme: colorScheme))
+                .foregroundStyle(Color.hitokuchi.textPrimary(for: activeTheme, colorScheme: colorScheme))
 
             HStack(spacing: HitokuchiSpacing.s) {
                 if let product = viewModel.storeManager.product(for: previewingTheme.productID ?? "") {
@@ -146,7 +148,7 @@ struct ThemePickerView: View {
                             .foregroundStyle(.white)
                             .padding(.horizontal, HitokuchiSpacing.m)
                             .padding(.vertical, HitokuchiSpacing.xs)
-                            .background(Color.hitokuchi.fillButton(for: theme, colorScheme: colorScheme))
+                            .background(Color.hitokuchi.fillButton(for: activeTheme, colorScheme: colorScheme))
                             .clipShape(Capsule())
                     }
                     .disabled(isPurchasing)
@@ -160,7 +162,7 @@ struct ThemePickerView: View {
                     Text(L("themePicker.backButton"))
                         .font(.callout)
                         .fontWeight(.medium)
-                        .foregroundStyle(Color.hitokuchi.textSecondary(for: theme, colorScheme: colorScheme))
+                        .foregroundStyle(Color.hitokuchi.textSecondary(for: activeTheme, colorScheme: colorScheme))
                         .padding(.horizontal, HitokuchiSpacing.m)
                         .padding(.vertical, HitokuchiSpacing.xs)
                 }
@@ -169,7 +171,7 @@ struct ThemePickerView: View {
         }
         .padding(HitokuchiSpacing.m)
         .background(
-            Color.hitokuchi.bgSecondary(for: theme, colorScheme: colorScheme)
+            Color.hitokuchi.bgSecondary(for: activeTheme, colorScheme: colorScheme)
                 .shadow(radius: 8, y: -2)
         )
         .accessibilityElement(children: .contain)

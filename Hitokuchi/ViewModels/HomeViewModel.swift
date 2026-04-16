@@ -54,6 +54,11 @@ final class HomeViewModel {
             favoriteBeverages = Array(allBeverages.prefix(3))
         }
 
+        // Cap at max favorites
+        if favoriteBeverages.count > HitokuchiLayout.maxFavoriteCount {
+            favoriteBeverages = Array(favoriteBeverages.prefix(HitokuchiLayout.maxFavoriteCount))
+        }
+
         // Generate greeting message
         let tone = settings.messageTone
         let streakDays = calculateStreak(context: context)

@@ -54,8 +54,35 @@ struct HomeView: View {
                     }
                     .padding(.horizontal, HitokuchiLayout.pageMargin)
 
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: HitokuchiSpacing.s) {
+                    if viewModel.favoriteBeverages.isEmpty {
+                        // Empty state
+                        NavigationLink {
+                            FavoriteEditView()
+                        } label: {
+                            HStack(spacing: HitokuchiSpacing.xs) {
+                                Image(systemName: "plus.circle")
+                                    .font(.title3)
+                                Text(L("home.favorites.empty"))
+                                    .font(.callout)
+                            }
+                            .foregroundStyle(Color.hitokuchi.textTertiary(for: theme, colorScheme: colorScheme))
+                            .frame(maxWidth: .infinity, minHeight: HitokuchiLayout.quickRecordGridHeight)
+                            .background(Color.hitokuchi.bgSecondary(for: theme, colorScheme: colorScheme))
+                            .clipShape(RoundedRectangle(cornerRadius: HitokuchiRadius.m))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: HitokuchiRadius.m)
+                                    .strokeBorder(style: StrokeStyle(lineWidth: 1, dash: [6, 3]))
+                                    .foregroundStyle(Color.hitokuchi.borderDefault(for: theme, colorScheme: colorScheme))
+                            )
+                        }
+                        .padding(.horizontal, HitokuchiLayout.pageMargin)
+                        .accessibilityLabel(L("a11y.home.addFavorite"))
+                        .accessibilityHint(L("a11y.home.addFavorite.hint"))
+                    } else {
+                        LazyVGrid(
+                            columns: Array(repeating: GridItem(.flexible(), spacing: HitokuchiSpacing.s), count: 3),
+                            spacing: HitokuchiSpacing.s
+                        ) {
                             ForEach(viewModel.favoriteBeverages, id: \.id) { beverage in
                                 QuickRecordButton(
                                     beverage: beverage,

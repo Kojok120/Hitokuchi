@@ -48,8 +48,8 @@ final class StoreManagerService {
 
     func loadProducts() async {
         do {
-            products = try await Product.products(for: Self.allProductIDs)
-                .sorted { $0.price < $1.price }
+            let loaded = try await Product.products(for: Self.allProductIDs)
+            products = loaded.sorted { $0.price < $1.price }
         } catch {
             products = []
         }

@@ -10,6 +10,7 @@ final class OnboardingViewModel {
     var selectedCount: Int { selectedBeverageIDs.count }
     var canProceed: Bool { selectedCount >= 3 }
     var remainingCount: Int { max(0, 3 - selectedCount) }
+    var isAtMax: Bool { selectedCount >= HitokuchiLayout.maxFavoriteCount }
 
     func loadBeverages(context: ModelContext) {
         let descriptor = FetchDescriptor<BeverageMaster>(
@@ -21,10 +22,10 @@ final class OnboardingViewModel {
     func toggleBeverage(_ id: UUID) {
         if selectedBeverageIDs.contains(id) {
             selectedBeverageIDs.remove(id)
-        } else if selectedCount < 5 {
+        } else if selectedCount < HitokuchiLayout.maxFavoriteCount {
             selectedBeverageIDs.insert(id)
         }
-        // If already 5 selected, don't add (haptic warning handled in View)
+        // If already at max, don't add (haptic warning handled in View)
     }
 
     func complete(context: ModelContext) {

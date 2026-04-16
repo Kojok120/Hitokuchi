@@ -6,6 +6,7 @@ struct HistoryView: View {
     @Environment(\.appTheme) private var theme
     @Environment(\.colorScheme) private var colorScheme
     @State private var viewModel = HistoryViewModel()
+    @State private var showShareSheet = false
 
     var body: some View {
         ScrollView {
@@ -33,12 +34,89 @@ struct HistoryView: View {
         .onAppear {
             viewModel.loadData(context: modelContext)
         }
+        .sheet(isPresented: $showShareSheet) {
+            sharePreviewSheet
+        }
+    }
+
+    // MARK: - Share Preview Sheet
+
+    private var sharePreviewSheet: some View {
+        let colors = Color.hitokuchi.themeColors(theme, colorScheme)
+        let streakDays = viewModel.streakDays
+
+        return VStack(spacing: HitokuchiSpacing.l) {
+            Text(L("history.share.preview.title"))
+                .font(.headline)
+                .foregroundStyle(Color.hitokuchi.textPrimary(for: theme, colorScheme: colorScheme))
+                .padding(.top, HitokuchiSpacing.l)
+
+            ShareCardView(
+                progress: viewModel.todayProgress,
+                streakDays: streakDays,
+                date: .now,
+                colors: colors
+            )
+            .frame(width: 270, height: 270)
+
+            if let shareImage = generateShareImage(colors: colors, streakDays: streakDays) {
+                ShareLink(
+                    item: Image(uiImage: shareImage),
+                    preview: SharePreview(L("history.share.preview.title"), image: Image(uiImage: shareImage))
+                ) {
+                    HStack(spacing: HitokuchiSpacing.xs) {
+                        Image(systemName: "square.and.arrow.up")
+                        Text(L("history.share.action"))
+                    }
+                    .font(.headline)
+                    .foregroundStyle(.white)
+                    .frame(maxWidth: .infinity, minHeight: 48)
+                    .background(Color.hitokuchi.fillButton(for: theme, colorScheme: colorScheme))
+                    .clipShape(Capsule())
+                }
+                .padding(.horizontal, HitokuchiLayout.pageMargin)
+            }
+
+            Spacer()
+        }
+        .presentationDetents([.medium])
+        .background(Color.hitokuchi.bgPrimary(for: theme, colorScheme: colorScheme))
+    }
+
+    private func generateShareImage(colors: ThemeColorSet, streakDays: Int) -> UIImage? {
+        let renderer = ImageRenderer(
+            content: ShareCardView(
+                progress: viewModel.todayProgress,
+                streakDays: streakDays,
+                date: .now,
+                colors: colors
+            )
+        )
+        renderer.scale = 2.0
+        return renderer.uiImage
     }
 
     // MARK: - Today
 
     private var todayView: some View {
         VStack(spacing: HitokuchiSpacing.l) {
+            // Share button
+            HStack {
+                Spacer()
+                Button {
+                    showShareSheet = true
+                } label: {
+                    Image(systemName: "square.and.arrow.up")
+                        .font(.body)
+                        .foregroundStyle(Color.hitokuchi.accentPrimary(for: theme, colorScheme: colorScheme))
+                        .frame(width: 44, height: 44)
+                }
+                .accessibilityLabel(L("history.share.button"))
+                .accessibilityHint(L("a11y.history.share.hint"))
+            }
+            .padding(.horizontal, HitokuchiLayout.pageMargin)
+            .padding(.top, -HitokuchiSpacing.s)
+
             // Summary message
             MessageBubble(
                 message: viewModel.todayMessage,

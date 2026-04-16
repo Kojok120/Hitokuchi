@@ -493,3 +493,20 @@
 
 "history.beverageCount" = "%@ x%d";
 "history.beverageSeparator" = ", ";
+
+// =============================================================================
+// MARK: - Favorites Grid
+// =============================================================================
+
+"home.favorites.empty" = "Agregar favoritos";
+"a11y.home.addFavorite" = "Agregar bebidas favoritas";
+"a11y.home.addFavorite.hint" = "Toca dos veces para abrir el editor de favoritos";
+
+// =============================================================================
+// MARK: - Share
+// =============================================================================
+
+"history.share.button" = "Compartir";
+"history.share.preview.title" = "Hidratación de hoy";
+"history.share.action" = "Compartir";
+"a11y.history.share.hint" = "Toca dos veces para compartir el registro de hoy";

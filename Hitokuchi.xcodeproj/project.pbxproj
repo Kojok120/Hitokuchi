@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A1B2C3D40000000000000200 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D40000000000000100 /* Localizable.strings */; };
 		0904CD554296268B8744E604 /* HydrationCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9454EA45E9E39927620A5137 /* HydrationCalculatorTests.swift */; };
 		0AAB7DEAB5231905F00E5A7A /* MessageContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0364280DCAA2027CDC8F2634 /* MessageContext.swift */; };
 		0ABEB8E190B94F1C72B34C1F /* BeverageSelectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56B0A75A6C33DFEBAF2BB6 /* BeverageSelectViewModel.swift */; };
@@ -38,7 +37,6 @@
 		648F2019A19ADAB4B11B02F4 /* DrinkAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B678E2A3B39AB08F6939E49 /* DrinkAmount.swift */; };
 		6F5FF136CCE05C71FE6060D5 /* DrinkLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365DFCAAFED07B16553D4D6C /* DrinkLog.swift */; };
 		76BA757E6CEEE2BECB696848 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA7EB426062690C7EBE2837 /* MessageBubble.swift */; };
-		UNDO0001000000000000000A /* UndoSnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = UNDO0001000000000000000B /* UndoSnackBar.swift */; };
 		789747303A2FC7070C4A6183 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FA93DF0422F601B16746C9 /* OnboardingViewModel.swift */; };
 		7A657BCE5F65211FCAB62CD1 /* StoreManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4189C9F1977FD33793780B /* StoreManaging.swift */; };
 		7C7580485BF04B6E8BDF053E /* MessageEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505FF14A5CF19ED91B21DA0 /* MessageEngine.swift */; };
@@ -49,6 +47,7 @@
 		995DC203D060DBED018FC78C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51C6BF9ACCFEC8A2B9E5C2E /* HomeViewModel.swift */; };
 		9D1BBBC7C7F7332CA485FD30 /* ThemePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9790CEC151DABE0485FB3127 /* ThemePickerView.swift */; };
 		9EDAAD31BCEB739372299FC7 /* ProgressStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6B9240138B83BE2895A391 /* ProgressStage.swift */; };
+		A1B2C3D40000000000000200 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D40000000000000100 /* Localizable.strings */; };
 		A30FFE4EE336644DBBB30493 /* BeverageSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211A8DF08B41667EB657071F /* BeverageSelectView.swift */; };
 		AA39D5EABDD30B95B2C860C1 /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FE18507510428133801231 /* ProgressIndicator.swift */; };
 		ACD30306ED6A43C6BD6049AF /* ReminderScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E91DA48DF369F670837445 /* ReminderScheduler.swift */; };
@@ -67,6 +66,8 @@
 		E982655EA6EC72E282A0E259 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE30CD7814FE30DE58B1330B /* StoreKit.framework */; };
 		F39D658826183334D60D4612 /* HitokuchiButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D986F7144BFA72D473EF9AB /* HitokuchiButton.swift */; };
 		F948760CB93EE7A71A68AA02 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4C9981F3BD345E4A5A9A76C5 /* PrivacyInfo.xcprivacy */; };
+		SHARE001000000000000000A /* ShareCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SHARE001000000000000000B /* ShareCardView.swift */; };
+		UNDO0001000000000000000A /* UndoSnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = UNDO0001000000000000000B /* UndoSnackBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		3C41B13D654AE2B4214F641E /* HitokuchiCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitokuchiCard.swift; sourceTree = "<group>"; };
 		3C6B9240138B83BE2895A391 /* ProgressStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressStage.swift; sourceTree = "<group>"; };
 		41BA24F9823A52FC9FD19EFE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		48BBA1202F911D4F0054D838 /* Test.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Test.storekit; sourceTree = "<group>"; };
 		4C9981F3BD345E4A5A9A76C5 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		4ECBA62A43539998D1410DEB /* FavoriteSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteSelectView.swift; sourceTree = "<group>"; };
 		566BD5B584CDFD9E9D70B7AF /* BeverageCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageCategory.swift; sourceTree = "<group>"; };
@@ -138,7 +140,6 @@
 		C7C2E75562D8ED1984C83E7D /* MessageEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageEngineTests.swift; sourceTree = "<group>"; };
 		C9F87FD02A0EE155E0620760 /* BeverageSeedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageSeedData.swift; sourceTree = "<group>"; };
 		CAA7EB426062690C7EBE2837 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
-		UNDO0001000000000000000B /* UndoSnackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoSnackBar.swift; sourceTree = "<group>"; };
 		CBFC10D1432F9241378017E3 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		CF99E5858ED8427A2BDDA911 /* MessageGenerating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageGenerating.swift; sourceTree = "<group>"; };
 		D1205CC7EB0B78F6C51DF5DA /* MessageTemplates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTemplates.swift; sourceTree = "<group>"; };
@@ -151,6 +152,8 @@
 		F505FF14A5CF19ED91B21DA0 /* MessageEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageEngine.swift; sourceTree = "<group>"; };
 		F78062FC12E83D7A1B21FDD1 /* BeverageMaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageMaster.swift; sourceTree = "<group>"; };
 		STOREKIT0000000000000001 /* Hitokuchi.storekit */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Hitokuchi.storekit; sourceTree = "<group>"; };
+		SHARE001000000000000000B /* ShareCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCardView.swift; sourceTree = "<group>"; };
+		UNDO0001000000000000000B /* UndoSnackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoSnackBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,6 +315,7 @@
 		BBA686363D9306AA77BB9CD0 = {
 			isa = PBXGroup;
 			children = (
+				48BBA1202F911D4F0054D838 /* Test.storekit */,
 				EDE71A266C3971826F65BD2C /* Hitokuchi */,
 				6C1CD987E1B0E2A7BF8E2256 /* HitokuchiTests */,
 				D678CA60AD131F8F1371340C /* Frameworks */,
@@ -384,6 +388,7 @@
 				3C41B13D654AE2B4214F641E /* HitokuchiCard.swift */,
 				CAA7EB426062690C7EBE2837 /* MessageBubble.swift */,
 				00FE18507510428133801231 /* ProgressIndicator.swift */,
+				SHARE001000000000000000B /* ShareCardView.swift */,
 				UNDO0001000000000000000B /* UndoSnackBar.swift */,
 			);
 			path = Components;
@@ -524,6 +529,7 @@
 				9954F5BB1AA4487A86A399A6 /* HydrationCalculator.swift in Sources */,
 				BB97310CCCFA7ECB34672C8E /* MainTabView.swift in Sources */,
 				76BA757E6CEEE2BECB696848 /* MessageBubble.swift in Sources */,
+				SHARE001000000000000000A /* ShareCardView.swift in Sources */,
 				UNDO0001000000000000000A /* UndoSnackBar.swift in Sources */,
 				0AAB7DEAB5231905F00E5A7A /* MessageContext.swift in Sources */,
 				7C7580485BF04B6E8BDF053E /* MessageEngine.swift in Sources */,

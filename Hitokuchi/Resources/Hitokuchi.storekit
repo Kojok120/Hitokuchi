@@ -1,7 +1,18 @@
 {
-  "identifier" : "B8F2A3C1-4D5E-6F7A-8B9C-0D1E2F3A4B5C",
-  "type" : "local",
-  "version" : 3,
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "B8F2A3C1",
+  "nonRenewingSubscriptions" : [
+
+  ],
   "products" : [
     {
       "displayPrice" : "4.99",
@@ -11,7 +22,7 @@
         {
           "description" : "Unlock all themes and premium features",
           "displayName" : "Hitokuchi Premium",
-          "locale" : "en"
+          "locale" : "en_US"
         },
         {
           "description" : "すべてのテーマとプレミアム機能をアンロック",
@@ -31,7 +42,7 @@
         {
           "description" : "Soft pink cherry blossom theme",
           "displayName" : "Sakura Theme",
-          "locale" : "en"
+          "locale" : "en_US"
         },
         {
           "description" : "優しい桜色のテーマ",
@@ -51,7 +62,7 @@
         {
           "description" : "Cool blue ocean theme",
           "displayName" : "Ocean Theme",
-          "locale" : "en"
+          "locale" : "en_US"
         },
         {
           "description" : "涼やかな海のテーマ",
@@ -71,7 +82,7 @@
         {
           "description" : "Calming green forest theme",
           "displayName" : "Forest Theme",
-          "locale" : "en"
+          "locale" : "en_US"
         },
         {
           "description" : "穏やかな森のテーマ",
@@ -91,7 +102,7 @@
         {
           "description" : "Warm sunset orange theme",
           "displayName" : "Sunset Theme",
-          "locale" : "en"
+          "locale" : "en_US"
         },
         {
           "description" : "あたたかい夕焼けのテーマ",
@@ -111,7 +122,7 @@
         {
           "description" : "Deep dark night theme",
           "displayName" : "Night Theme",
-          "locale" : "en"
+          "locale" : "en_US"
         },
         {
           "description" : "落ち着いた夜のテーマ",
@@ -131,7 +142,7 @@
         {
           "description" : "Lively Kansai dialect voice pack",
           "displayName" : "Kansai Voice Pack",
-          "locale" : "en"
+          "locale" : "en_US"
         },
         {
           "description" : "元気な関西弁ボイスパック",
@@ -151,7 +162,7 @@
         {
           "description" : "Elegant Kyoto dialect voice pack",
           "displayName" : "Kyoto Voice Pack",
-          "locale" : "en"
+          "locale" : "en_US"
         },
         {
           "description" : "はんなり京都弁ボイスパック",
@@ -165,7 +176,24 @@
     }
   ],
   "settings" : {
-    "_applicationInternalID" : "6745230001",
-    "_developerTeamID" : "DEVELOPMENT_TEAM"
+    "_askToBuyEnabled" : false,
+    "_billingGracePeriodEnabled" : false,
+    "_billingIssuesEnabled" : false,
+    "_disableDialogs" : false,
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_renewalBillingIssuesEnabled" : false,
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+
+    ],
+    "_timeRate" : 0
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 5,
+    "minor" : 0
   }
 }

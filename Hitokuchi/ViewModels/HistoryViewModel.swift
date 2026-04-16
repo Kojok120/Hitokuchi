@@ -10,6 +10,7 @@ final class HistoryViewModel {
     var todayProgress: HydrationProgress = HydrationProgress(totalML: 0, goalML: 2000, logCount: 0)
     var weeklyMessage: String = ""
     var weekDays: [WeekDayData] = []
+    var streakDays: Int = 0
 
     private let messageEngine: any MessageGenerating
     private let hydrationCalculator: any HydrationCalculating
@@ -65,6 +66,33 @@ final class HistoryViewModel {
     func loadData(context: ModelContext) {
         loadToday(context: context)
         loadWeek(context: context)
+        streakDays = calculateStreak(context: context)
+    }
+
+    private func calculateStreak(context: ModelContext) -> Int {
+        var streak = 0
+        let today = Calendar.current.startOfDay(for: .now)
+        let settingsDescriptor = FetchDescriptor<UserSettings>()
+        let goalML = (try? context.fetch(settingsDescriptor))?.first?.dailyGoalML ?? 2000.0
+
+        for dayOffset in 0..<365 {
+            let dayStart = Calendar.current.date(byAdding: .day, value: -dayOffset, to: today)!
+            let dayEnd = Calendar.current.date(byAdding: .day, value: 1, to: dayStart)!
+            let predicate = #Predicate<DrinkLog> {
+                $0.recordedAt >= dayStart && $0.recordedAt < dayEnd
+            }
+            let descriptor = FetchDescriptor<DrinkLog>(predicate: predicate)
+            let logs = (try? context.fetch(descriptor)) ?? []
+            let total = logs.reduce(0) { $0 + $1.effectiveWaterML }
+            if total >= goalML {
+                streak += 1
+            } else if dayOffset > 0 {
+                break
+            } else {
+                break
+            }
+        }
+        return streak
     }
 
     private func loadToday(context: ModelContext) {

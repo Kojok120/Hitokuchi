@@ -130,10 +130,8 @@ struct HistoryView: View {
                         .foregroundStyle(Color.hitokuchi.textSecondary(for: theme, colorScheme: colorScheme))
                         .padding(.horizontal, HitokuchiLayout.pageMargin)
 
-                    LazyVStack(spacing: HitokuchiSpacing.xxs) {
-                        ForEach(viewModel.todayLogs, id: \.id) { log in
-                            logRow(log)
-                        }
+                    ForEach(viewModel.todayLogs, id: \.id) { log in
+                        logRow(log)
                     }
                 }
             }

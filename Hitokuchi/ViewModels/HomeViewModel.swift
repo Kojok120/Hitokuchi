@@ -141,7 +141,7 @@ final class HomeViewModel {
         isRecording = false
 
         // Clear the recording indicator after a delay
-        try? await Task.sleep(for: .milliseconds(500))
+        try? await Task.sleep(for: .milliseconds(1500))
         lastRecordedBeverageID = nil
     }
 

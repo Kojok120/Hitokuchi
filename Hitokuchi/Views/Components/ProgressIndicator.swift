@@ -11,13 +11,26 @@ struct ProgressIndicator: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: HitokuchiSpacing.xs) {
-            // Progress text
-            Text(stage.displayText)
-                .font(.title2)
-                .fontWeight(.medium)
-                .foregroundStyle(stageColor)
-                .lineLimit(1)
-                .minimumScaleFactor(0.8)
+            // Progress text + ml display
+            HStack(alignment: .lastTextBaseline) {
+                Text(stage.displayText)
+                    .font(.title2)
+                    .fontWeight(.medium)
+                    .foregroundStyle(stageColor)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.8)
+
+                Spacer()
+
+                Text(L("common.volumeFormat", Int(currentML)))
+                    .font(.callout)
+                    .fontWeight(.medium)
+                    .foregroundStyle(stageColor)
+                +
+                Text(" / \(Int(goalML)) ml")
+                    .font(.callout)
+                    .foregroundStyle(Color.hitokuchi.textTertiary(for: theme, colorScheme: colorScheme))
+            }
 
             // Progress bar
             GeometryReader { geometry in

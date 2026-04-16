@@ -105,23 +105,6 @@ struct HomeView: View {
 
                 Spacer().frame(height: HitokuchiSpacing.l)
 
-                // Undo Snack Bar
-                if viewModel.showUndo, let target = viewModel.undoTarget {
-                    UndoSnackBar(
-                        beverageName: target.beverage?.localizedName ?? "",
-                        secondsRemaining: viewModel.undoSecondsRemaining
-                    ) {
-                        viewModel.undoLastRecord(context: modelContext)
-                    }
-                    .transition(.asymmetric(
-                        insertion: .move(edge: .bottom).combined(with: .opacity),
-                        removal: .opacity
-                    ))
-                    .animation(reduceMotion ? .none : .easeInOut(duration: 0.25), value: viewModel.showUndo)
-
-                    Spacer().frame(height: HitokuchiSpacing.s)
-                }
-
                 // "Other Beverages" Button
                 NavigationLink {
                     BeverageSelectView(
@@ -150,6 +133,22 @@ struct HomeView: View {
             }
         }
         .background(Color.hitokuchi.bgPrimary(for: theme, colorScheme: colorScheme))
+        .overlay(alignment: .bottom) {
+            if viewModel.showUndo, let target = viewModel.undoTarget {
+                UndoSnackBar(
+                    beverageName: target.beverage?.localizedName ?? "",
+                    secondsRemaining: viewModel.undoSecondsRemaining
+                ) {
+                    viewModel.undoLastRecord(context: modelContext)
+                }
+                .padding(.bottom, HitokuchiSpacing.m)
+                .transition(.asymmetric(
+                    insertion: .move(edge: .bottom).combined(with: .opacity),
+                    removal: .opacity
+                ))
+                .animation(reduceMotion ? .none : .easeInOut(duration: 0.25), value: viewModel.showUndo)
+            }
+        }
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {
             viewModel.loadData(context: modelContext)

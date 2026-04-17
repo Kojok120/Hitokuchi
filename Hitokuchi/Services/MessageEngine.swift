@@ -4,6 +4,8 @@ import Foundation
 @MainActor
 final class MessageEngine: MessageGenerating {
 
+    static let shared = MessageEngine()
+
     private var lastMessageHash: Int = 0
 
     private var isJapanese: Bool {

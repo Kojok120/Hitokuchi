@@ -12,6 +12,7 @@ final class LocalizationManager {
     }
 
     private(set) var bundle: Bundle = .main
+    private var cache: [String: String] = [:]
 
     /// 現在の言語に対応するLocale
     var locale: Locale {
@@ -33,6 +34,7 @@ final class LocalizationManager {
     }
 
     private func updateBundle() {
+        cache.removeAll()
         guard let code = currentLanguage.languageCode else {
             bundle = .main
             return
@@ -47,11 +49,14 @@ final class LocalizationManager {
     }
 
     func localizedString(for key: String) -> String {
-        bundle.localizedString(forKey: key, value: nil, table: nil)
+        if let cached = cache[key] { return cached }
+        let value = bundle.localizedString(forKey: key, value: nil, table: nil)
+        cache[key] = value
+        return value
     }
 
     func localizedString(for key: String, _ args: CVarArg...) -> String {
-        let format = bundle.localizedString(forKey: key, value: nil, table: nil)
+        let format = localizedString(for: key)
         return String(format: format, arguments: args)
     }
 }
@@ -65,6 +70,6 @@ func L(_ key: String) -> String {
 /// フォーマット引数付きヘルパー
 @MainActor
 func L(_ key: String, _ args: CVarArg...) -> String {
-    let format = LocalizationManager.shared.bundle.localizedString(forKey: key, value: nil, table: nil)
+    let format = LocalizationManager.shared.localizedString(for: key)
     return String(format: format, arguments: args)
 }

@@ -7,6 +7,7 @@ struct HistoryView: View {
     @Environment(\.colorScheme) private var colorScheme
     @State private var viewModel = HistoryViewModel()
     @State private var showShareSheet = false
+    @State private var cachedShareImage: UIImage?
 
     var body: some View {
         ScrollView {
@@ -45,7 +46,9 @@ struct HistoryView: View {
         .onAppear {
             viewModel.loadData(context: modelContext)
         }
-        .sheet(isPresented: $showShareSheet) {
+        .sheet(isPresented: $showShareSheet, onDismiss: {
+            cachedShareImage = nil
+        }) {
             sharePreviewSheet
         }
     }
@@ -71,7 +74,7 @@ struct HistoryView: View {
 
             Spacer()
 
-            if let shareImage = generateShareImage(colors: colors, streakDays: streakDays) {
+            if let shareImage = cachedShareImage {
                 ShareLink(
                     item: Image(uiImage: shareImage),
                     preview: SharePreview(L("history.share.preview.title"), image: Image(uiImage: shareImage))
@@ -89,6 +92,11 @@ struct HistoryView: View {
         }
         .presentationDetents([.medium])
         .background(Color.hitokuchi.bgPrimary(for: theme, colorScheme: colorScheme))
+        .onAppear {
+            if cachedShareImage == nil {
+                cachedShareImage = generateShareImage(colors: colors, streakDays: streakDays)
+            }
+        }
     }
 
     private func generateShareImage(colors: ThemeColorSet, streakDays: Int) -> UIImage? {

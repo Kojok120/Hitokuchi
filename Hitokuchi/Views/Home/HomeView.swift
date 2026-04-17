@@ -154,7 +154,7 @@ struct HomeView: View {
                     insertion: .move(edge: .bottom).combined(with: .opacity),
                     removal: .opacity
                 ))
-                .animation(reduceMotion ? .none : .easeInOut(duration: 0.25), value: viewModel.showUndo)
+                .animation((reduceMotion || ProcessInfo.processInfo.isLowPowerModeEnabled) ? .none : .easeInOut(duration: 0.25), value: viewModel.showUndo)
             }
         }
         .navigationBarTitleDisplayMode(.inline)
@@ -163,9 +163,6 @@ struct HomeView: View {
         }
         .task {
             await viewModel.requestNotificationPermissionIfNeeded()
-        }
-        .onChange(of: modelContext.hasChanges) {
-            viewModel.loadData(context: modelContext)
         }
         .onChange(of: viewModel.progress.isGoalAchieved) { wasAchieved, isAchieved in
             if !wasAchieved, isAchieved {

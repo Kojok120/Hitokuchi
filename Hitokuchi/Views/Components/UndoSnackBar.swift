@@ -8,6 +8,10 @@ struct UndoSnackBar: View {
     @Environment(\.appTheme) private var theme
     @Environment(\.colorScheme) private var colorScheme
 
+    private var isLowPowerMode: Bool {
+        ProcessInfo.processInfo.isLowPowerModeEnabled
+    }
+
     var body: some View {
         HStack(spacing: HitokuchiSpacing.s) {
             Image(systemName: "checkmark.circle.fill")
@@ -45,6 +49,7 @@ struct UndoSnackBar: View {
                         style: StrokeStyle(lineWidth: 2, lineCap: .round)
                     )
                     .rotationEffect(.degrees(-90))
+                    .animation(isLowPowerMode ? nil : .default, value: secondsRemaining)
                 Text("\(secondsRemaining)")
                     .font(.caption2)
                     .fontWeight(.medium)

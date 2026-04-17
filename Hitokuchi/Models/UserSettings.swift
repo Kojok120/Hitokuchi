@@ -20,6 +20,9 @@ final class UserSettings {
     var createdAt: Date
     var updatedAt: Date
 
+    @Transient
+    private var _cachedFavoriteIDs: [UUID]? = nil
+
     // MARK: - Computed Properties
 
     var messageTone: MessageTone {
@@ -34,12 +37,18 @@ final class UserSettings {
 
     var favoriteBeverageIDs: [UUID] {
         get {
+            if let cached = _cachedFavoriteIDs { return cached }
             guard let data = favoriteBeverageIDsJSON.data(using: .utf8),
                   let ids = try? JSONDecoder().decode([UUID].self, from: data)
-            else { return [] }
+            else {
+                _cachedFavoriteIDs = []
+                return []
+            }
+            _cachedFavoriteIDs = ids
             return ids
         }
         set {
+            _cachedFavoriteIDs = newValue
             if let data = try? JSONEncoder().encode(newValue),
                let json = String(data: data, encoding: .utf8) {
                 favoriteBeverageIDsJSON = json

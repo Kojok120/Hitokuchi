@@ -22,7 +22,7 @@ final class HomeViewModel {
     private let healthStoreService = HealthStoreService()
 
     init(
-        messageEngine: any MessageGenerating = MessageEngine(),
+        messageEngine: any MessageGenerating = MessageEngine.shared,
         hydrationCalculator: any HydrationCalculating = HydrationCalculatorService(),
         reminderScheduler: any ReminderScheduling = ReminderSchedulerService()
     ) {
@@ -40,14 +40,14 @@ final class HomeViewModel {
         // Load settings and favorites
         let settingsDescriptor = FetchDescriptor<UserSettings>()
         let settings = (try? context.fetch(settingsDescriptor))?.first ?? UserSettings()
-        let favoriteIDs = settings.favoriteBeverageIDs
+        let favoriteIDSet = Set<UUID>(settings.favoriteBeverageIDs)
 
         // Load favorite beverages
         let beverageDescriptor = FetchDescriptor<BeverageMaster>(
             sortBy: [SortDescriptor(\.sortOrder)]
         )
         let allBeverages = (try? context.fetch(beverageDescriptor)) ?? []
-        favoriteBeverages = allBeverages.filter { favoriteIDs.contains($0.id) }
+        favoriteBeverages = allBeverages.filter { favoriteIDSet.contains($0.id) }
 
         // If no favorites set yet, use first 3
         if favoriteBeverages.isEmpty {
@@ -206,27 +206,28 @@ final class HomeViewModel {
     // MARK: - Streak Calculation
 
     private func calculateStreak(context: ModelContext) -> Int {
-        var streak = 0
-        let today = Calendar.current.startOfDay(for: .now)
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: .now)
         let settingsDescriptor = FetchDescriptor<UserSettings>()
         let goalML = (try? context.fetch(settingsDescriptor))?.first?.dailyGoalML ?? 2000.0
 
+        let oldestBound = calendar.date(byAdding: .day, value: -365, to: today)!
+        let predicate = #Predicate<DrinkLog> { $0.recordedAt >= oldestBound }
+        let descriptor = FetchDescriptor<DrinkLog>(predicate: predicate)
+        let allLogs = (try? context.fetch(descriptor)) ?? []
+
+        var dailyTotal: [Date: Double] = [:]
+        for log in allLogs {
+            let day = calendar.startOfDay(for: log.recordedAt)
+            dailyTotal[day, default: 0] += log.effectiveWaterML
+        }
+
+        var streak = 0
         for dayOffset in 0..<365 {
-            let dayStart = Calendar.current.date(byAdding: .day, value: -dayOffset, to: today)!
-            let dayEnd = Calendar.current.date(byAdding: .day, value: 1, to: dayStart)!
-
-            let predicate = #Predicate<DrinkLog> {
-                $0.recordedAt >= dayStart && $0.recordedAt < dayEnd
-            }
-            let descriptor = FetchDescriptor<DrinkLog>(predicate: predicate)
-            let logs = (try? context.fetch(descriptor)) ?? []
-            let total = logs.reduce(0) { $0 + $1.effectiveWaterML }
-
+            let dayStart = calendar.date(byAdding: .day, value: -dayOffset, to: today)!
+            let total = dailyTotal[dayStart] ?? 0
             if total >= goalML {
                 streak += 1
-            } else if dayOffset > 0 {
-                // Don't break on today (might not be done yet)
-                break
             } else {
                 break
             }

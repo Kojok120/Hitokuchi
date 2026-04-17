@@ -10,15 +10,17 @@ final class BeverageSelectViewModel {
     var selectedAmount: DrinkAmount?
     var isRecording: Bool = false
 
-    var filteredBeverages: [BeverageMaster] {
-        guard let category = selectedCategory else {
-            return beverages
-        }
-        return beverages.filter { $0.category == category }
-    }
-
+    // 計算プロパティで都度算出する。
+    // 以前は didSet で先行構築してキャッシュしていたが、@Observable の同一更新サイクル中に
+    // 二段目の状態変更が走り AttributeGraph precondition failure を引き起こしていた。
     var groupedBeverages: [(category: BeverageCategory, items: [BeverageMaster])] {
-        let grouped = Dictionary(grouping: filteredBeverages) { $0.category }
+        let source: [BeverageMaster]
+        if let category = selectedCategory {
+            source = beverages.filter { $0.category == category }
+        } else {
+            source = beverages
+        }
+        let grouped = Dictionary(grouping: source) { $0.category }
         return BeverageCategory.allCases.compactMap { cat in
             guard let items = grouped[cat], !items.isEmpty else { return nil }
             return (category: cat, items: items.sorted { $0.sortOrder < $1.sortOrder })

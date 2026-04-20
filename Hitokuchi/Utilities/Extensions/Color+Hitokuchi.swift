@@ -98,6 +98,7 @@ extension Color.hitokuchi {
 
         switch theme {
         case .default:  return isDark ? defaultDark : defaultLight
+        case .houjicha: return isDark ? houjichaDark : houjichaLight
         case .sakura:   return isDark ? sakuraDark : sakuraLight
         case .ocean:    return isDark ? oceanDark : oceanLight
         case .forest:   return isDark ? forestDark : forestLight
@@ -106,8 +107,39 @@ extension Color.hitokuchi {
         }
     }
 
-    // MARK: - Default Theme
+    // MARK: - Default Theme (Water Blue)
     static let defaultLight = ThemeColorSet(
+        bgPrimary:      Color(red: 244/255, green: 251/255, blue: 253/255),
+        bgSecondary:    Color(red: 234/255, green: 245/255, blue: 250/255),
+        bgTertiary:     Color(red: 216/255, green: 236/255, blue: 245/255),
+        textPrimary:    Color(red: 30/255, green: 58/255, blue: 77/255),
+        textSecondary:  Color(red: 91/255, green: 126/255, blue: 148/255),
+        textTertiary:   Color(red: 143/255, green: 170/255, blue: 189/255),
+        accentPrimary:  Color(red: 91/255, green: 173/255, blue: 214/255),
+        accentSecondary: Color(red: 143/255, green: 207/255, blue: 232/255),
+        accentSuccess:  Color(red: 107/255, green: 174/255, blue: 158/255),
+        accentWarning:  Color(red: 212/255, green: 149/255, blue: 107/255),
+        accentError:    Color(red: 199/255, green: 91/255, blue: 91/255),
+        borderDefault:  Color(red: 204/255, green: 228/255, blue: 238/255)
+    )
+
+    static let defaultDark = ThemeColorSet(
+        bgPrimary:      Color(red: 18/255, green: 28/255, blue: 36/255),
+        bgSecondary:    Color(red: 29/255, green: 42/255, blue: 52/255),
+        bgTertiary:     Color(red: 37/255, green: 53/255, blue: 66/255),
+        textPrimary:    Color(red: 232/255, green: 244/255, blue: 252/255),
+        textSecondary:  Color(red: 159/255, green: 190/255, blue: 209/255),
+        textTertiary:   Color(red: 110/255, green: 143/255, blue: 163/255),
+        accentPrimary:  Color(red: 112/255, green: 190/255, blue: 222/255),
+        accentSecondary: Color(red: 159/255, green: 213/255, blue: 236/255),
+        accentSuccess:  Color(red: 125/255, green: 186/255, blue: 171/255),
+        accentWarning:  Color(red: 224/255, green: 168/255, blue: 125/255),
+        accentError:    Color(red: 212/255, green: 112/255, blue: 112/255),
+        borderDefault:  Color(red: 46/255, green: 64/255, blue: 80/255)
+    )
+
+    // MARK: - Houjicha Theme (Warm Brown — formerly Default, now paid)
+    static let houjichaLight = ThemeColorSet(
         bgPrimary:      Color(red: 255/255, green: 251/255, blue: 245/255),
         bgSecondary:    Color(red: 255/255, green: 247/255, blue: 238/255),
         bgTertiary:     Color(red: 245/255, green: 237/255, blue: 227/255),
@@ -122,7 +154,7 @@ extension Color.hitokuchi {
         borderDefault:  Color(red: 232/255, green: 222/255, blue: 212/255)
     )
 
-    static let defaultDark = ThemeColorSet(
+    static let houjichaDark = ThemeColorSet(
         bgPrimary:      Color(red: 28/255, green: 24/255, blue: 22/255),
         bgSecondary:    Color(red: 42/255, green: 36/255, blue: 32/255),
         bgTertiary:     Color(red: 53/255, green: 46/255, blue: 40/255),

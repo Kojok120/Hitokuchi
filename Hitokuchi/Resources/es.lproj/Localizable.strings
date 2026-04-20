@@ -97,7 +97,7 @@
 "settings.fun.voicePack" = "Paquete de voz";
 "settings.fun.voicePackValue" = "Actual: %@";
 "settings.fun.premium" = "Pack completo";
-"settings.fun.premiumDescription" = "5 temas + 2 packs de voz";
+"settings.fun.premiumDescription" = "6 temas + 2 packs de voz";
 
 // Section: Integration
 "settings.section.integration" = "Conexiones";
@@ -137,7 +137,7 @@
 "a11y.settings.numericValues.hint" = "Toca dos veces para alternar. Al activar, se muestran valores en mililitros junto a los mensajes.";
 "a11y.settings.theme.hint" = "Toca dos veces para cambiar";
 "a11y.settings.voicePack.hint" = "Toca dos veces para cambiar";
-"a11y.settings.premium.hint" = "Desbloquea 5 temas y 2 packs de voz";
+"a11y.settings.premium.hint" = "Desbloquea 6 temas y 2 packs de voz";
 "a11y.settings.healthKit.label" = "Sincronización con Salud";
 "a11y.settings.healthKit.hint" = "Toca dos veces para alternar";
 "a11y.settings.editFavorites.hint" = "Toca dos veces para editar bebidas favoritas";
@@ -243,7 +243,7 @@
 "premium.catchCopy" = "Hazlo\ntuyo.";
 "premium.subtitle" = "Temas y voces, todo en un solo pack.";
 "premium.feature.themes.title" = "5 temas de color";
-"premium.feature.themes.description" = "Cerezo, Océano, Bosque, Atardecer, Noche — adapta el ambiente de la app a tu estado de ánimo";
+"premium.feature.themes.description" = "Houjicha, Cerezo, Océano, Bosque, Atardecer, Noche — adapta el ambiente de la app a tu estado de ánimo";
 "premium.feature.voices.title" = "2 packs de voz";
 "premium.feature.voices.description" = "Dialectos Kansai y Kioto — la app te habla con la voz que prefieras";
 "premium.purchaseButton" = "Obtener pack completo %@ (pago único)";
@@ -407,8 +407,10 @@
 // MARK: - App Theme
 // =============================================================================
 
-"theme.default.name" = "Predeterminado";
-"theme.default.description" = "Cálido y neutro";
+"theme.default.name" = "Agua";
+"theme.default.description" = "Suave azul agua";
+"theme.houjicha.name" = "Houjicha";
+"theme.houjicha.description" = "Marrón cálido tostado";
 "theme.sakura.name" = "Cerezo";
 "theme.sakura.description" = "Inspirado en los cerezos en flor";
 "theme.ocean.name" = "Océano";

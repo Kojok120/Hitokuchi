@@ -97,7 +97,7 @@
 "settings.fun.voicePack" = "Voice Pack";
 "settings.fun.voicePackValue" = "Current: %@";
 "settings.fun.premium" = "Everything Pack";
-"settings.fun.premiumDescription" = "5 themes + 2 voice packs";
+"settings.fun.premiumDescription" = "6 themes + 2 voice packs";
 
 // Section: Integration
 "settings.section.integration" = "Integration";
@@ -137,7 +137,7 @@
 "a11y.settings.numericValues.hint" = "Double-tap to toggle. When on, milliliter values are shown alongside messages.";
 "a11y.settings.theme.hint" = "Double-tap to change";
 "a11y.settings.voicePack.hint" = "Double-tap to change";
-"a11y.settings.premium.hint" = "Unlock 5 themes and 2 voice packs";
+"a11y.settings.premium.hint" = "Unlock 6 themes and 2 voice packs";
 "a11y.settings.healthKit.label" = "Health App sync";
 "a11y.settings.healthKit.hint" = "Double-tap to toggle";
 "a11y.settings.editFavorites.hint" = "Double-tap to edit favorite drinks";
@@ -243,7 +243,7 @@
 "premium.catchCopy" = "Make it\nyours.";
 "premium.subtitle" = "Themes and voices, all in one pack.";
 "premium.feature.themes.title" = "5 Color Themes";
-"premium.feature.themes.description" = "Cherry Blossom, Ocean, Forest, Sunset, Night — match the app's mood to yours";
+"premium.feature.themes.description" = "Houjicha, Cherry Blossom, Ocean, Forest, Sunset, Night — match the app's mood to yours";
 "premium.feature.voices.title" = "2 Voice Packs";
 "premium.feature.voices.description" = "Kansai & Kyoto dialect — hear the app speak in your favorite voice";
 "premium.purchaseButton" = "Get Everything Pack %@ (one-time)";
@@ -407,8 +407,10 @@
 // MARK: - App Theme
 // =============================================================================
 
-"theme.default.name" = "Default";
-"theme.default.description" = "Warm and neutral";
+"theme.default.name" = "Water";
+"theme.default.description" = "Soft water blue";
+"theme.houjicha.name" = "Houjicha";
+"theme.houjicha.description" = "Warm roasted brown";
 "theme.sakura.name" = "Cherry Blossom";
 "theme.sakura.description" = "Inspired by spring sakura";
 "theme.ocean.name" = "Ocean";

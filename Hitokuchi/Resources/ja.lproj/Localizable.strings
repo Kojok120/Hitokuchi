@@ -107,7 +107,7 @@
 "settings.fun.voicePack" = "ボイスパック";
 "settings.fun.voicePackValue" = "現在: %@";
 "settings.fun.premium" = "ぜんぶ入りパック";
-"settings.fun.premiumDescription" = "テーマ5種 + ボイスパック2種";
+"settings.fun.premiumDescription" = "テーマ6種 + ボイスパック2種";
 
 // Section: 連携
 "settings.section.integration" = "連携";
@@ -147,7 +147,7 @@
 "a11y.settings.numericValues.hint" = "ダブルタップで切り替えます。オンにすると自然言語メッセージに加えてミリリットル数値も表示されます";
 "a11y.settings.theme.hint" = "ダブルタップで変更します";
 "a11y.settings.voicePack.hint" = "ダブルタップで変更します";
-"a11y.settings.premium.hint" = "テーマ5種とボイスパック2種が使えるようになります";
+"a11y.settings.premium.hint" = "テーマ6種とボイスパック2種が使えるようになります";
 "a11y.settings.healthKit.label" = "ヘルスケア連携";
 "a11y.settings.healthKit.hint" = "ダブルタップで切り替えます";
 "a11y.settings.editFavorites.hint" = "ダブルタップでお気に入り飲料を変更します";
@@ -253,7 +253,7 @@
 "premium.catchCopy" = "あなた好みの\nひとくちに。";
 "premium.subtitle" = "テーマも声もぜんぶまとめて、お得に。";
 "premium.feature.themes.title" = "カラーテーマ5種";
-"premium.feature.themes.description" = "桜・海・森・夕焼け・夜 — 気分に合わせてアプリの雰囲気を変えられます";
+"premium.feature.themes.description" = "ほうじ茶・桜・海・森・夕焼け・夜 — 気分に合わせてアプリの雰囲気を変えられます";
 "premium.feature.voices.title" = "ボイスパック2種";
 "premium.feature.voices.description" = "関西弁・京都弁 — アプリのメッセージがお好みの言葉になります";
 "premium.purchaseButton" = "ぜんぶ入りパック %@（買い切り）";
@@ -417,8 +417,10 @@
 // MARK: - App Theme
 // =============================================================================
 
-"theme.default.name" = "デフォルト";
-"theme.default.description" = "温かみのあるニュートラル";
+"theme.default.name" = "水色";
+"theme.default.description" = "やわらかな水の色";
+"theme.houjicha.name" = "ほうじ茶";
+"theme.houjicha.description" = "温かみのあるブラウン";
 "theme.sakura.name" = "桜";
 "theme.sakura.description" = "春の桜をイメージ";
 "theme.ocean.name" = "海";

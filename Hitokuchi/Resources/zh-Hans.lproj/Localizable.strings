@@ -97,7 +97,7 @@
 "settings.fun.voicePack" = "语音包";
 "settings.fun.voicePackValue" = "当前：%@";
 "settings.fun.premium" = "全套包";
-"settings.fun.premiumDescription" = "5种主题 + 2种语音包";
+"settings.fun.premiumDescription" = "6种主题 + 2种语音包";
 
 // Section: Integration
 "settings.section.integration" = "关联";
@@ -137,7 +137,7 @@
 "a11y.settings.numericValues.hint" = "双击切换。开启后将在消息旁显示毫升数值";
 "a11y.settings.theme.hint" = "双击更改";
 "a11y.settings.voicePack.hint" = "双击更改";
-"a11y.settings.premium.hint" = "解锁5种主题和2种语音包";
+"a11y.settings.premium.hint" = "解锁6种主题和2种语音包";
 "a11y.settings.healthKit.label" = "健康 App 关联";
 "a11y.settings.healthKit.hint" = "双击切换";
 "a11y.settings.editFavorites.hint" = "双击更改常喝饮品";
@@ -243,7 +243,7 @@
 "premium.catchCopy" = "打造你的\n专属风格。";
 "premium.subtitle" = "主题和语音，一次全部拥有。";
 "premium.feature.themes.title" = "5种颜色主题";
-"premium.feature.themes.description" = "樱花·海洋·森林·日落·夜晚 — 随心情切换应用氛围";
+"premium.feature.themes.description" = "焙茶·樱花·海洋·森林·日落·夜晚 — 随心情切换应用氛围";
 "premium.feature.voices.title" = "2种语音包";
 "premium.feature.voices.description" = "关西方言·京都方言 — 用你喜欢的语调与应用互动";
 "premium.purchaseButton" = "购买全套包 %@（买断制）";
@@ -407,8 +407,10 @@
 // MARK: - App Theme
 // =============================================================================
 
-"theme.default.name" = "默认";
-"theme.default.description" = "温暖中性";
+"theme.default.name" = "水色";
+"theme.default.description" = "柔和水蓝";
+"theme.houjicha.name" = "焙茶";
+"theme.houjicha.description" = "温暖焙炒棕";
 "theme.sakura.name" = "樱花";
 "theme.sakura.description" = "春日樱花";
 "theme.ocean.name" = "海洋";

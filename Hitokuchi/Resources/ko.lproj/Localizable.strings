@@ -97,7 +97,7 @@
 "settings.fun.voicePack" = "보이스 팩";
 "settings.fun.voicePackValue" = "현재: %@";
 "settings.fun.premium" = "올인원 팩";
-"settings.fun.premiumDescription" = "테마 5종 + 보이스팩 2종";
+"settings.fun.premiumDescription" = "테마 6종 + 보이스팩 2종";
 
 // Section: Integration
 "settings.section.integration" = "연동";
@@ -137,7 +137,7 @@
 "a11y.settings.numericValues.hint" = "이중 탭하여 전환합니다. 켜면 메시지와 함께 밀리리터 수치도 표시됩니다";
 "a11y.settings.theme.hint" = "이중 탭하여 변경합니다";
 "a11y.settings.voicePack.hint" = "이중 탭하여 변경합니다";
-"a11y.settings.premium.hint" = "테마 5종과 보이스팩 2종을 사용할 수 있습니다";
+"a11y.settings.premium.hint" = "테마 6종과 보이스팩 2종을 사용할 수 있습니다";
 "a11y.settings.healthKit.label" = "건강 앱 연동";
 "a11y.settings.healthKit.hint" = "이중 탭하여 전환합니다";
 "a11y.settings.editFavorites.hint" = "이중 탭하여 즐겨찾기 음료를 변경합니다";
@@ -243,7 +243,7 @@
 "premium.catchCopy" = "나만의\n스타일로.";
 "premium.subtitle" = "테마와 보이스, 모두 한 번에 득템.";
 "premium.feature.themes.title" = "컬러 테마 5종";
-"premium.feature.themes.description" = "벚꽃, 바다, 숲, 노을, 밤 — 기분에 맞게 앱 분위기를 바꿔보세요";
+"premium.feature.themes.description" = "호지차, 벚꽃, 바다, 숲, 노을, 밤 — 기분에 맞게 앱 분위기를 바꿔보세요";
 "premium.feature.voices.title" = "보이스팩 2종";
 "premium.feature.voices.description" = "간사이 사투리 · 교토 사투리 — 마음에 드는 말투로 앱 메시지를 받아보세요";
 "premium.purchaseButton" = "올인원 팩 구매 %@(일회 결제)";
@@ -407,8 +407,10 @@
 // MARK: - App Theme
 // =============================================================================
 
-"theme.default.name" = "기본";
-"theme.default.description" = "따뜻한 뉴트럴";
+"theme.default.name" = "물색";
+"theme.default.description" = "부드러운 물빛 블루";
+"theme.houjicha.name" = "호지차";
+"theme.houjicha.description" = "따뜻한 로스팅 브라운";
 "theme.sakura.name" = "벚꽃";
 "theme.sakura.description" = "봄의 벚꽃을 담아서";
 "theme.ocean.name" = "바다";

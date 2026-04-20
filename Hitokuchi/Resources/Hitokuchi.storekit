@@ -25,7 +25,7 @@
           "locale" : "en_US"
         },
         {
-          "description" : "テーマ5種とボイスパック2種をぜんぶアンロック",
+          "description" : "テーマ6種とボイスパック2種をぜんぶアンロック",
           "displayName" : "ぜんぶ入りパック",
           "locale" : "ja"
         }
@@ -52,6 +52,26 @@
       ],
       "productID" : "hitokuchi.theme.sakura",
       "referenceName" : "Theme: Sakura",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : true,
+      "internalID" : "A0000009",
+      "localizations" : [
+        {
+          "description" : "Warm roasted brown theme",
+          "displayName" : "Houjicha Theme",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "温かみのあるほうじ茶ブラウンのテーマ",
+          "displayName" : "ほうじ茶テーマ",
+          "locale" : "ja"
+        }
+      ],
+      "productID" : "hitokuchi.theme.houjicha",
+      "referenceName" : "Theme: Houjicha",
       "type" : "NonConsumable"
     },
     {

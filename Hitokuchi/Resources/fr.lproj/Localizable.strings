@@ -97,7 +97,7 @@
 "settings.fun.voicePack" = "Pack vocal";
 "settings.fun.voicePackValue" = "Actuel : %@";
 "settings.fun.premium" = "Pack complet";
-"settings.fun.premiumDescription" = "5 thèmes + 2 packs de voix";
+"settings.fun.premiumDescription" = "6 thèmes + 2 packs de voix";
 
 // Section: Integration
 "settings.section.integration" = "Connexion";
@@ -137,7 +137,7 @@
 "a11y.settings.numericValues.hint" = "Touchez deux fois pour basculer. Si activé, les valeurs en millilitres sont affichées avec les messages.";
 "a11y.settings.theme.hint" = "Touchez deux fois pour modifier";
 "a11y.settings.voicePack.hint" = "Touchez deux fois pour modifier";
-"a11y.settings.premium.hint" = "Débloquez 5 thèmes et 2 packs de voix";
+"a11y.settings.premium.hint" = "Débloquez 6 thèmes et 2 packs de voix";
 "a11y.settings.healthKit.label" = "Synchronisation Santé";
 "a11y.settings.healthKit.hint" = "Touchez deux fois pour basculer";
 "a11y.settings.editFavorites.hint" = "Touchez deux fois pour modifier vos boissons favorites";
@@ -243,7 +243,7 @@
 "premium.catchCopy" = "Faites-en\nle vôtre.";
 "premium.subtitle" = "Thèmes et voix, tout en un seul pack.";
 "premium.feature.themes.title" = "5 thèmes de couleur";
-"premium.feature.themes.description" = "Cerisier, Océan, Forêt, Crépuscule, Nuit — adaptez l'ambiance à votre humeur";
+"premium.feature.themes.description" = "Houjicha, Cerisier, Océan, Forêt, Crépuscule, Nuit — adaptez l'ambiance à votre humeur";
 "premium.feature.voices.title" = "2 packs de voix";
 "premium.feature.voices.description" = "Dialecte Kansai et Kyoto — l'app vous parle avec la voix de votre choix";
 "premium.purchaseButton" = "Obtenir le pack complet %@ (achat unique)";
@@ -407,8 +407,10 @@
 // MARK: - App Theme
 // =============================================================================
 
-"theme.default.name" = "Par défaut";
-"theme.default.description" = "Chaleureux et neutre";
+"theme.default.name" = "Eau";
+"theme.default.description" = "Bleu eau doux";
+"theme.houjicha.name" = "Houjicha";
+"theme.houjicha.description" = "Brun torréfié chaleureux";
 "theme.sakura.name" = "Cerisier";
 "theme.sakura.description" = "Inspiré des cerisiers en fleurs";
 "theme.ocean.name" = "Océan";

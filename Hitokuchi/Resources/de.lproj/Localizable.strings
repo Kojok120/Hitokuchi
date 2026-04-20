@@ -97,7 +97,7 @@
 "settings.fun.voicePack" = "Sprachpaket";
 "settings.fun.voicePackValue" = "Aktuell: %@";
 "settings.fun.premium" = "Komplettpaket";
-"settings.fun.premiumDescription" = "5 Designs + 2 Stimmpakete";
+"settings.fun.premiumDescription" = "6 Designs + 2 Stimmpakete";
 
 // Section: Integration
 "settings.section.integration" = "Verknüpfung";
@@ -137,7 +137,7 @@
 "a11y.settings.numericValues.hint" = "Doppeltippen zum Umschalten. Wenn aktiviert, werden Milliliter-Werte neben den Nachrichten angezeigt.";
 "a11y.settings.theme.hint" = "Doppeltippen zum Ändern";
 "a11y.settings.voicePack.hint" = "Doppeltippen zum Ändern";
-"a11y.settings.premium.hint" = "Schalte 5 Designs und 2 Stimmpakete frei";
+"a11y.settings.premium.hint" = "Schalte 6 Designs und 2 Stimmpakete frei";
 "a11y.settings.healthKit.label" = "Health-Synchronisierung";
 "a11y.settings.healthKit.hint" = "Doppeltippen zum Umschalten";
 "a11y.settings.editFavorites.hint" = "Doppeltippen, um Lieblingsgetränke zu bearbeiten";
@@ -243,7 +243,7 @@
 "premium.catchCopy" = "Mach es\nzu deinem.";
 "premium.subtitle" = "Designs und Stimmen, alles in einem Paket.";
 "premium.feature.themes.title" = "5 Farbdesigns";
-"premium.feature.themes.description" = "Kirschblüte, Ozean, Wald, Sonnenuntergang, Nacht — passe die Stimmung der App deiner an";
+"premium.feature.themes.description" = "Houjicha, Kirschblüte, Ozean, Wald, Sonnenuntergang, Nacht — passe die Stimmung der App deiner an";
 "premium.feature.voices.title" = "2 Stimmpakete";
 "premium.feature.voices.description" = "Kansai- & Kyoto-Dialekt — lass die App in deiner Lieblingssprache sprechen";
 "premium.purchaseButton" = "Komplettpaket kaufen %@ (Einmalkauf)";
@@ -407,8 +407,10 @@
 // MARK: - App Theme
 // =============================================================================
 
-"theme.default.name" = "Standard";
-"theme.default.description" = "Warm und neutral";
+"theme.default.name" = "Wasser";
+"theme.default.description" = "Sanftes Wasserblau";
+"theme.houjicha.name" = "Houjicha";
+"theme.houjicha.description" = "Warmes Röstbraun";
 "theme.sakura.name" = "Kirschblüte";
 "theme.sakura.description" = "Inspiriert von Frühlingskirschblüten";
 "theme.ocean.name" = "Ozean";

@@ -11,6 +11,7 @@ final class StoreManagerService {
 
     static let allProductIDs: Set<String> = [
         "hitokuchi.bundle.all",
+        "hitokuchi.theme.houjicha",
         "hitokuchi.theme.sakura",
         "hitokuchi.theme.ocean",
         "hitokuchi.theme.forest",

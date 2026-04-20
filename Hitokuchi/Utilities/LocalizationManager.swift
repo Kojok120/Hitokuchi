@@ -12,7 +12,7 @@ final class LocalizationManager {
     }
 
     private(set) var bundle: Bundle = .main
-    private var cache: [String: String] = [:]
+    @ObservationIgnored private var cache: [String: String] = [:]
 
     /// 現在の言語に対応するLocale
     var locale: Locale {

@@ -24,6 +24,16 @@ struct HitokuchiApp: App {
             // Seed beverage master data on first launch
             let context = modelContainer.mainContext
             BeverageSeedData.seedIfNeeded(in: context)
+
+            #if DEBUG
+            if CommandLine.arguments.contains("-seed7Days") {
+                ScreenshotSeed.seed7DaysOfLogs(in: context)
+            }
+            if CommandLine.arguments.contains("-seedFavorites") {
+                ScreenshotSeed.seedFavoriteBeverages(in: context)
+            }
+            ScreenshotStoreKit.activateIfRequested()
+            #endif
         } catch {
             fatalError("SwiftData container creation failed: \(error)")
         }

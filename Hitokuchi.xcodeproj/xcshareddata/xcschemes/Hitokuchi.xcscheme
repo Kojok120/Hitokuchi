@@ -40,7 +40,20 @@
                ReferencedContainer = "container:Hitokuchi.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E11234567890ABCDEF000050"
+               BuildableName = "HitokuchiUITests.xctest"
+               BlueprintName = "HitokuchiUITests"
+               ReferencedContainer = "container:Hitokuchi.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <StoreKitConfigurationFileReference
+         identifier = "../../Hitokuchi/Resources/Hitokuchi.storekit">
+      </StoreKitConfigurationFileReference>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
